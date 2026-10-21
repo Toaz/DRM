@@ -1,5 +1,132 @@
-import re,geonamescache,pycountry
+import re, unicodedata, geonamescache, pycountry
+
 gc=geonamescache.GeonamesCache();CO=gc.get_countries();CI=gc.get_cities()
+
+
+def _clean_name(value):
+    text = unicodedata.normalize('NFKC', str(value or ''))
+    text = text.replace('&', ' and ')
+    text = text.replace('’', "'")
+    text = re.sub(r'[^A-Za-zА-Яа-я0-9\s\-]', ' ', text)
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
+
+
+BG_COUNTRY_NAMES = {
+    'UA': {'Украйна', 'Украински', 'Украинско'},
+    'RU': {'Русия', 'Руска', 'Руски'},
+    'US': {'САЩ', 'Америка', 'Американски', 'Съединени американски щати'},
+    'GB': {'Великобритания', 'Британия', 'Обединено кралство'},
+    'FR': {'Франция', 'Френски'},
+    'DE': {'Германия', 'Германски'},
+    'IT': {'Италия', 'Италиански'},
+    'ES': {'Испания', 'Испански'},
+    'NL': {'Нидерландия', 'Холандия'},
+    'SE': {'Швеция', 'Шведски'},
+    'FI': {'Финландия', 'Финландски'},
+    'NO': {'Норвегия', 'Норвежки'},
+    'DK': {'Дания', 'Датски'},
+    'LT': {'Литва', 'Литовски'},
+    'LV': {'Латвия', 'Латвийски'},
+    'EE': {'Естония', 'Естонски'},
+    'CZ': {'Чехия', 'Чешки'},
+    'SK': {'Словакия', 'Словашки'},
+    'HU': {'Унгария', 'Унгарски'},
+    'PL': {'Полша', 'Полски'},
+    'RO': {'Румъния', 'Румънски'},
+    'BG': {'България', 'Български'},
+    'GR': {'Гърция', 'Гръцки'},
+    'TR': {'Турция', 'Турски'},
+    'IR': {'Иран', 'Ирански'},
+    'IL': {'Израел', 'Израелски'},
+    'SY': {'Сирия', 'Сирийски'},
+    'PS': {'Палестина', 'Палестински'},
+    'LB': {'Ливан', 'Ливански'},
+    'YE': {'Йемен', 'Йеменски'},
+    'SA': {'Саудитска Арабия', 'Саудитски'},
+    'AE': {'ОАЕ', 'Обединени арабски емирства'},
+    'QA': {'Катар'},
+    'EG': {'Египет', 'Египетски'},
+    'JO': {'Йордания'},
+    'KW': {'Кувейт'},
+    'BH': {'Бахрейн'},
+    'OM': {'Оман'},
+    'SD': {'Судан'},
+    'ET': {'Етиопия', 'Етиопски'},
+    'ML': {'Мали'},
+    'NE': {'Нигер'},
+    'NG': {'Нигерия'},
+    'SO': {'Сомалия'},
+    'LY': {'Либия'},
+    'CD': {'Конго'},
+    'KZ': {'Казахстан'},
+    'RS': {'Сърбия', 'Сръбски'},
+    'CA': {'Канада', 'Канадски'},
+    'MX': {'Мексико', 'Мексикански'},
+    'AU': {'Австралия', 'Австралийски'},
+    'TH': {'Тайланд', 'Тайландски'},
+    'MM': {'Мианмар', 'Бирма'},
+    'CN': {'Китай', 'Китайски'},
+    'TW': {'Тайван'},
+    'JP': {'Япония', 'Японски'},
+    'KR': {'Южна Корея', 'Южнокорейски'},
+    'KP': {'Северна Корея', 'КНДР'},
+    'IN': {'Индия', 'Индийски'},
+    'PK': {'Пакистан', 'Пакистански'},
+    'AF': {'Афганистан', 'Афганистански'},
+    'BY': {'Беларус', 'Белорусия'},
+    'MD': {'Молдова', 'Молдовски'},
+    'GE': {'Грузия', 'Грузински'},
+    'AM': {'Армения', 'Арменски'},
+    'AZ': {'Азербайджан', 'Азербайджански'},
+    'VE': {'Венецуела', 'Венецуелски'},
+    'EU': {'Европейски съюз', 'ЕС'},
+    'UN': {'ООН'}
+}
+
+
+def _country_names(iso):
+    names = set()
+    data = CO.get(iso, {})
+    for key in ('name', 'official_name', 'capital'):
+        value = data.get(key)
+        if value:
+            names.add(value)
+    for c in pycountry.countries:
+        if getattr(c, 'alpha_2', None) == iso:
+            names.add(c.name)
+            official = getattr(c, 'official_name', None)
+            if official:
+                names.add(official)
+            names.add(c.alpha_2)
+            names.add(c.alpha_3)
+            break
+    names |= BG_COUNTRY_NAMES.get(iso, set())
+    if iso == 'GB':
+        names |= {'United Kingdom', 'UK', 'Britain', 'Great Britain', 'Великобритания'}
+    if iso == 'US':
+        names |= {'United States', 'USA', 'United States of America', 'America', 'САЩ'}
+    if iso == 'RU':
+        names |= {'Russia', 'Russian Federation', 'Русия'}
+    if iso == 'UA':
+        names |= {'Ukraine', 'Ukrainian', 'Украйна'}
+    cleaned = {n for n in (_clean_name(i) for i in names) if n and len(n) > 1}
+    return cleaned
+
+
+def _build_country_regexes():
+    patterns = []
+    for iso in sorted(CO):
+        names = _country_names(iso)
+        if not names:
+            continue
+        terms = sorted({re.escape(n) for n in names}, key=len, reverse=True)
+        if not terms:
+            continue
+        patterns.append((iso, re.compile('|'.join(terms), re.I)))
+    return patterns
+
+
 big={}
 for c in CI.values():
     k=c['countrycode']
@@ -20,18 +147,8 @@ def theme(iso):
     c=CO.get(iso,{}).get('continentcode')
     return {'EU':'eu','AF':'af','NA':'am','SA':'am','AS':'as','OC':'as'}.get(c,'gl')
 LOW={'US','EU','UN','GB','DE','FR'}
-CRX=[(i,re.compile(p,re.I)) for i,p in [
-('UA',r'украйн|украин|зеленск|\bВСУ\b'),('RU',r'русия|руск|путин|кремъл|лавров|шойгу'),('IR',r'иран|хаменей|ИРГК|КСИР'),('IL',r'израел|нетаняху|ЦАХАЛ|\bIDF\b'),
-('SY',r'сирия|сирийск|асад'),('LB',r'ливан|хизбула|хезболла'),('PS',r'палестин|(?-i:\bГаза\b)|ивицата|хамас|западния бряг'),('IQ',r'ирак|иракск|кюрдистан'),
-('SA',r'саудитск|саудитска арабия'),('YE',r'йемен|хути'),('TR',r'турци|ердоган|турск'),('CN',r'китай|китайск|дзинпин'),('TW',r'тайван'),
-('KP',r'севернокорей|северна корея|КНДР|ким чен'),('KR',r'южна корея|южнокорей'),('JP',r'япони'),('IN',r'индия|индийск|(?-i:\bМоди\b)'),('PK',r'пакистан'),
-('AF',r'афганистан|талибан'),('BY',r'беларус|лукашенко'),('PL',r'полша|полск'),('DE',r'германи|германск'),('FR',r'франци|френск|макрон'),
-('GB',r'великобритани|британск'),('BG',r'българи|български'),('RO',r'румъни'),('MD',r'молдов|приднестров'),('GE',r'грузи'),('AM',r'армени'),('AZ',r'азербайджан'),
-('VE',r'венецуел|мадуро'),('US',r'съединените щати|\bСАЩ\b|американск|тръмп|байдън|пентагон|вашингтон|белия дом'),('EG',r'египет'),('JO',r'йордани'),('QA',r'катар'),
-('AE',r'емирства|\bОАЕ\b'),('KW',r'кувейт'),('BH',r'бахрейн'),('OM',r'(?-i:\bОман\b)'),('SD',r'судан'),('ET',r'етиопи'),('ML',r'(?-i:\bМали\b)'),('NE',r'нигер(?!ийск|ия)'),('NG',r'нигерия|нигерийск'),
-('SO',r'сомали'),('LY',r'либия|либий'),('CD',r'конго'),('KZ',r'казахстан'),('RS',r'сърби'),('GR',r'гърци'),('IT',r'итали'),('ES',r'испани'),('NL',r'нидерланд'),
-('SE',r'швеци'),('FI',r'финланд'),('NO',r'норвег'),('DK',r'дания'),('LT',r'литва'),('LV',r'латви'),('EE',r'естони'),('CZ',r'чехи'),('SK',r'словаки'),('HU',r'унгари'),
-('CA',r'канад'),('MX',r'мексик'),('AU',r'австрали'),('TH',r'тайланд'),('MM',r'мианма|бирма'),('EU',r'европейски съюз|(?-i:\bЕС\b)'),('UN',r'(?-i:\bООН\b)')]]
+CRX=_build_country_regexes()
+
 def C(lat,lon,iso,*ps):return (re.compile('|'.join(ps),re.I),lat,lon,iso)
 CITY=[C(50.45,30.52,'UA','киев','киевск'),C(49.99,36.23,'UA','харков'),C(48.59,38.0,'UA','бахмут','артьомовск'),C(47.1,37.55,'UA','мариупол'),C(46.64,32.62,'UA','херсон'),
 C(46.48,30.73,'UA','одес'),C(47.84,35.14,'UA','запорож'),C(48.0,37.8,'UA','донецк'),C(48.3,38.2,'UA','донбас'),C(48.57,39.31,'UA','луганск'),
@@ -84,81 +201,4 @@ def locate(t):
     if k not in PT:return None
     return PT[k][0],PT[k][1],k,('a' if good else 's')
 
-PHYS=re.compile(r'атакува|атаки|атака|нападн|нападен|напада|удар|обстрел|бомбард|порази|нанес|унищож|нахлу|стрелб|потопи|свали|сваля|взриви|ликвидира|елиминира|разруши|завзе|превзе',re.I)
-VERB=re.compile(r'заплаш|обвин|осъд|санкци|експулс|изгон|ултиматум|предупреди|критикува',re.I)
-NOUNV=re.compile(r'удар|атак|обстрел|нападен|нахлуван|бомбардиров',re.I)
-def mentions(h):
-    out=[]
-    for iso,rx in CRX:
-        for m in rx.finditer(h):out.append((m.start(),m.end(),iso,None))
-    for rx,la,lo,iso in CITY:
-        if iso:
-            for m in rx.finditer(h):out.append((m.start(),m.end(),iso,(la,lo)))
-    out.sort(key=lambda x:(x[0],x[1]));return out
-def detect(t,loc):
-    h=t[:320];m=PHYS.search(h);kind='p'
-    if not m:m=VERB.search(h);kind='v'
-    if not m:return None
-    vp,ve=m.start(),m.end();M=mentions(h)
-    before=[x for x in M if x[1]<=vp and vp-x[1]<=70 and x[2]!='UN']
-    after=[x for x in M if x[0]>=ve and x[0]-ve<=110]
-    att=before[-1] if before else None
-    if att is None:
-        for x in after:
-            pre=h[max(0,x[0]-5):x[0]].lower().rstrip()
-            if pre.endswith('от') or (NOUNV.search(m.group()) and pre.endswith('на')):att=x;after=[y for y in after if y is not x];break
-    if att is None:return None
-    tgt=next((x for x in after if x[2]!=att[2] and x[2]!='UN'),None)
-    if tgt is None and loc and loc!=att[2]:tgt=(0,0,loc,None)
-    if tgt is None or att[2] not in PT or tgt[2] not in PT:return None
-    return att[2],tgt,kind
-
-BND='(?<![А-Яа-яA-Za-z])(?:'
-CRX=[(i,re.compile(BND+rx.pattern+')',rx.flags)) for i,rx in CRX]
-CITY=[(re.compile(BND+rx.pattern+')',rx.flags),la,lo,iso) for rx,la,lo,iso in CITY]
-_d=detect
-DELIV=re.compile(r'достав|предостав|военна помощ|пакет с помощ|ще получи|получава|договор за|подпис',re.I);STRONG=re.compile(r'удар по|атака срещу|обстрел|нападение срещу|нанесе|порази',re.I)
-def detect(t,loc):
-    h=t[:320]
-    if DELIV.search(h[:200]) and not STRONG.search(h):return None
-    return _d(t,loc)
-
-PASS=re.compile(r'^(?:ударен|поразен|атакуван|обстрелян|нападнат|бомбардиран|унищожен|завзет|превзет|потопен|свален|взривен|разрушен|ликвидиран|елиминиран)(?:а|и|о)?$',re.I)
-def _d2(t,loc):
-    h=t[:320];m=first_verb(h);kind='p'
-    if not m:m=VERB.search(h);kind='v'
-    if not m:return None
-    vp,ve=m.start(),m.end();M=mentions(h)
-    wm=re.match(r'[А-Яа-я]+',h[vp:]);word=wm.group() if wm else ''
-    ctry=lambda x:x[3] is None
-    after=[x for x in M if x[0]>=ve and x[0]-ve<=110]
-    pre=lambda x:h[max(0,x[0]-6):x[0]].lower().rstrip()
-    if PASS.match(word):
-        att=next((x for x in after if ctry(x) and re.search(r'(?:от|при|чрез|след)$',pre(x))),None)
-        tg=[x for x in M if x[1]<=vp and vp-x[1]<=70];tgt=tg[-1] if tg else None
-        if tgt is None and loc:tgt=(0,0,loc,None)
-        if att is None or tgt is None:return None
-    else:
-        before=[x for x in M if ctry(x) and x[1]<=vp and vp-x[1]<=70 and x[2]!='UN'];att=before[-1] if before else None;rest=after
-        if att is None:
-            att=next((x for x in after if ctry(x) and (re.search(r'(?:от|при|чрез)$',pre(x)) or (NOUNV.search(m.group()) and pre(x).endswith('на')))),None);rest=[x for x in after if x is not att]
-        if att is None:return None
-        tgt=next((x for x in rest if x[2]!=att[2] and x[2]!='UN'),None)
-        if tgt is None and loc and loc!=att[2]:tgt=(0,0,loc,None)
-        if tgt is None:return None
-    if att[2] not in PT or tgt[2] not in PT or att[2]==tgt[2]:return None
-    return att[2],tgt,kind
-def detect(t,loc):
-    h=t[:320]
-    if DELIV.search(h[:200]) and not STRONG.search(h):return None
-    return _d2(t,loc)
-
-DEFN=re.compile(r'^(?:атаката|атаките|нападението|нападенията|ударът|ударите|удара|обстрела|обстрелите|бомбардировката)$',re.I)
-REFP=re.compile(r'(?:от|след|при|кадри|видео|заради|жертвите|последиците)\s*$',re.I)
-def first_verb(h):
-    for m in PHYS.finditer(h):
-        wm=re.match(r'[А-Яа-я]+',h[m.start():]);w=wm.group() if wm else ''
-        if DEFN.match(w) and REFP.search(h[max(0,m.start()-14):m.start()]):continue
-        if re.match(r'^удар(?:на|ни|но|ния|ната|ните|ното)$',w,re.I):continue
-        return m
-    return None
+PHYS=re.compile(r'атакува|атаки|атака|нападн|нападен|напада|удар|обстрел|бомбард|порази|нанес|унищож|нахлу|стрелб|[...]
