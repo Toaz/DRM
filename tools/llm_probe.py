@@ -16,6 +16,7 @@ from pathlib import Path
 
 URL = "https://models.github.ai/inference/chat/completions"
 CASES = Path(__file__).with_name("probe_cases.json")
+API_VERSION = "2026-03-10"  # GitHub REST API version header; override with --api-version
 CATS = "war mil dip sea eng hum sec nuc air cyb ter pro dis arm avi gen"
 
 SYSTEM = f"""You read short news posts (mostly Bulgarian) from a military/geopolitics channel and extract structured data for a map.
@@ -39,17 +40,26 @@ Rules for "events" (these become arrows on the map, from attacker to victim):
 """
 
 
-def ask(text, model, token, tries=4):
+def ask(text, model, token, tries=4, api_version=None):
     body = json.dumps({"model": model, "temperature": 0, "max_tokens": 600,
                        "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": text[:1500]}]}).encode()
     for i in range(tries):
         req = urllib.request.Request(URL, data=body, method="POST", headers={
             "Authorization": f"Bearer {token}", "Content-Type": "application/json",
-            "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"})
+            "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": api_version or API_VERSION,
+            "User-Agent": "drm-map-probe"})
         try:
             with urllib.request.urlopen(req, timeout=60) as r:
-                data = json.load(r)
+                status, ctype, final = r.status, r.headers.get("Content-Type"), r.geturl()
+                payload = r.read().decode("utf-8", "replace")
+            try:
+                data = json.loads(payload)
                 return data["choices"][0]["message"]["content"], data.get("usage", {})
+            except (ValueError, KeyError, IndexError, TypeError):
+                sys.exit("GitHub Models answered, but not with a usable result.\n"
+                         f"  status      : {status}\n  content-type: {ctype}\n  url         : {final}\n"
+                         f"  body (first 500 chars): {payload[:500]!r}\n"
+                         "Please send me this block (it contains no token).")
         except urllib.error.HTTPError as e:
             detail = e.read().decode("utf-8", "replace")[:300]
             if e.code == 429 and i < tries - 1:
@@ -84,6 +94,7 @@ def main():
     ap.add_argument("--model", default="openai/gpt-4.1")
     ap.add_argument("--case", type=int)
     ap.add_argument("--dry", action="store_true")
+    ap.add_argument("--api-version", default=API_VERSION)
     a = ap.parse_args()
     cases = [c for c in json.load(open(CASES, encoding="utf-8")) if not a.case or c["id"] == a.case]
     if a.dry:
@@ -96,7 +107,7 @@ def main():
         sys.exit("Set GITHUB_TOKEN (fine-grained personal access token with 'Models: read').")
     ok = 0
     for c in cases:
-        raw, usage = ask(c["text"], a.model, token)
+        raw, usage = ask(c["text"], a.model, token, api_version=a.api_version)
         try:
             out = parse(raw)
         except ValueError:
