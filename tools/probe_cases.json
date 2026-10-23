@@ -155,9 +155,10 @@
   "date": "2023-05-20",
   "text": "В Япония #Г7 осъди войната на Русия срещу Украйна \"по възможно най-категоричния начин\", наричайки я \"сериозно нарушение на международното право\".\n\nКато част от изявлението световните лидери призоваха за „справедлив и траен мир“ и потвърдиха намерението си да предоставят на Украйна военна, финансова и хуманитарна подкрепа, “за колкото време е нужно”.",
   "rules_said": "JP->RU",
-  "note": "Statement/condemnation, no physical attack by Japan",
+  "note": "Statement/condemnation: a verbal JP->RU arrow is fine, a physical one is not",
   "required": [],
-  "forbidden": [
+  "forbidden": [],
+  "forbidden_physical": [
    [
     "JP",
     "RU"

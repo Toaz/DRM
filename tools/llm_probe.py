@@ -1,22 +1,26 @@
 """Try an LLM on the hard posts in tools/probe_cases.json and compare with what we expect.
 
-Uses GitHub Models (free, rate limited). Nothing is written to data/; this only prints.
+Works with any OpenAI-compatible chat API. Presets: groq, gemini, openrouter. Nothing is written to data/.
 
-  export GITHUB_TOKEN=...        # a fine-grained personal access token with "Models: read"
-  python tools/llm_probe.py                      # all cases
-  python tools/llm_probe.py --case 13930         # one case
-  python tools/llm_probe.py --model openai/gpt-4.1-mini
-  python tools/llm_probe.py --dry                # show the prompt, call nothing
+  export GROQ_API_KEY=...                         # or GEMINI_API_KEY / OPENROUTER_API_KEY
+  python3 tools/llm_probe.py --provider groq --case 13930     # one post, tests the connection
+  python3 tools/llm_probe.py --provider groq                  # all cases
+  python3 tools/llm_probe.py --provider gemini --model <name from Google AI Studio>
+  python3 tools/llm_probe.py --provider openrouter --model <a model id ending in :free>
+  python3 tools/llm_probe.py --provider groq --sample 30      # random recent posts, model vs current rules, for you to judge
+  python3 tools/llm_probe.py --dry                            # show the prompt, call nothing
 
-Inside GitHub Actions the same code works with the built-in GITHUB_TOKEN if the job has `models: read`.
 Only the standard library is used.
 """
 import argparse, json, os, sys, time, urllib.request, urllib.error
 from pathlib import Path
 
-URL = "https://models.github.ai/inference/chat/completions"
+PROVIDERS = {  # base url, env var holding the key, default model (None = must pass --model)
+    "groq": ("https://api.groq.com/openai/v1", "GROQ_API_KEY", "openai/gpt-oss-120b"),
+    "gemini": ("https://generativelanguage.googleapis.com/v1beta/openai", "GEMINI_API_KEY", "gemini-flash-latest"),
+    "openrouter": ("https://openrouter.ai/api/v1", "OPENROUTER_API_KEY", None),
+}
 CASES = Path(__file__).with_name("probe_cases.json")
-API_VERSION = "2026-03-10"  # GitHub REST API version header; override with --api-version
 CATS = "war mil dip sea eng hum sec nuc air cyb ter pro dis arm avi gen"
 
 SYSTEM = f"""You read short news posts (mostly Bulgarian) from a military/geopolitics channel and extract structured data for a map.
@@ -40,23 +44,25 @@ Rules for "events" (these become arrows on the map, from attacker to victim):
 """
 
 
-def ask(text, model, token, tries=4, api_version=None):
-    body = json.dumps({"model": model, "temperature": 0, "max_tokens": 600,
+def ask(text, model, token, base_url, tries=4):
+    body = json.dumps({"model": model, "temperature": 0, "max_tokens": 2000,
                        "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": text[:1500]}]}).encode()
     for i in range(tries):
-        req = urllib.request.Request(URL, data=body, method="POST", headers={
+        req = urllib.request.Request(base_url.rstrip("/") + "/chat/completions", data=body, method="POST", headers={
             "Authorization": f"Bearer {token}", "Content-Type": "application/json",
-            "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": api_version or API_VERSION,
-            "User-Agent": "drm-map-probe"})
+            "Accept": "application/json", "User-Agent": "drm-map-probe"})
         try:
             with urllib.request.urlopen(req, timeout=60) as r:
                 status, ctype, final = r.status, r.headers.get("Content-Type"), r.geturl()
                 payload = r.read().decode("utf-8", "replace")
             try:
                 data = json.loads(payload)
-                return data["choices"][0]["message"]["content"], data.get("usage", {})
+                content = data["choices"][0]["message"]["content"]
+                if not content:
+                    raise ValueError("empty content")
+                return content, data.get("usage", {})
             except (ValueError, KeyError, IndexError, TypeError):
-                sys.exit("GitHub Models answered, but not with a usable result.\n"
+                sys.exit("The API answered, but not with a usable result.\n"
                          f"  status      : {status}\n  content-type: {ctype}\n  url         : {final}\n"
                          f"  body (first 500 chars): {payload[:500]!r}\n"
                          "Please send me this block (it contains no token).")
@@ -67,8 +73,8 @@ def ask(text, model, token, tries=4, api_version=None):
                 print(f"   rate limited, waiting {wait}s ...", file=sys.stderr)
                 time.sleep(wait)
                 continue
-            sys.exit(f"HTTP {e.code} from GitHub Models: {detail}\n"
-                     "403/401 usually means the token lacks 'Models: read' (or the model id is wrong).")
+            sys.exit(f"HTTP {e.code} from {base_url}: {detail}\n"
+                     "401/403 usually means a wrong or missing key; 404 or 400 often means the model name is wrong.")
     sys.exit("Gave up after repeated rate limits.")
 
 
@@ -86,15 +92,53 @@ def score(case, out):
     anyk = {(e["from"], e["to"]) for e in ev}
     miss = [f"{a}->{b}" for a, b in case["required"] if (a, b) not in phys]
     bad = [f"{a}->{b}" for a, b in case["forbidden"] if (a, b) in anyk]
+    bad += [f"{a}->{b} (physical)" for a, b in case.get("forbidden_physical", []) if (a, b) in phys]
     return miss, bad
+
+
+def rules_arrow(text):
+    """What the current rule-based code says (needs the project's requirements installed)."""
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
+        import place
+        t = " ".join(text.split())
+        loc = place.locate(t)
+        d = place.detect(t, loc[2] if loc else None)
+        return f"{d[0]}->{d[1][2]}" if d else "none"
+    except Exception as e:  # missing packages, different layout, ...
+        return f"n/a ({type(e).__name__})"
+
+
+def run_sample(a, model, token, base_url):
+    import random
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
+    from common import load_all, txt
+    posts = [m for m in load_all() if m["date"] >= a.since and len(txt(m).strip()) > 60]
+    random.Random(a.seed).shuffle(posts)
+    print(f"{len(posts)} posts since {a.since}; judging {min(a.sample, len(posts))} random ones (seed {a.seed})\n")
+    for m in posts[: a.sample]:
+        t = txt(m).strip()
+        raw, _ = ask(t, model, token, base_url)
+        try:
+            out = parse(raw)
+        except ValueError:
+            out = {"events": [], "location": "?"}
+        ev = "; ".join(f"{e['from']}->{e['to']} ({e['kind'][0]}, {e.get('confidence', '?')})" for e in out.get("events", [])) or "none"
+        print(f"#{m['id']} {m['date'][:10]}  {' '.join(t.split())[:230]}")
+        print(f"   rules: {rules_arrow(t)}")
+        print(f"   model: {ev}   [location={out.get('location')}]\n")
+        time.sleep(1)
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--model", default="openai/gpt-4.1")
+    ap.add_argument("--provider", choices=sorted(PROVIDERS), default="groq")
+    ap.add_argument("--model")
     ap.add_argument("--case", type=int)
     ap.add_argument("--dry", action="store_true")
-    ap.add_argument("--api-version", default=API_VERSION)
+    ap.add_argument("--sample", type=int, help="judge N random recent posts instead of the fixed cases")
+    ap.add_argument("--seed", type=int, default=1)
+    ap.add_argument("--since", default="2026-01-01")
     a = ap.parse_args()
     cases = [c for c in json.load(open(CASES, encoding="utf-8")) if not a.case or c["id"] == a.case]
     if a.dry:
@@ -102,12 +146,18 @@ def main():
         print("--- first case ---")
         print(cases[0]["text"])
         return
-    token = os.environ.get("GITHUB_TOKEN")
+    base_url, env, default_model = PROVIDERS[a.provider]
+    model = a.model or default_model
+    if not model:
+        sys.exit(f"{a.provider} has no default model; pass --model <id>.")
+    token = os.environ.get(env)
     if not token:
-        sys.exit("Set GITHUB_TOKEN (fine-grained personal access token with 'Models: read').")
+        sys.exit(f"Set {env} first, e.g.  export {env}=...")
+    if a.sample:
+        return run_sample(a, model, token, base_url)
     ok = 0
     for c in cases:
-        raw, usage = ask(c["text"], a.model, token, api_version=a.api_version)
+        raw, usage = ask(c["text"], model, token, base_url)
         try:
             out = parse(raw)
         except ValueError:
@@ -126,7 +176,7 @@ def main():
         if bad:
             print("   WRONG  :", ", ".join(bad))
         time.sleep(1)
-    print(f"\n{ok}/{len(cases)} cases passed with {a.model}")
+    print(f"\n{ok}/{len(cases)} cases passed with {a.provider}/{model}")
 
 
 if __name__ == "__main__":
