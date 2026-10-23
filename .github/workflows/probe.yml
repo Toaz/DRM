@@ -1,0 +1,45 @@
+name: LLM probe (manual)
+
+# Run by hand: Actions tab -> "LLM probe (manual)" -> Run workflow.
+# Uses the built-in GITHUB_TOKEN, so no personal token is needed.
+on:
+  workflow_dispatch:
+    inputs:
+      model:
+        description: GitHub Models id
+        default: openai/gpt-4.1
+      case:
+        description: Single post id (leave empty for all cases)
+        default: ""
+
+permissions:
+  contents: read
+  models: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Connection check (plain curl)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -sS -i -X POST https://models.github.ai/inference/chat/completions \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "X-GitHub-Api-Version: 2026-03-10" \
+            -H "Content-Type: application/json" \
+            -d '{"model":"${{ inputs.model }}","messages":[{"role":"user","content":"Say hi"}]}' | head -40
+      - name: Run probe
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -n "${{ inputs.case }}" ]; then
+            python tools/llm_probe.py --model "${{ inputs.model }}" --case "${{ inputs.case }}"
+          else
+            python tools/llm_probe.py --model "${{ inputs.model }}"
+          fi
