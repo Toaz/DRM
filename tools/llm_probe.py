@@ -1,98 +1,42 @@
 """Try an LLM on the hard posts in tools/probe_cases.json and compare with what we expect.
 
+The prompt, the API call and the arrow guards live in src/extract.py; this tool only tests them.
 Works with any OpenAI-compatible chat API. Presets: groq, gemini, openrouter. Nothing is written to data/.
 
   export GROQ_API_KEY=...                         # or GEMINI_API_KEY / OPENROUTER_API_KEY
   python3 tools/llm_probe.py --provider groq --case 13930     # one post, tests the connection
   python3 tools/llm_probe.py --provider groq                  # all cases
-  python3 tools/llm_probe.py --provider gemini --model <name from Google AI Studio>
-  python3 tools/llm_probe.py --provider openrouter --model <a model id ending in :free>
   python3 tools/llm_probe.py --provider groq --sample 30      # random recent posts, model vs current rules, for you to judge
+  python3 tools/llm_probe.py --provider gemini --model <name from Google AI Studio>
   python3 tools/llm_probe.py --dry                            # show the prompt, call nothing
-
-Only the standard library is used.
 """
-import argparse, json, os, sys, time, urllib.request, urllib.error
+import argparse, json, os, sys, time
 from pathlib import Path
 
-PROVIDERS = {  # base url, env var holding the key, default model (None = must pass --model)
-    "groq": ("https://api.groq.com/openai/v1", "GROQ_API_KEY", "openai/gpt-oss-120b"),
-    "gemini": ("https://generativelanguage.googleapis.com/v1beta/openai", "GEMINI_API_KEY", "gemini-flash-latest"),
-    "openrouter": ("https://openrouter.ai/api/v1", "OPENROUTER_API_KEY", None),
-}
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
+import extract
+from extract import SYSTEM, PROVIDERS, parse, clean_events
+
 CASES = Path(__file__).with_name("probe_cases.json")
-CATS = "war mil dip sea eng hum sec nuc air cyb ter pro dis arm avi gen"
-
-SYSTEM = f"""You read short news posts (mostly Bulgarian) from a military/geopolitics channel and extract structured data for a map.
-Answer with ONE JSON object and nothing else (no markdown fences):
-{{"countries": [ISO codes of every country or bloc the post is about],
-  "location": ISO code of the country where the main event happens, or null,
-  "category": one of: {CATS},
-  "events": [{{"from": ISO, "to": ISO, "kind": "physical" or "verbal", "confidence": 0.0-1.0, "why": "max 12 words"}}]}}
-
-Rules for "events" (these become arrows on the map, from attacker to victim):
-- One event per attacker->victim pair. Several attackers or several victims means several events. Two-way exchanges give two events.
-- "physical": strikes, shelling, drone/missile attacks, invasions, shoot-downs, sabotage by a state or its forces.
-- "verbal": threats, ultimatums, sanctions, accusations, condemnations aimed at a country.
-- The FROM country is whoever carries out the act, the TO country is whoever suffers it. Read passive sentences carefully
-  ("X was struck by Y" means Y->X). Shooting down an incoming drone is defence: the drone's owner is the attacker.
-- Armed groups map to the country they operate from (Hamas -> PS, Hezbollah -> LB, Houthis -> YE).
-- Countries that only help, supply, host, comment or negotiate are NOT attackers. Deliveries, aid, talks, deployments, exercises,
-  economic news and background mentions produce no event.
-- If the post only mentions an attack as the reason for something else, still list it but lower the confidence.
-- Use ISO 3166-1 alpha-2 codes, plus EU and UN. If there is no event, return "events": [].
-"""
 
 
-def ask(text, model, token, base_url, tries=4):
-    body = json.dumps({"model": model, "temperature": 0, "max_tokens": 2000,
-                       "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": text[:1500]}]}).encode()
-    for i in range(tries):
-        req = urllib.request.Request(base_url.rstrip("/") + "/chat/completions", data=body, method="POST", headers={
-            "Authorization": f"Bearer {token}", "Content-Type": "application/json",
-            "Accept": "application/json", "User-Agent": "drm-map-probe"})
-        try:
-            with urllib.request.urlopen(req, timeout=60) as r:
-                status, ctype, final = r.status, r.headers.get("Content-Type"), r.geturl()
-                payload = r.read().decode("utf-8", "replace")
-            try:
-                data = json.loads(payload)
-                content = data["choices"][0]["message"]["content"]
-                if not content:
-                    raise ValueError("empty content")
-                return content, data.get("usage", {})
-            except (ValueError, KeyError, IndexError, TypeError):
-                sys.exit("The API answered, but not with a usable result.\n"
-                         f"  status      : {status}\n  content-type: {ctype}\n  url         : {final}\n"
-                         f"  body (first 500 chars): {payload[:500]!r}\n"
-                         "Please send me this block (it contains no token).")
-        except urllib.error.HTTPError as e:
-            detail = e.read().decode("utf-8", "replace")[:300]
-            if e.code == 429 and i < tries - 1:
-                wait = int(e.headers.get("Retry-After", "20"))
-                print(f"   rate limited, waiting {wait}s ...", file=sys.stderr)
-                time.sleep(wait)
-                continue
-            sys.exit(f"HTTP {e.code} from {base_url}: {detail}\n"
-                     "401/403 usually means a wrong or missing key; 404 or 400 often means the model name is wrong.")
-    sys.exit("Gave up after repeated rate limits.")
-
-
-def parse(raw):
-    s = raw.strip()
-    if s.startswith("```"):
-        s = s.strip("`")
-        s = s[s.find("{"):]
-    return json.loads(s[s.find("{"): s.rfind("}") + 1])
+def ask(text, model, token, base_url):
+    """Same call as the real pipeline, but a failure ends the probe with a readable message."""
+    try:
+        return extract.ask(text, model, token, base_url), {}
+    except extract.LLMError as e:
+        sys.exit(str(e))
 
 
 def score(case, out):
-    ev = out.get("events", [])
-    phys = {(e["from"], e["to"]) for e in ev if e.get("kind") == "physical"}
+    ev = [e for e in clean_events(out) if e["show"]]
+    phys = {(e["from"], e["to"]) for e in ev if e["kind"] == "physical"}
     anyk = {(e["from"], e["to"]) for e in ev}
-    miss = [f"{a}->{b}" for a, b in case["required"] if (a, b) not in phys]
-    bad = [f"{a}->{b}" for a, b in case["forbidden"] if (a, b) in anyk]
+    miss = [f"{a}->{b}" for a, b in case.get("required", []) if (a, b) not in phys]
+    bad = [f"{a}->{b}" for a, b in case.get("forbidden", []) if (a, b) in anyk]
     bad += [f"{a}->{b} (physical)" for a, b in case.get("forbidden_physical", []) if (a, b) in phys]
+    if "max_events" in case and len(ev) > case["max_events"]:
+        bad.append(f"{len(ev)} arrows shown, expected at most {case['max_events']}")
     return miss, bad
 
 
@@ -123,7 +67,7 @@ def run_sample(a, model, token, base_url):
             out = parse(raw)
         except ValueError:
             out = {"events": [], "location": "?"}
-        ev = "; ".join(f"{e['from']}->{e['to']} ({e['kind'][0]}, {e.get('confidence', '?')})" for e in out.get("events", [])) or "none"
+        ev = "; ".join(f"{e['from']}->{e['to']} ({e['kind'][0]}, {e['confidence']}{'' if e['show'] else ', hidden'})" for e in clean_events(out)) or "none"
         print(f"#{m['id']} {m['date'][:10]}  {' '.join(t.split())[:230]}")
         print(f"   rules: {rules_arrow(t)}")
         print(f"   model: {ev}   [location={out.get('location')}]\n")
@@ -168,8 +112,8 @@ def main():
         ok += good
         print(f"#{c['id']} {'PASS' if good else 'FAIL'}  {c['note']}")
         print(f"   current rules : {c['rules_said']}")
-        print("   model         : " + ("; ".join(f"{e['from']}->{e['to']} ({e['kind']}, {e.get('confidence', '?')}) {e.get('why', '')}"
-                                           for e in out.get("events", [])) or "no events"))
+        print("   model         : " + ("; ".join(f"{e['from']}->{e['to']} ({e['kind']}, {e['confidence']}{'' if e['show'] else ', HIDDEN'}) {e['why']}"
+                                           for e in clean_events(out)) or "no events"))
         print(f"   location={out.get('location')}  category={out.get('category')}  countries={out.get('countries')}")
         if miss:
             print("   MISSING:", ", ".join(miss))

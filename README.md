@@ -60,6 +60,26 @@ python -m unittest discover -s tests
 ```
 To use the full original Telegram Desktop export instead of the slim one: `python tools/slim.py path/to/result.json`.
 
+## Countries and arrows: read by an LLM
+
+Each post is read once by a language model (free Groq tier by default). It returns the countries in the post, the country where it happens, a
+category and any number of arrows `attacker -> victim` with a confidence. The result is stored in `data/events.json`, one line per post.
+
+- `src/extract.py` does the reading. A post is only sent again if its text was edited; changing the prompt never rewrites old results.
+- `src/arrows.py` turns the stored result into map arrows. A post can have several. Weak arrows (physical below 0.7, verbal below 0.9, see
+  `SHOW_PHYSICAL` / `SHOW_VERBAL` in `src/extract.py`) stay in the data but are not drawn.
+- Posts the model has not read yet still use the old keyword rules in `src/place.py`, so the map is never empty while the backlog is processed.
+- Countries are not hard-coded any more for these posts: every country the model finds appears in the country filter and on the map.
+  Set `MENTIONED_IN_FILTER = False` in `src/build.py` to filter only by location and arrows.
+- Setup: create a free key at console.groq.com, then in GitHub: Settings -> Secrets and variables -> Actions -> New repository secret
+  named `GROQ_API_KEY`. Without it the step is skipped and nothing breaks.
+- Try it on your computer: `export GROQ_API_KEY=...`, then `python src/extract.py --dry`, then `python src/extract.py --limit 5`.
+- Check quality on hard posts: `python tools/llm_probe.py` (cases in `tools/probe_cases.json`; add a case whenever you find a misread post).
+- Attacks on ships at sea: when the post names the attacker but no victim country, the arrow goes from the attacker to the exact place found in the post
+  (for example the Strait of Hormuz) and is labelled "посоченото място". Without an exact place there is no arrow. Hand-placed posts in `data/curated.json` still win.
+- Read one post again (for example after a prompt change): `python src/extract.py --redo 20152`. See the results next to the text: `python tools/show_events.py`.
+- Row format of the page data: element 8 is now a list of arrows `[from_lat, from_lon, to_lat, to_lon, label, kind, attacker_iso]` or `null`.
+
 ## Good to know
 * This reads the **public preview** of the channel. It works only while the channel is public and the preview is enabled, and it depends on
   the layout of that page. Be gentle: it makes about 3–5 requests per run, one per second, which is what a person scrolling would cause.
