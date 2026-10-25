@@ -48,6 +48,14 @@ Rules for "events" (these become arrows on the map, from attacker to victim):
 - Plans, rumours, hypothetical operations and attacks mentioned only as the reason for something else: confidence 0.5 or lower.
 - Use ISO 3166-1 alpha-2 codes, plus EU and UN. "location" must be a country code or null (never EU or UN). If there is no event, return "events": [].
 
+Rules for "location" and "category":
+- "location" is where the EFFECT happens, i.e. where the struck target is, NOT where the attacker comes from. A Ukrainian strike on a plant
+  in Samara oblast has location RU. Russian oblasts, cities and facilities are RU, Ukrainian ones are UA, even if the post names no country there.
+- A named place or facility inside a country makes that country the TO of the event, unless the post says otherwise.
+  Flags at the start of a post list the countries involved; the target is the one where the named place lies.
+- "category" is the kind of event, not the industry. Any strike, drone or missile attack on a refinery, plant, depot or other facility is "war".
+  Use "eng" only for prices, sanctions, supplies and market news.
+
 Examples (different posts, only to show the format and the traps):
 Post: "A Liberian-flagged tanker was hit by a Houthi missile in the Red Sea, two crew injured."
 {{"countries": ["YE", "LR"], "location": null, "category": "sea", "events": [{{"from": "YE", "to": null, "kind": "physical", "confidence": 0.9, "why": "Houthi missile hit tanker; flag state is not the victim"}}]}}
@@ -55,6 +63,8 @@ Post: "Egyptian airports suspended all flights to and from Libya."
 {{"countries": ["EG", "LY"], "location": "EG", "category": "avi", "events": []}}
 Post: "France and Germany will send air defence to Ukraine. Russia launched 40 drones at Kharkiv overnight."
 {{"countries": ["FR", "DE", "UA", "RU"], "location": "UA", "category": "war", "events": [{{"from": "RU", "to": "UA", "kind": "physical", "confidence": 1.0, "why": "drone attack on Kharkiv"}}]}}
+Post: "Ukraine struck the Tolyattikauchuk petrochemical plant in Samara oblast."
+{{"countries": ["UA", "RU"], "location": "RU", "category": "war", "events": [{{"from": "UA", "to": "RU", "kind": "physical", "confidence": 0.95, "why": "strike on plant in Samara oblast"}}]}}
 """
 PROMPT_VERSION = hashlib.sha1(SYSTEM.encode()).hexdigest()[:8]
 SHOW_PHYSICAL, SHOW_VERBAL = 0.7, 0.9  # below these an arrow stays in the data but is hidden / goes to review
