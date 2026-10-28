@@ -60,111 +60,166 @@ C(54.2,37.6,'RU','тула\\b','тулск'),C(52.6,39.6,'RU','липецк'),C(
 C(57.63,39.87,'RU','ярослав'),C(45.0,41.9,'RU','ставропол'),C(46.35,48.04,'RU','астрахан'),C(59.9,30.3,'RU','ленинградск'),
 C(57.8,28.35,'RU','псковск'),C(56.86,35.9,'RU','твер\\b','тверск'),C(54.5,36.25,'RU','калуга','калужк'),C(52.7,41.4,'RU','тамбов'),C(53.2,45.0,'RU','пенза','пензенск'),
 C(54.3,48.4,'RU','ульяновск'),C(56.85,53.2,'RU','удмурт'),C(53.4,59.0,'RU','магнитогорск','челябинск')]
-FL=re.compile('[\U0001F1E6-\U0001F1FF]{2}')
-def flag(f):return ''.join(chr(ord(c)-0x1F1E6+65) for c in f)
+
+# --- word boundaries ---------------------------------------------------------------------------------------------
+# Every pattern above must start at a word boundary, so "уфа" does not match inside another word. Python's \b is not
+# reliable next to Cyrillic with these mixed alphabets, hence the explicit look-behind. Done once, here.
+_BND = '(?<![А-Яа-яA-Za-z])(?:'
+
+
+def _bounded(rx):
+    return re.compile(_BND + rx.pattern + ')', rx.flags)
+
+
+CRX = [(iso, _bounded(rx)) for iso, rx in CRX]
+CITY = [(_bounded(rx), la, lo, iso) for rx, la, lo, iso in CITY]
+
+FL = re.compile('[\U0001F1E6-\U0001F1FF]{2}')
+
+
+def flag(f):
+    """Two regional-indicator characters -> ISO code ('🇺🇦' -> 'UA')."""
+    return ''.join(chr(ord(c) - 0x1F1E6 + 65) for c in f)
+
+
 def locate(t):
-    head=t[:380];best=None
-    for rx,la,lo,iso in CITY:
-        m=rx.search(head)
-        if m and (best is None or m.start()<best[0]):best=(m.start(),la,lo,iso)
-    if best:return best[1],best[2],best[3],'p'
-    c=[];pos={}
+    """Where is this post about?  -> (lat, lon, iso, how) or None.  how: 'p' exact place, 'a' country, 's' weak guess.
+
+    1. a named city or region from CITY, the earliest one in the first 380 characters;
+    2. otherwise the countries found by flags and names in the first 300 characters (whole text if none there),
+       skipping the big "background" countries (LOW, and the usual aggressor/side countries) when anything else is named.
+    """
+    head = t[:380]
+    best = None
+    for rx, la, lo, iso in CITY:
+        m = rx.search(head)
+        if m and (best is None or m.start() < best[0]):
+            best = (m.start(), la, lo, iso)
+    if best:
+        return best[1], best[2], best[3], 'p'
+
+    pos = {}                                   # iso -> position in the text (flags count as "before everything")
     for f in FL.findall(t[:300]):
-        k=flag(f)
-        if k in PT or k in('EU','UN'):pos.setdefault(k,len(pos)-1000)
-    for iso,rx in CRX:
-        m=rx.search(t[:300])
-        if m:pos.setdefault(iso,m.start())
+        k = flag(f)
+        if k in PT or k in ('EU', 'UN'):
+            pos.setdefault(k, len(pos) - 1000)
+    for iso, rx in CRX:
+        m = rx.search(t[:300])
+        if m:
+            pos.setdefault(iso, m.start())
     if not pos:
-        for iso,rx in CRX:
-            m=rx.search(t)
-            if m:pos.setdefault(iso,m.start()+500)
-    if not pos:return None
-    ks=sorted(pos,key=pos.get);dem=set(LOW)
-    if 'UA' in ks:dem|={'RU','BY'}
-    if set(ks)&{'LB','PS','SY','IQ','YE','IR'}:dem.add('IL')
-    if 'TW' in ks:dem|={'CN'}
-    if 'SA' in ks and 'YE' in ks:dem.add('SA')
-    good=[k for k in ks if k not in dem]
-    k=(good or ks)[0]
-    if k not in PT:return None
-    return PT[k][0],PT[k][1],k,('a' if good else 's')
+        for iso, rx in CRX:
+            m = rx.search(t)
+            if m:
+                pos.setdefault(iso, m.start() + 500)
+    if not pos:
+        return None
 
-PHYS=re.compile(r'атакува|атаки|атака|нападн|нападен|напада|удар|обстрел|бомбард|порази|нанес|унищож|нахлу|стрелб|потопи|свали|сваля|взриви|ликвидира|елиминира|разруши|завзе|превзе',re.I)
-VERB=re.compile(r'заплаш|обвин|осъд|санкци|експулс|изгон|ултиматум|предупреди|критикува',re.I)
-NOUNV=re.compile(r'удар|атак|обстрел|нападен|нахлуван|бомбардиров',re.I)
+    ks = sorted(pos, key=pos.get)
+    demoted = set(LOW)
+    if 'UA' in ks:
+        demoted |= {'RU', 'BY'}
+    if set(ks) & {'LB', 'PS', 'SY', 'IQ', 'YE', 'IR'}:
+        demoted.add('IL')
+    if 'TW' in ks:
+        demoted.add('CN')
+    if 'SA' in ks and 'YE' in ks:
+        demoted.add('SA')
+    good = [k for k in ks if k not in demoted]
+    k = (good or ks)[0]
+    if k not in PT:
+        return None
+    return PT[k][0], PT[k][1], k, ('a' if good else 's')
+
+
+# --- attacker -> target arrows from keywords (fallback for posts the LLM has not read) ---------------------------
+PHYS = re.compile(r'атакува|атаки|атака|нападн|нападен|напада|удар|обстрел|бомбард|порази|нанес|унищож|нахлу|стрелб|потопи|свали|сваля|взриви|ликвидира|елиминира|разруши|завзе|превзе', re.I)
+VERB = re.compile(r'заплаш|обвин|осъд|санкци|експулс|изгон|ултиматум|предупреди|критикува', re.I)
+NOUNV = re.compile(r'удар|атак|обстрел|нападен|нахлуван|бомбардиров', re.I)
+# deliveries and signed deals are not attacks unless a strong attack phrase is also there
+DELIV = re.compile(r'достав|предостав|военна помощ|пакет с помощ|ще получи|получава|договор за|подпис', re.I)
+STRONG = re.compile(r'удар по|атака срещу|обстрел|нападение срещу|нанесе|порази', re.I)
+# passive participles: "X was struck by Y" -> the attacker comes AFTER the verb
+PASS = re.compile(r'^(?:ударен|поразен|атакуван|обстрелян|нападнат|бомбардиран|унищожен|завзет|превзет|потопен|свален|взривен|разрушен|ликвидиран|елиминиран)(?:а|и|о)?$', re.I)
+# "the attack on X", "after the strike": a noun that refers to an attack, not a new one
+DEFN = re.compile(r'^(?:атаката|атаките|нападението|нападенията|ударът|ударите|удара|обстрела|обстрелите|бомбардировката)$', re.I)
+REFP = re.compile(r'(?:от|след|при|кадри|видео|заради|жертвите|последиците)\s*$', re.I)
+
+
 def mentions(h):
-    out=[]
-    for iso,rx in CRX:
-        for m in rx.finditer(h):out.append((m.start(),m.end(),iso,None))
-    for rx,la,lo,iso in CITY:
+    """Every country or city name in `h`: (start, end, iso, (lat, lon) for cities else None), in text order."""
+    out = []
+    for iso, rx in CRX:
+        for m in rx.finditer(h):
+            out.append((m.start(), m.end(), iso, None))
+    for rx, la, lo, iso in CITY:
         if iso:
-            for m in rx.finditer(h):out.append((m.start(),m.end(),iso,(la,lo)))
-    out.sort(key=lambda x:(x[0],x[1]));return out
-def detect(t,loc):
-    h=t[:320];m=PHYS.search(h);kind='p'
-    if not m:m=VERB.search(h);kind='v'
-    if not m:return None
-    vp,ve=m.start(),m.end();M=mentions(h)
-    before=[x for x in M if x[1]<=vp and vp-x[1]<=70 and x[2]!='UN']
-    after=[x for x in M if x[0]>=ve and x[0]-ve<=110]
-    att=before[-1] if before else None
-    if att is None:
-        for x in after:
-            pre=h[max(0,x[0]-5):x[0]].lower().rstrip()
-            if pre.endswith('от') or (NOUNV.search(m.group()) and pre.endswith('на')):att=x;after=[y for y in after if y is not x];break
-    if att is None:return None
-    tgt=next((x for x in after if x[2]!=att[2] and x[2]!='UN'),None)
-    if tgt is None and loc and loc!=att[2]:tgt=(0,0,loc,None)
-    if tgt is None or att[2] not in PT or tgt[2] not in PT:return None
-    return att[2],tgt,kind
+            for m in rx.finditer(h):
+                out.append((m.start(), m.end(), iso, (la, lo)))
+    out.sort(key=lambda x: (x[0], x[1]))
+    return out
 
-BND='(?<![А-Яа-яA-Za-z])(?:'
-CRX=[(i,re.compile(BND+rx.pattern+')',rx.flags)) for i,rx in CRX]
-CITY=[(re.compile(BND+rx.pattern+')',rx.flags),la,lo,iso) for rx,la,lo,iso in CITY]
-_d=detect
-DELIV=re.compile(r'достав|предостав|военна помощ|пакет с помощ|ще получи|получава|договор за|подпис',re.I);STRONG=re.compile(r'удар по|атака срещу|обстрел|нападение срещу|нанесе|порази',re.I)
-def detect(t,loc):
-    h=t[:320]
-    if DELIV.search(h[:200]) and not STRONG.search(h):return None
-    return _d(t,loc)
 
-PASS=re.compile(r'^(?:ударен|поразен|атакуван|обстрелян|нападнат|бомбардиран|унищожен|завзет|превзет|потопен|свален|взривен|разрушен|ликвидиран|елиминиран)(?:а|и|о)?$',re.I)
-def _d2(t,loc):
-    h=t[:320];m=first_verb(h);kind='p'
-    if not m:m=VERB.search(h);kind='v'
-    if not m:return None
-    vp,ve=m.start(),m.end();M=mentions(h)
-    wm=re.match(r'[А-Яа-я]+',h[vp:]);word=wm.group() if wm else ''
-    ctry=lambda x:x[3] is None
-    after=[x for x in M if x[0]>=ve and x[0]-ve<=110]
-    pre=lambda x:h[max(0,x[0]-6):x[0]].lower().rstrip()
-    if PASS.match(word):
-        att=next((x for x in after if ctry(x) and re.search(r'(?:от|при|чрез|след)$',pre(x))),None)
-        tg=[x for x in M if x[1]<=vp and vp-x[1]<=70];tgt=tg[-1] if tg else None
-        if tgt is None and loc:tgt=(0,0,loc,None)
-        if att is None or tgt is None:return None
-    else:
-        before=[x for x in M if ctry(x) and x[1]<=vp and vp-x[1]<=70 and x[2]!='UN'];att=before[-1] if before else None;rest=after
-        if att is None:
-            att=next((x for x in after if ctry(x) and (re.search(r'(?:от|при|чрез)$',pre(x)) or (NOUNV.search(m.group()) and pre(x).endswith('на')))),None);rest=[x for x in after if x is not att]
-        if att is None:return None
-        tgt=next((x for x in rest if x[2]!=att[2] and x[2]!='UN'),None)
-        if tgt is None and loc and loc!=att[2]:tgt=(0,0,loc,None)
-        if tgt is None:return None
-    if att[2] not in PT or tgt[2] not in PT or att[2]==tgt[2]:return None
-    return att[2],tgt,kind
-def detect(t,loc):
-    h=t[:320]
-    if DELIV.search(h[:200]) and not STRONG.search(h):return None
-    return _d2(t,loc)
-
-DEFN=re.compile(r'^(?:атаката|атаките|нападението|нападенията|ударът|ударите|удара|обстрела|обстрелите|бомбардировката)$',re.I)
-REFP=re.compile(r'(?:от|след|при|кадри|видео|заради|жертвите|последиците)\s*$',re.I)
 def first_verb(h):
+    """First attack word in `h`, skipping nouns that only refer back to an attack ('след удара', 'кадри от атаката')."""
     for m in PHYS.finditer(h):
-        wm=re.match(r'[А-Яа-я]+',h[m.start():]);w=wm.group() if wm else ''
-        if DEFN.match(w) and REFP.search(h[max(0,m.start()-14):m.start()]):continue
-        if re.match(r'^удар(?:на|ни|но|ния|ната|ните|ното)$',w,re.I):continue
+        wm = re.match(r'[А-Яа-я]+', h[m.start():])
+        w = wm.group() if wm else ''
+        if DEFN.match(w) and REFP.search(h[max(0, m.start() - 14):m.start()]):
+            continue
+        if re.match(r'^удар(?:на|ни|но|ния|ната|ните|ното)$', w, re.I):
+            continue
         return m
     return None
+
+
+def detect(t, loc):
+    """-> (attacker iso, target mention, 'p' physical | 'v' verbal) or None.   `loc`: the country found by locate().
+
+    Looks only at the first 320 characters. The target mention is a tuple from mentions(): coordinates are set when the
+    target is a city, None when it is a country (and (0, 0, loc, None) when it falls back to the post's own location).
+    """
+    h = t[:320]
+    if DELIV.search(h[:200]) and not STRONG.search(h):
+        return None
+    m = first_verb(h)
+    kind = 'p'
+    if not m:
+        m = VERB.search(h)
+        kind = 'v'
+    if not m:
+        return None
+    vp, ve = m.start(), m.end()
+    M = mentions(h)
+    wm = re.match(r'[А-Яа-я]+', h[vp:])
+    word = wm.group() if wm else ''
+    is_country = lambda x: x[3] is None
+    after = [x for x in M if x[0] >= ve and x[0] - ve <= 110]
+    pre = lambda x: h[max(0, x[0] - 6):x[0]].lower().rstrip()
+
+    if PASS.match(word):                                   # "Y was struck by X": attacker after the verb, target before it
+        att = next((x for x in after if is_country(x) and re.search(r'(?:от|при|чрез|след)$', pre(x))), None)
+        tg = [x for x in M if x[1] <= vp and vp - x[1] <= 70]
+        tgt = tg[-1] if tg else None
+        if tgt is None and loc:
+            tgt = (0, 0, loc, None)
+        if att is None or tgt is None:
+            return None
+    else:                                                  # "X struck Y": attacker before the verb (or "от X" / "удар на X" after it)
+        before = [x for x in M if is_country(x) and x[1] <= vp and vp - x[1] <= 70 and x[2] != 'UN']
+        att = before[-1] if before else None
+        rest = after
+        if att is None:
+            att = next((x for x in after if is_country(x) and (re.search(r'(?:от|при|чрез)$', pre(x))
+                                                               or (NOUNV.search(m.group()) and pre(x).endswith('на')))), None)
+            rest = [x for x in after if x is not att]
+        if att is None:
+            return None
+        tgt = next((x for x in rest if x[2] != att[2] and x[2] != 'UN'), None)
+        if tgt is None and loc and loc != att[2]:
+            tgt = (0, 0, loc, None)
+        if tgt is None:
+            return None
+    if att[2] not in PT or tgt[2] not in PT or att[2] == tgt[2]:
+        return None
+    return att[2], tgt, kind
