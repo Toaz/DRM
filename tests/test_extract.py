@@ -153,6 +153,50 @@ class Enrich(unittest.TestCase):
         self.assertNotIn("show", r["ev"][0])
 
 
+class PlaceAndStale(unittest.TestCase):
+    """The place name the model gives, and re-reading posts made with an older prompt."""
+    def with_place(self, place, *events):
+        return json.dumps({"countries": ["RU", "UA"], "location": "UA", "place": place, "category": "war", "events": list(events)})
+
+    def test_place_is_stored_when_present_and_left_out_otherwise(self):
+        self.assertEqual(record(self.with_place("Kharkiv", ev("RU", "UA")), "text", "m")["pl"], "Kharkiv")
+        self.assertNotIn("pl", record(self.with_place(None, ev("RU", "UA")), "text", "m"))
+
+    def test_silly_places_are_dropped(self):
+        for bad in ("", " ", "null", "None", "123", "x" * 200, 5, ["Kharkiv"]):
+            self.assertNotIn("pl", record(self.with_place(bad, ev("RU", "UA")), "text", "m"), bad)
+
+    def test_old_prompt_posts_wait_only_when_asked(self):
+        cache = {"version": 1, "posts": {}}
+        enrich([post(1)], cache, lambda t: answer(ev("RU", "UA")), "m", sleep=0)
+        cache["posts"]["1"]["pv"] = "older"
+        self.assertEqual(waiting([post(1)], cache), [])
+        self.assertEqual([m["id"] for m in waiting([post(1)], cache, stale=True)], [1])
+
+    def test_stale_reread_replaces_the_record(self):
+        cache = {"version": 1, "posts": {}}
+        enrich([post(1)], cache, lambda t: answer(ev("RU", "UA")), "m", sleep=0)
+        cache["posts"]["1"]["pv"] = "older"
+        st = enrich([post(1)], cache, lambda t: self.with_place("Kharkiv", ev("RU", "UA")), "m", sleep=0, stale=True)
+        self.assertEqual(st["done"], 1)
+        self.assertEqual((cache["posts"]["1"]["pv"], cache["posts"]["1"]["pl"]), (extract.PROMPT_VERSION, "Kharkiv"))
+
+    def test_a_failed_reread_keeps_the_old_record(self):
+        cache = {"version": 1, "posts": {}}
+        enrich([post(1)], cache, lambda t: answer(ev("RU", "UA")), "m", sleep=0)
+        before = dict(cache["posts"]["1"])
+        def broken(t):
+            raise LLMError("down")
+        enrich([post(1)], cache, broken, "m", sleep=0, force=[1])
+        self.assertEqual(cache["posts"]["1"], before)
+
+    def test_force_rereads_a_current_post(self):
+        cache = {"version": 1, "posts": {}}
+        enrich([post(1)], cache, lambda t: answer(ev("RU", "UA")), "m", sleep=0)
+        self.assertEqual(waiting([post(1)], cache), [])
+        self.assertEqual(len(waiting([post(1)], cache, force=[1])), 1)
+
+
 class FakeAPI(http.server.BaseHTTPRequestHandler):
     mode = "ok"
     def do_POST(self):
