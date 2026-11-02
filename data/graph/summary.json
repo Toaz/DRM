@@ -1,0 +1,937 @@
+[
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "count": 20,
+  "avg_confidence": 1.0,
+  "first": "2026-09-23",
+  "last": "2026-10-24",
+  "posts": [
+   "post:19942",
+   "post:19943",
+   "post:19960",
+   "post:19972",
+   "post:19981",
+   "post:19988",
+   "post:19989",
+   "post:19997",
+   "post:20016",
+   "post:20038",
+   "post:20048",
+   "post:20058",
+   "post:20094",
+   "post:20103",
+   "post:20107",
+   "post:20126",
+   "post:20127",
+   "post:20272",
+   "post:20280",
+   "post:20281"
+  ],
+  "why": [
+   "Ukrainian forces reclaimed 4 km² from Russian forces",
+   "Ukrainian agents detained Russian agent",
+   "Ukrainian drones struck Russian facilities",
+   "Ukrainian strike hit Russian refinery",
+   "Ukrainian UGVs attacked Russian positions"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:UA",
+  "type": "ATTACKED",
+  "count": 12,
+  "avg_confidence": 0.98,
+  "first": "2026-09-25",
+  "last": "2026-10-11",
+  "posts": [
+   "post:19969",
+   "post:19999",
+   "post:20001",
+   "post:20043",
+   "post:20044",
+   "post:20058",
+   "post:20062",
+   "post:20111",
+   "post:20112",
+   "post:20130",
+   "post:20139",
+   "post:20142"
+  ],
+  "why": [
+   "Russian internet shutdown operation",
+   "Russian UAVs struck cargo ships",
+   "Russian strike on Kyiv warehouse",
+   "Russian drone attacked Ukrainian ground robot",
+   "drones hit Ukrainian tanks"
+  ]
+ },
+ {
+  "source": "country:YE",
+  "target": "country:SA",
+  "type": "ATTACKED",
+  "count": 5,
+  "avg_confidence": 0.96,
+  "first": "2026-10-02",
+  "last": "2026-10-11",
+  "posts": [
+   "post:20037",
+   "post:20065",
+   "post:20097",
+   "post:20128",
+   "post:20131"
+  ],
+  "why": [
+   "Houthi attack damaged electricity equipment in Medina",
+   "Houthis attacked Saudi pump stations",
+   "Houthi missile/drone attacks on Saudi airports",
+   "Houthis ballistic missile hit Saudi Ghawar oil field",
+   "Houthi rocket hit King Khalid airport"
+  ]
+ },
+ {
+  "source": "country:SA",
+  "target": "country:YE",
+  "type": "ATTACKED",
+  "count": 5,
+  "avg_confidence": 1.0,
+  "first": "2026-10-04",
+  "last": "2026-10-12",
+  "posts": [
+   "post:20049",
+   "post:20073",
+   "post:20110",
+   "post:20120",
+   "post:20148"
+  ],
+  "why": [
+   "Saudi aviation struck Houthi positions",
+   "Saudi strikes hit Houthi‑controlled Sana'a",
+   "Saudi air strikes on Hodeidah airport",
+   "Saudi air strikes on Yemen's capital Sana'a",
+   "Saudi strike hit position in Sana'a"
+  ]
+ },
+ {
+  "source": "country:IR",
+  "target": "country:US",
+  "type": "ATTACKED",
+  "count": 3,
+  "avg_confidence": 1.0,
+  "first": "2026-09-27",
+  "last": "2026-10-25",
+  "posts": [
+   "post:19984",
+   "post:19993",
+   "post:20282"
+  ],
+  "why": [
+   "Iran captured US underwater drone in Strait of Hormuz",
+   "Iranian cruise missile hit ship carrying US Marines",
+   "Iran shot down US drone over Bandar Abbas"
+  ]
+ },
+ {
+  "source": "country:IL",
+  "target": "country:LB",
+  "type": "ATTACKED",
+  "count": 2,
+  "avg_confidence": 1.0,
+  "first": "2026-09-23",
+  "last": "2026-10-11",
+  "posts": [
+   "post:19941",
+   "post:20134"
+  ],
+  "why": [
+   "Israeli strikes in Southern Lebanon",
+   "Israeli forces shelled southern Lebanon"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:PL",
+  "type": "ATTACKED",
+  "count": 2,
+  "avg_confidence": 0.95,
+  "first": "2026-09-24",
+  "last": "2026-09-24",
+  "posts": [
+   "post:19950",
+   "post:19957"
+  ],
+  "why": [
+   "Russian Mi-8 helicopter violated Polish airspace",
+   "Russian sabotage attacks on infrastructure in Poland"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:DE",
+  "type": "ATTACKED",
+  "count": 2,
+  "avg_confidence": 0.95,
+  "first": "2026-09-24",
+  "last": "2026-09-26",
+  "posts": [
+   "post:19957",
+   "post:19971"
+  ],
+  "why": [
+   "Russian sabotage attacks on infrastructure in Germany",
+   "GRU-linked arson on German facilities"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:ES",
+  "type": "THREATENED",
+  "count": 2,
+  "avg_confidence": 0.95,
+  "first": "2026-09-24",
+  "last": "2026-10-05",
+  "posts": [
+   "post:19958",
+   "post:20060"
+  ],
+  "why": [
+   "Russian drone threat to Spain",
+   "Russian threat to foreign diplomats to leave Kyiv"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:FR",
+  "type": "THREATENED",
+  "count": 2,
+  "avg_confidence": 0.95,
+  "first": "2026-09-24",
+  "last": "2026-10-05",
+  "posts": [
+   "post:19958",
+   "post:20060"
+  ],
+  "why": [
+   "Russian drone threat to France",
+   "Russian threat to foreign diplomats to leave Kyiv"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:IT",
+  "type": "THREATENED",
+  "count": 2,
+  "avg_confidence": 0.95,
+  "first": "2026-09-24",
+  "last": "2026-10-05",
+  "posts": [
+   "post:19958",
+   "post:20060"
+  ],
+  "why": [
+   "Russian drone threat to Italy",
+   "Russian threat to foreign diplomats to leave Kyiv"
+  ]
+ },
+ {
+  "source": "country:ER",
+  "target": "country:ET",
+  "type": "ATTACKED",
+  "count": 2,
+  "avg_confidence": 1.0,
+  "first": "2026-09-28",
+  "last": "2026-10-07",
+  "posts": [
+   "post:19990",
+   "post:20100"
+  ],
+  "why": [
+   "Eritrean troops participating in offensive in northern Ethiopia",
+   "Eritrean troops crossed into Ethiopia"
+  ]
+ },
+ {
+  "source": "country:US",
+  "target": "country:RU",
+  "type": "THREATENED",
+  "count": 2,
+  "avg_confidence": 1.0,
+  "first": "2026-10-04",
+  "last": "2026-10-11",
+  "posts": [
+   "post:20047",
+   "post:20137"
+  ],
+  "why": [
+   "US accuses Russia of illegal bioweapon program",
+   "US bill to block Russian fuel purchases"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:LV",
+  "type": "THREATENED",
+  "count": 2,
+  "avg_confidence": 1.0,
+  "first": "2026-10-05",
+  "last": "2026-10-06",
+  "posts": [
+   "post:20060",
+   "post:20091"
+  ],
+  "why": [
+   "Russian threat to foreign diplomats to leave Kyiv",
+   "Russian prosecutor accuses Latvia of Nazi collaboration"
+  ]
+ },
+ {
+  "source": "country:GB",
+  "target": "country:IL",
+  "type": "THREATENED",
+  "count": 2,
+  "avg_confidence": 0.93,
+  "first": "2026-10-05",
+  "last": "2026-10-24",
+  "posts": [
+   "post:20072",
+   "post:20276"
+  ],
+  "why": [
+   "UK threatens expulsion of Israeli diplomats if consulate closed",
+   "UK sanctions settlements affecting Israel"
+  ]
+ },
+ {
+  "source": "country:IR",
+  "target": "country:AE",
+  "type": "ATTACKED",
+  "count": 2,
+  "avg_confidence": 1.0,
+  "first": "2026-10-08",
+  "last": "2026-10-11",
+  "posts": [
+   "post:20106",
+   "post:20136"
+  ],
+  "why": [
+   "Iran struck UAE tanker near Fujairah",
+   "Iranian sea mine hit oil tanker near UAE"
+  ]
+ },
+ {
+  "source": "country:US",
+  "target": "country:SD",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-09-23",
+  "last": "2026-09-23",
+  "posts": [
+   "post:19939"
+  ],
+  "why": [
+   "US denies visa and demands ceasefire from Sudan army chief"
+  ]
+ },
+ {
+  "source": "country:US",
+  "target": "country:IR",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-09-23",
+  "last": "2026-09-23",
+  "posts": [
+   "post:19944"
+  ],
+  "why": [
+   "Trump threatened to destroy Iran without a deal"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:FR",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 0.9,
+  "first": "2026-09-24",
+  "last": "2026-09-24",
+  "posts": [
+   "post:19957"
+  ],
+  "why": [
+   "Russian sabotage attacks on infrastructure in France"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:GB",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 0.9,
+  "first": "2026-09-24",
+  "last": "2026-09-24",
+  "posts": [
+   "post:19957"
+  ],
+  "why": [
+   "Russian sabotage attacks on infrastructure in United Kingdom"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:ES",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 0.9,
+  "first": "2026-09-24",
+  "last": "2026-09-24",
+  "posts": [
+   "post:19957"
+  ],
+  "why": [
+   "Russian sabotage attacks on infrastructure in Spain"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:EE",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 0.9,
+  "first": "2026-09-24",
+  "last": "2026-09-24",
+  "posts": [
+   "post:19957"
+  ],
+  "why": [
+   "Russian sabotage attacks on infrastructure in Estonia"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:LV",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 0.9,
+  "first": "2026-09-24",
+  "last": "2026-09-24",
+  "posts": [
+   "post:19957"
+  ],
+  "why": [
+   "Russian sabotage attacks on infrastructure in Latvia"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:LT",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 0.9,
+  "first": "2026-09-24",
+  "last": "2026-09-24",
+  "posts": [
+   "post:19957"
+  ],
+  "why": [
+   "Russian sabotage attacks on infrastructure in Lithuania"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:SE",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 0.9,
+  "first": "2026-09-24",
+  "last": "2026-09-24",
+  "posts": [
+   "post:19957"
+  ],
+  "why": [
+   "Russian sabotage attacks on infrastructure in Sweden"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:NO",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 0.9,
+  "first": "2026-09-24",
+  "last": "2026-09-24",
+  "posts": [
+   "post:19957"
+  ],
+  "why": [
+   "Russian sabotage attacks on infrastructure in Norway"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:DK",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 0.9,
+  "first": "2026-09-24",
+  "last": "2026-09-24",
+  "posts": [
+   "post:19957"
+  ],
+  "why": [
+   "Russian sabotage attacks on infrastructure in Denmark"
+  ]
+ },
+ {
+  "source": "country:IL",
+  "target": "country:IR",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-09-25",
+  "last": "2026-09-25",
+  "posts": [
+   "post:19962"
+  ],
+  "why": [
+   "Netanyahu condemned Tehran"
+  ]
+ },
+ {
+  "source": "country:IR",
+  "target": "country:US",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-09-27",
+  "last": "2026-09-27",
+  "posts": [
+   "post:19979"
+  ],
+  "why": [
+   "Iranian Revolutionary Guard warned US bombers not to take off"
+  ]
+ },
+ {
+  "source": "country:DE",
+  "target": "country:RU",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-09-27",
+  "last": "2026-09-27",
+  "posts": [
+   "post:19983"
+  ],
+  "why": [
+   "German minister condemns Russia's lack of constructive stance"
+  ]
+ },
+ {
+  "source": "country:CN",
+  "target": "country:MM",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-01",
+  "last": "2026-10-01",
+  "posts": [
+   "post:20033"
+  ],
+  "why": [
+   "Chinese warning shots at Myanmar jets"
+  ]
+ },
+ {
+  "source": "country:US",
+  "target": "country:KP",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-04",
+  "last": "2026-10-04",
+  "posts": [
+   "post:20047"
+  ],
+  "why": [
+   "US accuses North Korea of illegal bioweapon program"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:UA",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-04",
+  "last": "2026-10-04",
+  "posts": [
+   "post:20057"
+  ],
+  "why": [
+   "Russia accuses Ukraine of causing mines"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:AT",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-05",
+  "last": "2026-10-05",
+  "posts": [
+   "post:20060"
+  ],
+  "why": [
+   "Russian threat to foreign diplomats to leave Kyiv"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:BE",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-05",
+  "last": "2026-10-05",
+  "posts": [
+   "post:20060"
+  ],
+  "why": [
+   "Russian threat to foreign diplomats to leave Kyiv"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:DE",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-05",
+  "last": "2026-10-05",
+  "posts": [
+   "post:20060"
+  ],
+  "why": [
+   "Russian threat to foreign diplomats to leave Kyiv"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:LT",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-05",
+  "last": "2026-10-05",
+  "posts": [
+   "post:20060"
+  ],
+  "why": [
+   "Russian threat to foreign diplomats to leave Kyiv"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:NL",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-05",
+  "last": "2026-10-05",
+  "posts": [
+   "post:20060"
+  ],
+  "why": [
+   "Russian threat to foreign diplomats to leave Kyiv"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:SK",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-05",
+  "last": "2026-10-05",
+  "posts": [
+   "post:20060"
+  ],
+  "why": [
+   "Russian threat to foreign diplomats to leave Kyiv"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:SI",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-05",
+  "last": "2026-10-05",
+  "posts": [
+   "post:20060"
+  ],
+  "why": [
+   "Russian threat to foreign diplomats to leave Kyiv"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:FI",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-05",
+  "last": "2026-10-05",
+  "posts": [
+   "post:20060"
+  ],
+  "why": [
+   "Russian threat to foreign diplomats to leave Kyiv"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:SE",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-05",
+  "last": "2026-10-05",
+  "posts": [
+   "post:20060"
+  ],
+  "why": [
+   "Russian threat to foreign diplomats to leave Kyiv"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:AL",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-05",
+  "last": "2026-10-05",
+  "posts": [
+   "post:20060"
+  ],
+  "why": [
+   "Russian threat to foreign diplomats to leave Kyiv"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:MD",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 0.9,
+  "first": "2026-10-05",
+  "last": "2026-10-05",
+  "posts": [
+   "post:20061"
+  ],
+  "why": [
+   "Russian shell hit bus at Moldovan checkpoint"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:BG",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 0.9,
+  "first": "2026-10-06",
+  "last": "2026-10-06",
+  "posts": [
+   "post:20080"
+  ],
+  "why": [
+   "Russian submarine bomb hit ship in Bulgarian EEZ"
+  ]
+ },
+ {
+  "source": "country:IL",
+  "target": "country:PS",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 0.95,
+  "first": "2026-10-06",
+  "last": "2026-10-06",
+  "posts": [
+   "post:20082"
+  ],
+  "why": [
+   "Israeli minister orders preparation for attacks on Palestinian forces"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:EE",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-06",
+  "last": "2026-10-06",
+  "posts": [
+   "post:20091"
+  ],
+  "why": [
+   "Russian prosecutor accuses Estonia of Nazi collaboration"
+  ]
+ },
+ {
+  "source": "country:KR",
+  "target": "country:UA",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-08",
+  "last": "2026-10-08",
+  "posts": [
+   "post:20102"
+  ],
+  "why": [
+   "KR recalled ambassador, threatens retaliation unless Ukraine apologizes"
+  ]
+ },
+ {
+  "source": "country:KP",
+  "target": "country:UA",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 0.9,
+  "first": "2026-10-08",
+  "last": "2026-10-08",
+  "posts": [
+   "post:20102"
+  ],
+  "why": [
+   "NK soldiers fought for Russia in Ukraine"
+  ]
+ },
+ {
+  "source": "country:IL",
+  "target": "country:GB",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-08",
+  "last": "2026-10-08",
+  "posts": [
+   "post:20104"
+  ],
+  "why": [
+   "Israel expelled British diplomats over settlement sanctions"
+  ]
+ },
+ {
+  "source": "country:PK",
+  "target": "country:YE",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-08",
+  "last": "2026-10-08",
+  "posts": [
+   "post:20108"
+  ],
+  "why": [
+   "Pakistani jets strike Houthi positions"
+  ]
+ },
+ {
+  "source": "country:RU",
+  "target": "country:ML",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 0.9,
+  "first": "2026-10-08",
+  "last": "2026-10-08",
+  "posts": [
+   "post:20113"
+  ],
+  "why": [
+   "Russian air strikes on Kidal"
+  ]
+ },
+ {
+  "source": "country:LV",
+  "target": "country:GB",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-08",
+  "last": "2026-10-08",
+  "posts": [
+   "post:20115"
+  ],
+  "why": [
+   "Latvian nationals breached RAF base fence"
+  ]
+ },
+ {
+  "source": "country:IR",
+  "target": "country:IQ",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-08",
+  "last": "2026-10-08",
+  "posts": [
+   "post:20118"
+  ],
+  "why": [
+   "Iranian attack on Erbil, Iraqi Kurdistan"
+  ]
+ },
+ {
+  "source": "country:IL",
+  "target": "country:SY",
+  "type": "ATTACKED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-11",
+  "last": "2026-10-11",
+  "posts": [
+   "post:20132"
+  ],
+  "why": [
+   "Israeli convoy entered Arne; drones over Damascus"
+  ]
+ },
+ {
+  "source": "country:GB",
+  "target": "country:RU",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-11",
+  "last": "2026-10-11",
+  "posts": [
+   "post:20140"
+  ],
+  "why": [
+   "UK PM accuses Russia of Brexit interference"
+  ]
+ },
+ {
+  "source": "country:EU",
+  "target": "country:RU",
+  "type": "THREATENED",
+  "count": 1,
+  "avg_confidence": 1.0,
+  "first": "2026-10-12",
+  "last": "2026-10-12",
+  "posts": [
+   "post:20144"
+  ],
+  "why": [
+   "EU sanctions package against Russia"
+  ]
+ }
+]

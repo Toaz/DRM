@@ -1,0 +1,19 @@
+{"entities": [
+{"type": "org", "name_en": "Houthis", "aliases": ["хуситите", "хусите", "хусити", "Хуситите", "Ансар Аллах", "Ансар Алла"]},
+{"type": "org", "name_en": "Islamic Revolutionary Guard Corps", "aliases": ["КСИР", "Корпусът на гвардейците на ислямската революция", "Корпуса на гвардейците на ислямската революция", "Революционната гвардия", "Ислямската революционна гвардия"]},
+{"type": "person", "name_en": "Bashar al-Assad", "aliases": ["Асад"], "not_after": ["Рифат", "Рифаат", "Хафез", "Дураид"]},
+{"type": "person", "name_en": "Muqtada al-Sadr", "aliases": [], "not_after": ["Мохамад", "Мохамед", "Сайед", "Сейед"]},
+{"type": "org", "name_en": "Rheinmetall", "aliases": ["Райнметал", "Рейнметал"]},
+{"type": "weapon", "name_en": "Marder", "aliases": ["Мардер"]},
+{"type": "org", "name_en": "Kongsberg", "aliases": ["Kongsberg", "Конгсберг"]},
+{"type": "weapon", "name_en": "Aspide", "aliases": ["Aspide", "Аспиде"]},
+{"type": "weapon", "name_en": "ESSM", "aliases": ["ESSM"]},
+{"type": "weapon", "name_en": "Sea Sparrow", "aliases": ["Sea Sparrow", "Си Спароу"]},
+{"type": "weapon", "name_en": "TOW", "aliases": ["TOW"]},
+{"type": "weapon", "name_en": "AT-4", "aliases": ["AT-4", "АТ-4"]},
+{"type": "weapon", "name_en": "T-80", "aliases": ["Т-80", "T-80"]},
+{"type": "weapon", "name_en": "An-12", "aliases": ["Ан-12", "An-12"]},
+{"type": "weapon", "name_en": "Tor-M2", "aliases": ["Тор-М2", "Тор-М1"]},
+{"type": "weapon", "name_en": "B1 Centauro", "aliases": ["B1 Centauro", "Centauro", "Кентавро"]},
+{"type": "org", "name_en": "G7", "aliases": ["G7", "Г7", "Г-7"]}
+]}

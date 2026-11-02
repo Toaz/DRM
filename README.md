@@ -115,3 +115,29 @@ because that is where a missed arrow hides). Open each link, write `y` or `n` in
 Only if the preview stops working. It needs a Telegram login, which is **full access to that account**, so use a dedicated account if you can.
 `pip install -r requirements-api.txt`, create the session with `python tools/make_session.py`, store `TG_API_ID`, `TG_API_HASH`, `TG_SESSION` as
 **environment secrets** (restricted to `main`), pass them to the pull step in `update.yml` and set `SOURCE: api`.
+
+## Entity dictionary (people, organisations, units, weapons)
+
+One-off bootstrap, run from the project root:
+
+    python tools/mine_entities.py                 # free: recurring names and designations -> data/entity_mined.json
+    export GROQ_API_KEY=...
+    python tools/classify_entities.py --dry       # number of requests, nothing is sent
+    python tools/classify_entities.py             # LLM classification (resumable) -> data/entities_candidates.json
+    python tools/fix_entities.py                  # my corrections of known model mistakes (edit the tables in that file)
+    python tools/classify_entities.py --rebuild   # regroup after fixes; your "keep" flags are preserved
+    # review the candidates: set "keep": false, fix name_en / name_bg / aliases
+    python tools/promote_entities.py --dry && python tools/promote_entities.py   # -> data/entities.json (review the git diff)
+
+Re-run `mine_entities.py` later to list names that are not in the dictionary yet. Optional `data/entity_stop.txt`
+(one phrase per line, lower case) hides phrases that are never entities.
+
+### Matching entities in posts (rules only, no AI)
+
+    python tools/audit_entities.py --check        # aliases shared by two entities
+    python tools/audit_entities.py --n 60         # sample matches -> data/audit_entities.tsv; put y/n in the "ok" column
+    python tools/audit_entities.py --score        # precision per type + the wrong matches
+    python tools/audit_entities.py --stats        # mentions per entity, entries never found
+
+`src/entities.py`: `entities.find(text)` / `entities.ids(text)`. Handles Bulgarian endings, Cyrillic/Latin look-alike
+letters in designations, capital letters (Град the weapon vs град the city), exact short acronyms (ГРУ, ВСУ).

@@ -85,9 +85,11 @@ class QuotaExceeded(LLMError):
     """Daily or per-minute quota used up for longer than we are willing to wait."""
 
 
-def ask(text, model, token, base_url, tries=4, max_wait=90):
-    body = json.dumps({"model": model, "temperature": 0, "max_tokens": 2000,
-                       "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": text[:MAX_TEXT]}]}).encode()
+def ask(text, model, token, base_url, tries=4, max_wait=90, system=None, max_tokens=2000, max_text=None, extra=None):
+    msg = {"model": model, "temperature": 0, "max_tokens": max_tokens,  # system/max_*/extra: for other one-off tasks
+           "messages": [{"role": "system", "content": system or SYSTEM}, {"role": "user", "content": text[:max_text or MAX_TEXT]}]}
+    msg.update(extra or {})
+    body = json.dumps(msg).encode()
     last = "no attempt made"
     for i in range(tries):
         req = urllib.request.Request(base_url.rstrip("/") + "/chat/completions", data=body, method="POST", headers={

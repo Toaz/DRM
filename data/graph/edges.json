@@ -1,0 +1,8537 @@
+[
+ {
+  "source": "post:19928",
+  "target": "country:GB",
+  "type": "MENTIONS",
+  "post": "post:19928",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19928",
+  "target": "country:GB",
+  "type": "LOCATED_IN",
+  "post": "post:19928",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19928",
+  "target": "category:avi",
+  "type": "HAS_CATEGORY",
+  "post": "post:19928",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19929",
+  "target": "country:ER",
+  "type": "MENTIONS",
+  "post": "post:19929",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19929",
+  "target": "country:ET",
+  "type": "MENTIONS",
+  "post": "post:19929",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19929",
+  "target": "country:ET",
+  "type": "LOCATED_IN",
+  "post": "post:19929",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19929",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:19929",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19930",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19930",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19930",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19930",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19930",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:19930",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19930",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:19930",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19931",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:19931",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19931",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19931",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19931",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:19931",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19932",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19932",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19932",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:19932",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19932",
+  "target": "category:gen",
+  "type": "HAS_CATEGORY",
+  "post": "post:19932",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19933",
+  "target": "country:RO",
+  "type": "MENTIONS",
+  "post": "post:19933",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19933",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19933",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19933",
+  "target": "country:RO",
+  "type": "LOCATED_IN",
+  "post": "post:19933",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19933",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:19933",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19934",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19934",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19934",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:19934",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19934",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:19934",
+  "date": "2026-09-21"
+ },
+ {
+  "source": "post:19936",
+  "target": "keyword:sanctions",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19936",
+  "date": "2026-09-22"
+ },
+ {
+  "source": "post:19936",
+  "target": "country:CN",
+  "type": "MENTIONS",
+  "post": "post:19936",
+  "date": "2026-09-22"
+ },
+ {
+  "source": "post:19936",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19936",
+  "date": "2026-09-22"
+ },
+ {
+  "source": "post:19936",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19936",
+  "date": "2026-09-22"
+ },
+ {
+  "source": "post:19936",
+  "target": "country:IR",
+  "type": "LOCATED_IN",
+  "post": "post:19936",
+  "date": "2026-09-22"
+ },
+ {
+  "source": "post:19936",
+  "target": "category:avi",
+  "type": "HAS_CATEGORY",
+  "post": "post:19936",
+  "date": "2026-09-22"
+ },
+ {
+  "source": "post:19937",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:19937",
+  "date": "2026-09-22"
+ },
+ {
+  "source": "post:19938",
+  "target": "country:DE",
+  "type": "MENTIONS",
+  "post": "post:19938",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19938",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:19938",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19938",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19938",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19938",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:19938",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19938",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19938",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19938",
+  "target": "country:SA",
+  "type": "LOCATED_IN",
+  "post": "post:19938",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19938",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:19938",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19939",
+  "target": "country:AE",
+  "type": "MENTIONS",
+  "post": "post:19939",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19939",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19939",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19939",
+  "target": "country:SD",
+  "type": "MENTIONS",
+  "post": "post:19939",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19939",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19939",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19939",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:19939",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19939",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:19939",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "country:US",
+  "target": "country:SD",
+  "type": "THREATENED",
+  "post": "post:19939",
+  "date": "2026-09-23",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "US denies visa and demands ceasefire from Sudan army chief"
+ },
+ {
+  "source": "post:19940",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19940",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19940",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19940",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19940",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:19940",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19940",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:19940",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19940",
+  "target": "country:YE",
+  "type": "LOCATED_IN",
+  "post": "post:19940",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19940",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19940",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19941",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:19941",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19941",
+  "target": "country:LB",
+  "type": "MENTIONS",
+  "post": "post:19941",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19941",
+  "target": "country:LB",
+  "type": "LOCATED_IN",
+  "post": "post:19941",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19941",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19941",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "country:IL",
+  "target": "country:LB",
+  "type": "ATTACKED",
+  "post": "post:19941",
+  "date": "2026-09-23",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Israeli strikes in Southern Lebanon"
+ },
+ {
+  "source": "post:19942",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19942",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19942",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19942",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19942",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:19942",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19942",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19942",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:19942",
+  "date": "2026-09-23",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Ukrainian forces reclaimed 4 km² from Russian forces"
+ },
+ {
+  "source": "post:19943",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19943",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19943",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19943",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19943",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:19943",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19943",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:19943",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:19943",
+  "date": "2026-09-23",
+  "confidence": 1.0,
+  "category": "category:sec",
+  "why": "Ukrainian agents detained Russian agent"
+ },
+ {
+  "source": "post:19944",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19944",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19944",
+  "target": "country:UN",
+  "type": "MENTIONS",
+  "post": "post:19944",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19944",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19944",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19944",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:19944",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19944",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:19944",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "country:US",
+  "target": "country:IR",
+  "type": "THREATENED",
+  "post": "post:19944",
+  "date": "2026-09-23",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Trump threatened to destroy Iran without a deal"
+ },
+ {
+  "source": "post:19945",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19945",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19945",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19945",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19945",
+  "target": "country:EU",
+  "type": "MENTIONS",
+  "post": "post:19945",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19945",
+  "target": "country:PL",
+  "type": "MENTIONS",
+  "post": "post:19945",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19945",
+  "target": "country:RO",
+  "type": "MENTIONS",
+  "post": "post:19945",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19945",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19945",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19945",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19945",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19945",
+  "target": "category:air",
+  "type": "HAS_CATEGORY",
+  "post": "post:19945",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19946",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19946",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19946",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:19946",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19946",
+  "target": "category:cyb",
+  "type": "HAS_CATEGORY",
+  "post": "post:19946",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19947",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19947",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19947",
+  "target": "keyword:sanctions",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19947",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19947",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19947",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19947",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19947",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19947",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19947",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19947",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:19947",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19947",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:19947",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19948",
+  "target": "country:ET",
+  "type": "MENTIONS",
+  "post": "post:19948",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19948",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19948",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19948",
+  "target": "country:ET",
+  "type": "LOCATED_IN",
+  "post": "post:19948",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19948",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19948",
+  "date": "2026-09-23"
+ },
+ {
+  "source": "post:19949",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:19949",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19949",
+  "target": "country:PS",
+  "type": "MENTIONS",
+  "post": "post:19949",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19949",
+  "target": "country:IL",
+  "type": "LOCATED_IN",
+  "post": "post:19949",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19949",
+  "target": "category:hum",
+  "type": "HAS_CATEGORY",
+  "post": "post:19949",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19950",
+  "target": "country:PL",
+  "type": "MENTIONS",
+  "post": "post:19950",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19950",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19950",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19950",
+  "target": "country:PL",
+  "type": "LOCATED_IN",
+  "post": "post:19950",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19950",
+  "target": "category:air",
+  "type": "HAS_CATEGORY",
+  "post": "post:19950",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:PL",
+  "type": "ATTACKED",
+  "post": "post:19950",
+  "date": "2026-09-24",
+  "confidence": 1.0,
+  "category": "category:air",
+  "why": "Russian Mi-8 helicopter violated Polish airspace"
+ },
+ {
+  "source": "post:19951",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19951",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19951",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19951",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19951",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:19951",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19951",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:19951",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19952",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19952",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19952",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:19952",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19952",
+  "target": "category:eng",
+  "type": "HAS_CATEGORY",
+  "post": "post:19952",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19953",
+  "target": "country:AF",
+  "type": "MENTIONS",
+  "post": "post:19953",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19953",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19953",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19953",
+  "target": "country:PK",
+  "type": "MENTIONS",
+  "post": "post:19953",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19953",
+  "target": "country:IR",
+  "type": "LOCATED_IN",
+  "post": "post:19953",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19953",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:19953",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19954",
+  "target": "country:EU",
+  "type": "MENTIONS",
+  "post": "post:19954",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19954",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19954",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19954",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:19954",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19955",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19955",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19955",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:19955",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19955",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:19955",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19956",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19956",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19956",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19956",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19956",
+  "target": "keyword:cyber",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19956",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19956",
+  "target": "country:DK",
+  "type": "MENTIONS",
+  "post": "post:19956",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19956",
+  "target": "country:EU",
+  "type": "MENTIONS",
+  "post": "post:19956",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19956",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19956",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19956",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19956",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19957",
+  "target": "country:DE",
+  "type": "MENTIONS",
+  "post": "post:19957",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19957",
+  "target": "country:DK",
+  "type": "MENTIONS",
+  "post": "post:19957",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19957",
+  "target": "country:EE",
+  "type": "MENTIONS",
+  "post": "post:19957",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19957",
+  "target": "country:ES",
+  "type": "MENTIONS",
+  "post": "post:19957",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19957",
+  "target": "country:EU",
+  "type": "MENTIONS",
+  "post": "post:19957",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19957",
+  "target": "country:FR",
+  "type": "MENTIONS",
+  "post": "post:19957",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19957",
+  "target": "country:GB",
+  "type": "MENTIONS",
+  "post": "post:19957",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19957",
+  "target": "country:LT",
+  "type": "MENTIONS",
+  "post": "post:19957",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19957",
+  "target": "country:LV",
+  "type": "MENTIONS",
+  "post": "post:19957",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19957",
+  "target": "country:NO",
+  "type": "MENTIONS",
+  "post": "post:19957",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19957",
+  "target": "country:PL",
+  "type": "MENTIONS",
+  "post": "post:19957",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19957",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19957",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19957",
+  "target": "country:SE",
+  "type": "MENTIONS",
+  "post": "post:19957",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19957",
+  "target": "category:dis",
+  "type": "HAS_CATEGORY",
+  "post": "post:19957",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:DE",
+  "type": "ATTACKED",
+  "post": "post:19957",
+  "date": "2026-09-24",
+  "confidence": 0.9,
+  "category": "category:dis",
+  "why": "Russian sabotage attacks on infrastructure in Germany"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:FR",
+  "type": "ATTACKED",
+  "post": "post:19957",
+  "date": "2026-09-24",
+  "confidence": 0.9,
+  "category": "category:dis",
+  "why": "Russian sabotage attacks on infrastructure in France"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:GB",
+  "type": "ATTACKED",
+  "post": "post:19957",
+  "date": "2026-09-24",
+  "confidence": 0.9,
+  "category": "category:dis",
+  "why": "Russian sabotage attacks on infrastructure in United Kingdom"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:PL",
+  "type": "ATTACKED",
+  "post": "post:19957",
+  "date": "2026-09-24",
+  "confidence": 0.9,
+  "category": "category:dis",
+  "why": "Russian sabotage attacks on infrastructure in Poland"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:ES",
+  "type": "ATTACKED",
+  "post": "post:19957",
+  "date": "2026-09-24",
+  "confidence": 0.9,
+  "category": "category:dis",
+  "why": "Russian sabotage attacks on infrastructure in Spain"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:EE",
+  "type": "ATTACKED",
+  "post": "post:19957",
+  "date": "2026-09-24",
+  "confidence": 0.9,
+  "category": "category:dis",
+  "why": "Russian sabotage attacks on infrastructure in Estonia"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:LV",
+  "type": "ATTACKED",
+  "post": "post:19957",
+  "date": "2026-09-24",
+  "confidence": 0.9,
+  "category": "category:dis",
+  "why": "Russian sabotage attacks on infrastructure in Latvia"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:LT",
+  "type": "ATTACKED",
+  "post": "post:19957",
+  "date": "2026-09-24",
+  "confidence": 0.9,
+  "category": "category:dis",
+  "why": "Russian sabotage attacks on infrastructure in Lithuania"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:SE",
+  "type": "ATTACKED",
+  "post": "post:19957",
+  "date": "2026-09-24",
+  "confidence": 0.9,
+  "category": "category:dis",
+  "why": "Russian sabotage attacks on infrastructure in Sweden"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:NO",
+  "type": "ATTACKED",
+  "post": "post:19957",
+  "date": "2026-09-24",
+  "confidence": 0.9,
+  "category": "category:dis",
+  "why": "Russian sabotage attacks on infrastructure in Norway"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:DK",
+  "type": "ATTACKED",
+  "post": "post:19957",
+  "date": "2026-09-24",
+  "confidence": 0.9,
+  "category": "category:dis",
+  "why": "Russian sabotage attacks on infrastructure in Denmark"
+ },
+ {
+  "source": "post:19958",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19958",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19958",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19958",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19958",
+  "target": "country:ES",
+  "type": "MENTIONS",
+  "post": "post:19958",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19958",
+  "target": "country:EU",
+  "type": "MENTIONS",
+  "post": "post:19958",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19958",
+  "target": "country:FR",
+  "type": "MENTIONS",
+  "post": "post:19958",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19958",
+  "target": "country:IT",
+  "type": "MENTIONS",
+  "post": "post:19958",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19958",
+  "target": "country:LT",
+  "type": "MENTIONS",
+  "post": "post:19958",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19958",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19958",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19958",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19958",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19958",
+  "target": "category:air",
+  "type": "HAS_CATEGORY",
+  "post": "post:19958",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:ES",
+  "type": "THREATENED",
+  "post": "post:19958",
+  "date": "2026-09-24",
+  "confidence": 0.9,
+  "category": "category:air",
+  "why": "Russian drone threat to Spain"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:FR",
+  "type": "THREATENED",
+  "post": "post:19958",
+  "date": "2026-09-24",
+  "confidence": 0.9,
+  "category": "category:air",
+  "why": "Russian drone threat to France"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:IT",
+  "type": "THREATENED",
+  "post": "post:19958",
+  "date": "2026-09-24",
+  "confidence": 0.9,
+  "category": "category:air",
+  "why": "Russian drone threat to Italy"
+ },
+ {
+  "source": "post:19959",
+  "target": "country:AE",
+  "type": "MENTIONS",
+  "post": "post:19959",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19959",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19959",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19959",
+  "target": "country:AE",
+  "type": "LOCATED_IN",
+  "post": "post:19959",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19959",
+  "target": "category:avi",
+  "type": "HAS_CATEGORY",
+  "post": "post:19959",
+  "date": "2026-09-24"
+ },
+ {
+  "source": "post:19960",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19960",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19960",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19960",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19960",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19960",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19960",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19960",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19960",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:19960",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19960",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19960",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:19960",
+  "date": "2026-09-25",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Ukrainian drones struck Russian facilities"
+ },
+ {
+  "source": "post:19961",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19961",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19961",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19961",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19961",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:19961",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19961",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19961",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19962",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:19962",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19962",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19962",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19962",
+  "target": "country:PS",
+  "type": "MENTIONS",
+  "post": "post:19962",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19962",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19962",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19962",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:19962",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19962",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:19962",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "country:IL",
+  "target": "country:IR",
+  "type": "THREATENED",
+  "post": "post:19962",
+  "date": "2026-09-25",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Netanyahu condemned Tehran"
+ },
+ {
+  "source": "post:19965",
+  "target": "country:SY",
+  "type": "MENTIONS",
+  "post": "post:19965",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19965",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19965",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19965",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:19965",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19965",
+  "target": "category:hum",
+  "type": "HAS_CATEGORY",
+  "post": "post:19965",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19966",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19966",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19966",
+  "target": "country:FI",
+  "type": "MENTIONS",
+  "post": "post:19966",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19966",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19966",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19966",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19966",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19966",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:19966",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19967",
+  "target": "country:JP",
+  "type": "MENTIONS",
+  "post": "post:19967",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19967",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19967",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19967",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:19967",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19967",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:19967",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19968",
+  "target": "country:FR",
+  "type": "MENTIONS",
+  "post": "post:19968",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19968",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:19968",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19968",
+  "target": "country:SA",
+  "type": "LOCATED_IN",
+  "post": "post:19968",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19968",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:19968",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19969",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19969",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19969",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19969",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19969",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:19969",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "post:19969",
+  "target": "category:cyb",
+  "type": "HAS_CATEGORY",
+  "post": "post:19969",
+  "date": "2026-09-25"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:UA",
+  "type": "ATTACKED",
+  "post": "post:19969",
+  "date": "2026-09-25",
+  "confidence": 1.0,
+  "category": "category:cyb",
+  "why": "Russian internet shutdown operation"
+ },
+ {
+  "source": "post:19970",
+  "target": "keyword:sanctions",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19970",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19970",
+  "target": "country:CZ",
+  "type": "MENTIONS",
+  "post": "post:19970",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19970",
+  "target": "country:DE",
+  "type": "MENTIONS",
+  "post": "post:19970",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19970",
+  "target": "country:EU",
+  "type": "MENTIONS",
+  "post": "post:19970",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19970",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19970",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19970",
+  "target": "country:CZ",
+  "type": "LOCATED_IN",
+  "post": "post:19970",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19970",
+  "target": "category:dis",
+  "type": "HAS_CATEGORY",
+  "post": "post:19970",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19971",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19971",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19971",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:19971",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19971",
+  "target": "country:DE",
+  "type": "MENTIONS",
+  "post": "post:19971",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19971",
+  "target": "country:LV",
+  "type": "MENTIONS",
+  "post": "post:19971",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19971",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19971",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19971",
+  "target": "country:SK",
+  "type": "MENTIONS",
+  "post": "post:19971",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19971",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19971",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19971",
+  "target": "country:DE",
+  "type": "LOCATED_IN",
+  "post": "post:19971",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19971",
+  "target": "category:ter",
+  "type": "HAS_CATEGORY",
+  "post": "post:19971",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:DE",
+  "type": "ATTACKED",
+  "post": "post:19971",
+  "date": "2026-09-26",
+  "confidence": 1.0,
+  "category": "category:ter",
+  "why": "GRU-linked arson on German facilities"
+ },
+ {
+  "source": "post:19972",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19972",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19972",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19972",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19972",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:19972",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19972",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19972",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:19972",
+  "date": "2026-09-26",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Ukrainian strike hit Russian refinery"
+ },
+ {
+  "source": "post:19974",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19974",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19974",
+  "target": "country:IQ",
+  "type": "MENTIONS",
+  "post": "post:19974",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19974",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19974",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19974",
+  "target": "country:SY",
+  "type": "MENTIONS",
+  "post": "post:19974",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19974",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19974",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19974",
+  "target": "country:SY",
+  "type": "LOCATED_IN",
+  "post": "post:19974",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19974",
+  "target": "category:eng",
+  "type": "HAS_CATEGORY",
+  "post": "post:19974",
+  "date": "2026-09-26"
+ },
+ {
+  "source": "post:19975",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19975",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19975",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19975",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19975",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:19975",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19976",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19976",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19976",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:19976",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19977",
+  "target": "country:GB",
+  "type": "MENTIONS",
+  "post": "post:19977",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19977",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19977",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19977",
+  "target": "country:GB",
+  "type": "LOCATED_IN",
+  "post": "post:19977",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19977",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:19977",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19978",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19978",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19978",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:19978",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19979",
+  "target": "country:GB",
+  "type": "MENTIONS",
+  "post": "post:19979",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19979",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19979",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19979",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19979",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19979",
+  "target": "country:GB",
+  "type": "LOCATED_IN",
+  "post": "post:19979",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19979",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:19979",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "country:IR",
+  "target": "country:US",
+  "type": "THREATENED",
+  "post": "post:19979",
+  "date": "2026-09-27",
+  "confidence": 1.0,
+  "category": "category:sec",
+  "why": "Iranian Revolutionary Guard warned US bombers not to take off"
+ },
+ {
+  "source": "post:19980",
+  "target": "keyword:nuclear",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19980",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19980",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19980",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19980",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:19980",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19980",
+  "target": "category:nuc",
+  "type": "HAS_CATEGORY",
+  "post": "post:19980",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19981",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:19981",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19981",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19981",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19981",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19981",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19981",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:19981",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19981",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19981",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:19981",
+  "date": "2026-09-27",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Ukrainian UGVs attacked Russian positions"
+ },
+ {
+  "source": "post:19982",
+  "target": "country:IQ",
+  "type": "MENTIONS",
+  "post": "post:19982",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19982",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19982",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19982",
+  "target": "country:IQ",
+  "type": "LOCATED_IN",
+  "post": "post:19982",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19982",
+  "target": "category:avi",
+  "type": "HAS_CATEGORY",
+  "post": "post:19982",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19983",
+  "target": "country:DE",
+  "type": "MENTIONS",
+  "post": "post:19983",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19983",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19983",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19983",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:19983",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "country:DE",
+  "target": "country:RU",
+  "type": "THREATENED",
+  "post": "post:19983",
+  "date": "2026-09-27",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "German minister condemns Russia's lack of constructive stance"
+ },
+ {
+  "source": "post:19984",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19984",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19984",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19984",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19984",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19984",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19984",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:19984",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "country:IR",
+  "target": "country:US",
+  "type": "ATTACKED",
+  "post": "post:19984",
+  "date": "2026-09-27",
+  "confidence": 1.0,
+  "category": "category:sea",
+  "why": "Iran captured US underwater drone in Strait of Hormuz"
+ },
+ {
+  "source": "post:19985",
+  "target": "country:GB",
+  "type": "MENTIONS",
+  "post": "post:19985",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19985",
+  "target": "country:GB",
+  "type": "LOCATED_IN",
+  "post": "post:19985",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19985",
+  "target": "category:ter",
+  "type": "HAS_CATEGORY",
+  "post": "post:19985",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19986",
+  "target": "country:LT",
+  "type": "MENTIONS",
+  "post": "post:19986",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19986",
+  "target": "country:PL",
+  "type": "MENTIONS",
+  "post": "post:19986",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19986",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19986",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19986",
+  "target": "category:hum",
+  "type": "HAS_CATEGORY",
+  "post": "post:19986",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19987",
+  "target": "keyword:sanctions",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19987",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19987",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19987",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19987",
+  "target": "country:IR",
+  "type": "LOCATED_IN",
+  "post": "post:19987",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19987",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:19987",
+  "date": "2026-09-27"
+ },
+ {
+  "source": "post:19988",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19988",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19988",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19988",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19988",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:19988",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19988",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19988",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:19988",
+  "date": "2026-09-28",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Ukrainian UAVs struck Russian railway infrastructure"
+ },
+ {
+  "source": "post:19989",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19989",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19989",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19989",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19989",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:19989",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19989",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19989",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:19989",
+  "date": "2026-09-28",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Ukrainian forces captured Russian soldiers"
+ },
+ {
+  "source": "post:19990",
+  "target": "country:ER",
+  "type": "MENTIONS",
+  "post": "post:19990",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19990",
+  "target": "country:ET",
+  "type": "MENTIONS",
+  "post": "post:19990",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19990",
+  "target": "country:ET",
+  "type": "LOCATED_IN",
+  "post": "post:19990",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19990",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19990",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "country:ER",
+  "target": "country:ET",
+  "type": "ATTACKED",
+  "post": "post:19990",
+  "date": "2026-09-28",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Eritrean troops participating in offensive in northern Ethiopia"
+ },
+ {
+  "source": "post:19991",
+  "target": "country:MM",
+  "type": "MENTIONS",
+  "post": "post:19991",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19991",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19991",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19991",
+  "target": "country:MM",
+  "type": "LOCATED_IN",
+  "post": "post:19991",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19991",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19991",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19992",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19992",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19992",
+  "target": "country:DE",
+  "type": "MENTIONS",
+  "post": "post:19992",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19992",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19992",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19992",
+  "target": "country:DE",
+  "type": "LOCATED_IN",
+  "post": "post:19992",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19992",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:19992",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19993",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19993",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19993",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19993",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19993",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19993",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19993",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19993",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19993",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19993",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "country:IR",
+  "target": "country:US",
+  "type": "ATTACKED",
+  "post": "post:19993",
+  "date": "2026-09-28",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Iranian cruise missile hit ship carrying US Marines"
+ },
+ {
+  "source": "post:19994",
+  "target": "country:ET",
+  "type": "MENTIONS",
+  "post": "post:19994",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19994",
+  "target": "country:ET",
+  "type": "LOCATED_IN",
+  "post": "post:19994",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19994",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19994",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19995",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19995",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19995",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:19995",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19995",
+  "target": "category:gen",
+  "type": "HAS_CATEGORY",
+  "post": "post:19995",
+  "date": "2026-09-28"
+ },
+ {
+  "source": "post:19996",
+  "target": "country:IQ",
+  "type": "MENTIONS",
+  "post": "post:19996",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:19996",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:19996",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:19996",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:19996",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:19996",
+  "target": "country:IQ",
+  "type": "LOCATED_IN",
+  "post": "post:19996",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:19996",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19996",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:19997",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19997",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:19997",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19997",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:19997",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:19997",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:19997",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19997",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:19997",
+  "date": "2026-09-29",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Ukrainian strikes on Russian military targets"
+ },
+ {
+  "source": "post:19998",
+  "target": "country:ET",
+  "type": "MENTIONS",
+  "post": "post:19998",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:19998",
+  "target": "country:ET",
+  "type": "LOCATED_IN",
+  "post": "post:19998",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:19998",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:19998",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:19999",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:19999",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:19999",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:19999",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:19999",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:19999",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:19999",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:19999",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:19999",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:19999",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:UA",
+  "type": "ATTACKED",
+  "post": "post:19999",
+  "date": "2026-09-29",
+  "confidence": 0.9,
+  "category": "category:sea",
+  "why": "Russian UAVs struck cargo ships"
+ },
+ {
+  "source": "post:20000",
+  "target": "country:AE",
+  "type": "MENTIONS",
+  "post": "post:20000",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20000",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20000",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20000",
+  "target": "country:LY",
+  "type": "MENTIONS",
+  "post": "post:20000",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20000",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20000",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20000",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20000",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20000",
+  "target": "country:AE",
+  "type": "LOCATED_IN",
+  "post": "post:20000",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20000",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20000",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20001",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20001",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20001",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20001",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20001",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20001",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20001",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20001",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:UA",
+  "type": "ATTACKED",
+  "post": "post:20001",
+  "date": "2026-09-29",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Russian strike on Kyiv warehouse"
+ },
+ {
+  "source": "post:20002",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20002",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20002",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20002",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20002",
+  "target": "category:avi",
+  "type": "HAS_CATEGORY",
+  "post": "post:20002",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20003",
+  "target": "country:DE",
+  "type": "MENTIONS",
+  "post": "post:20003",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20003",
+  "target": "country:FR",
+  "type": "MENTIONS",
+  "post": "post:20003",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20003",
+  "target": "country:GB",
+  "type": "MENTIONS",
+  "post": "post:20003",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20003",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20003",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20003",
+  "target": "country:IT",
+  "type": "MENTIONS",
+  "post": "post:20003",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20003",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20003",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20004",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20004",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20004",
+  "target": "country:CN",
+  "type": "MENTIONS",
+  "post": "post:20004",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20004",
+  "target": "country:DE",
+  "type": "MENTIONS",
+  "post": "post:20004",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20004",
+  "target": "country:DE",
+  "type": "LOCATED_IN",
+  "post": "post:20004",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20004",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20004",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20005",
+  "target": "country:CN",
+  "type": "MENTIONS",
+  "post": "post:20005",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20005",
+  "target": "country:TW",
+  "type": "MENTIONS",
+  "post": "post:20005",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20005",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20005",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20005",
+  "target": "country:TW",
+  "type": "LOCATED_IN",
+  "post": "post:20005",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20005",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20005",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20006",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20006",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20006",
+  "target": "category:hum",
+  "type": "HAS_CATEGORY",
+  "post": "post:20006",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20007",
+  "target": "country:SV",
+  "type": "MENTIONS",
+  "post": "post:20007",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20007",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20007",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20007",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:20007",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20007",
+  "target": "category:hum",
+  "type": "HAS_CATEGORY",
+  "post": "post:20007",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20008",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20008",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20008",
+  "target": "country:IL",
+  "type": "LOCATED_IN",
+  "post": "post:20008",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20008",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:20008",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20009",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20009",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20009",
+  "target": "country:IL",
+  "type": "LOCATED_IN",
+  "post": "post:20009",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20009",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:20009",
+  "date": "2026-09-29"
+ },
+ {
+  "source": "post:20010",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20010",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20010",
+  "target": "country:BG",
+  "type": "LOCATED_IN",
+  "post": "post:20010",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20010",
+  "target": "category:gen",
+  "type": "HAS_CATEGORY",
+  "post": "post:20010",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20011",
+  "target": "country:AE",
+  "type": "MENTIONS",
+  "post": "post:20011",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20011",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20011",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20011",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20011",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20011",
+  "target": "country:SA",
+  "type": "LOCATED_IN",
+  "post": "post:20011",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20011",
+  "target": "category:avi",
+  "type": "HAS_CATEGORY",
+  "post": "post:20011",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20012",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20012",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20012",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20012",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20012",
+  "target": "country:SA",
+  "type": "LOCATED_IN",
+  "post": "post:20012",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20012",
+  "target": "category:avi",
+  "type": "HAS_CATEGORY",
+  "post": "post:20012",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20013",
+  "target": "country:AE",
+  "type": "MENTIONS",
+  "post": "post:20013",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20013",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20013",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20013",
+  "target": "country:BG",
+  "type": "LOCATED_IN",
+  "post": "post:20013",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20013",
+  "target": "category:avi",
+  "type": "HAS_CATEGORY",
+  "post": "post:20013",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20014",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20014",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20014",
+  "target": "country:BG",
+  "type": "LOCATED_IN",
+  "post": "post:20014",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20014",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:20014",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20015",
+  "target": "keyword:air defence",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20015",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20015",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20015",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20015",
+  "target": "country:JO",
+  "type": "MENTIONS",
+  "post": "post:20015",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20015",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20015",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20015",
+  "target": "country:JO",
+  "type": "LOCATED_IN",
+  "post": "post:20015",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20015",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:20015",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20016",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20016",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20016",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20016",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20016",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20016",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20016",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20016",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20016",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20016",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:20016",
+  "date": "2026-09-30",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Ukrainian drones launched against Russian western and southern regions"
+ },
+ {
+  "source": "post:20017",
+  "target": "keyword:cyber",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20017",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20017",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20017",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20017",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20017",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20017",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:20017",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20017",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:20017",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20018",
+  "target": "country:GR",
+  "type": "MENTIONS",
+  "post": "post:20018",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20018",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20018",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20018",
+  "target": "country:IT",
+  "type": "MENTIONS",
+  "post": "post:20018",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20018",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20018",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20018",
+  "target": "category:gen",
+  "type": "HAS_CATEGORY",
+  "post": "post:20018",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20019",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20019",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20019",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:20019",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20019",
+  "target": "category:eng",
+  "type": "HAS_CATEGORY",
+  "post": "post:20019",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20020",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20020",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20020",
+  "target": "category:gen",
+  "type": "HAS_CATEGORY",
+  "post": "post:20020",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20021",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20021",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20021",
+  "target": "category:gen",
+  "type": "HAS_CATEGORY",
+  "post": "post:20021",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20022",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20022",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20022",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:20022",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20022",
+  "target": "category:gen",
+  "type": "HAS_CATEGORY",
+  "post": "post:20022",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20023",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20023",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20023",
+  "target": "category:pro",
+  "type": "HAS_CATEGORY",
+  "post": "post:20023",
+  "date": "2026-09-30"
+ },
+ {
+  "source": "post:20024",
+  "target": "country:SY",
+  "type": "MENTIONS",
+  "post": "post:20024",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20024",
+  "target": "country:TR",
+  "type": "MENTIONS",
+  "post": "post:20024",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20024",
+  "target": "country:TR",
+  "type": "LOCATED_IN",
+  "post": "post:20024",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20024",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:20024",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20025",
+  "target": "keyword:air defence",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20025",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20025",
+  "target": "country:IQ",
+  "type": "MENTIONS",
+  "post": "post:20025",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20025",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20025",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20025",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20025",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20025",
+  "target": "country:IQ",
+  "type": "LOCATED_IN",
+  "post": "post:20025",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20025",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:20025",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20026",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20026",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20026",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20026",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20026",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20026",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20026",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:20026",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20027",
+  "target": "country:CN",
+  "type": "MENTIONS",
+  "post": "post:20027",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20027",
+  "target": "country:TW",
+  "type": "MENTIONS",
+  "post": "post:20027",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20027",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20027",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20027",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20027",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20029",
+  "target": "country:FR",
+  "type": "MENTIONS",
+  "post": "post:20029",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20029",
+  "target": "country:FR",
+  "type": "LOCATED_IN",
+  "post": "post:20029",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20029",
+  "target": "category:hum",
+  "type": "HAS_CATEGORY",
+  "post": "post:20029",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20031",
+  "target": "country:CN",
+  "type": "MENTIONS",
+  "post": "post:20031",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20031",
+  "target": "country:HK",
+  "type": "MENTIONS",
+  "post": "post:20031",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20031",
+  "target": "country:MO",
+  "type": "MENTIONS",
+  "post": "post:20031",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20031",
+  "target": "country:CN",
+  "type": "LOCATED_IN",
+  "post": "post:20031",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20031",
+  "target": "category:eng",
+  "type": "HAS_CATEGORY",
+  "post": "post:20031",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20032",
+  "target": "country:CN",
+  "type": "MENTIONS",
+  "post": "post:20032",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20032",
+  "target": "country:EC",
+  "type": "MENTIONS",
+  "post": "post:20032",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20032",
+  "target": "country:PA",
+  "type": "MENTIONS",
+  "post": "post:20032",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20032",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20032",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20032",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20032",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20033",
+  "target": "country:CN",
+  "type": "MENTIONS",
+  "post": "post:20033",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20033",
+  "target": "country:MM",
+  "type": "MENTIONS",
+  "post": "post:20033",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20033",
+  "target": "country:CN",
+  "type": "LOCATED_IN",
+  "post": "post:20033",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20033",
+  "target": "category:air",
+  "type": "HAS_CATEGORY",
+  "post": "post:20033",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "country:CN",
+  "target": "country:MM",
+  "type": "ATTACKED",
+  "post": "post:20033",
+  "date": "2026-10-01",
+  "confidence": 1.0,
+  "category": "category:air",
+  "why": "Chinese warning shots at Myanmar jets"
+ },
+ {
+  "source": "post:20034",
+  "target": "country:DE",
+  "type": "MENTIONS",
+  "post": "post:20034",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20034",
+  "target": "country:LT",
+  "type": "MENTIONS",
+  "post": "post:20034",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20034",
+  "target": "country:SE",
+  "type": "MENTIONS",
+  "post": "post:20034",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20034",
+  "target": "country:LT",
+  "type": "LOCATED_IN",
+  "post": "post:20034",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20034",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:20034",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20035",
+  "target": "country:GB",
+  "type": "MENTIONS",
+  "post": "post:20035",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20035",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20035",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20035",
+  "target": "country:GB",
+  "type": "LOCATED_IN",
+  "post": "post:20035",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20035",
+  "target": "category:ter",
+  "type": "HAS_CATEGORY",
+  "post": "post:20035",
+  "date": "2026-10-01"
+ },
+ {
+  "source": "post:20036",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20036",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "post:20036",
+  "target": "country:YE",
+  "type": "LOCATED_IN",
+  "post": "post:20036",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "post:20036",
+  "target": "category:air",
+  "type": "HAS_CATEGORY",
+  "post": "post:20036",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "post:20037",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20037",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "post:20037",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20037",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "post:20037",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20037",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "post:20037",
+  "target": "country:SA",
+  "type": "LOCATED_IN",
+  "post": "post:20037",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "post:20037",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20037",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "country:YE",
+  "target": "country:SA",
+  "type": "ATTACKED",
+  "post": "post:20037",
+  "date": "2026-10-02",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Houthi attack damaged electricity equipment in Medina"
+ },
+ {
+  "source": "post:20038",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20038",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "post:20038",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20038",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "post:20038",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20038",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "post:20038",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20038",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:20038",
+  "date": "2026-10-02",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Ukrainian strike on Russian oil pipeline station"
+ },
+ {
+  "source": "post:20039",
+  "target": "country:ER",
+  "type": "MENTIONS",
+  "post": "post:20039",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "post:20039",
+  "target": "country:ET",
+  "type": "MENTIONS",
+  "post": "post:20039",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "post:20039",
+  "target": "country:ET",
+  "type": "LOCATED_IN",
+  "post": "post:20039",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "post:20039",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20039",
+  "date": "2026-10-02"
+ },
+ {
+  "source": "post:20040",
+  "target": "country:EU",
+  "type": "MENTIONS",
+  "post": "post:20040",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20040",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20040",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20040",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:20040",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20040",
+  "target": "category:eng",
+  "type": "HAS_CATEGORY",
+  "post": "post:20040",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20041",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20041",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20041",
+  "target": "country:PS",
+  "type": "MENTIONS",
+  "post": "post:20041",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20041",
+  "target": "country:IL",
+  "type": "LOCATED_IN",
+  "post": "post:20041",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20041",
+  "target": "category:gen",
+  "type": "HAS_CATEGORY",
+  "post": "post:20041",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20042",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20042",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20042",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20042",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20042",
+  "target": "keyword:air defence",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20042",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20042",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20042",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20042",
+  "target": "country:PK",
+  "type": "MENTIONS",
+  "post": "post:20042",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20042",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20042",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20042",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20042",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20042",
+  "target": "country:SA",
+  "type": "LOCATED_IN",
+  "post": "post:20042",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20042",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:20042",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20043",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20043",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20043",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20043",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20043",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20043",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20043",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20043",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20043",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20043",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:UA",
+  "type": "ATTACKED",
+  "post": "post:20043",
+  "date": "2026-10-03",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Russian drone attacked Ukrainian ground robot"
+ },
+ {
+  "source": "post:20044",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20044",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20044",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20044",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20044",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20044",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20044",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20044",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20044",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20044",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:UA",
+  "type": "ATTACKED",
+  "post": "post:20044",
+  "date": "2026-10-03",
+  "confidence": 0.9,
+  "category": "category:war",
+  "why": "drones hit Ukrainian tanks"
+ },
+ {
+  "source": "post:20045",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20045",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20045",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20045",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20045",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20045",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20045",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:20045",
+  "date": "2026-10-03"
+ },
+ {
+  "source": "post:20046",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20046",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20046",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20046",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20046",
+  "target": "category:hum",
+  "type": "HAS_CATEGORY",
+  "post": "post:20046",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20047",
+  "target": "country:KP",
+  "type": "MENTIONS",
+  "post": "post:20047",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20047",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20047",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20047",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20047",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20047",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20047",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20047",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:20047",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "country:US",
+  "target": "country:RU",
+  "type": "THREATENED",
+  "post": "post:20047",
+  "date": "2026-10-04",
+  "confidence": 1.0,
+  "category": "category:sec",
+  "why": "US accuses Russia of illegal bioweapon program"
+ },
+ {
+  "source": "country:US",
+  "target": "country:KP",
+  "type": "THREATENED",
+  "post": "post:20047",
+  "date": "2026-10-04",
+  "confidence": 1.0,
+  "category": "category:sec",
+  "why": "US accuses North Korea of illegal bioweapon program"
+ },
+ {
+  "source": "post:20048",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20048",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20048",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20048",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20048",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20048",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20048",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20048",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20048",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20048",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:20048",
+  "date": "2026-10-04",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Ukrainian strike on Russian Kaluga radio‑lamp plant"
+ },
+ {
+  "source": "post:20049",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20049",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20049",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20049",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20049",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20049",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20049",
+  "target": "country:YE",
+  "type": "LOCATED_IN",
+  "post": "post:20049",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20049",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20049",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "country:SA",
+  "target": "country:YE",
+  "type": "ATTACKED",
+  "post": "post:20049",
+  "date": "2026-10-04",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Saudi aviation struck Houthi positions"
+ },
+ {
+  "source": "post:20050",
+  "target": "country:FI",
+  "type": "MENTIONS",
+  "post": "post:20050",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20050",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20050",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20050",
+  "target": "country:FI",
+  "type": "LOCATED_IN",
+  "post": "post:20050",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20050",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:20050",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20051",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20051",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20051",
+  "target": "keyword:nuclear",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20051",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20051",
+  "target": "country:KP",
+  "type": "MENTIONS",
+  "post": "post:20051",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20051",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20051",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20051",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20051",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20052",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20052",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20052",
+  "target": "country:YE",
+  "type": "LOCATED_IN",
+  "post": "post:20052",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20052",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20052",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20053",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20053",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20053",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20053",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20053",
+  "target": "category:hum",
+  "type": "HAS_CATEGORY",
+  "post": "post:20053",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20054",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20054",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20054",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20054",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20054",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20054",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20054",
+  "target": "category:avi",
+  "type": "HAS_CATEGORY",
+  "post": "post:20054",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20055",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20055",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20055",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20055",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20055",
+  "target": "category:hum",
+  "type": "HAS_CATEGORY",
+  "post": "post:20055",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20056",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20056",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20056",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20056",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20056",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:20056",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20057",
+  "target": "country:EU",
+  "type": "MENTIONS",
+  "post": "post:20057",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20057",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20057",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20057",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20057",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20057",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20057",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "post:20057",
+  "target": "category:hum",
+  "type": "HAS_CATEGORY",
+  "post": "post:20057",
+  "date": "2026-10-04"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:UA",
+  "type": "THREATENED",
+  "post": "post:20057",
+  "date": "2026-10-04",
+  "confidence": 1.0,
+  "category": "category:hum",
+  "why": "Russia accuses Ukraine of causing mines"
+ },
+ {
+  "source": "post:20058",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20058",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20058",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20058",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20058",
+  "target": "keyword:air defence",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20058",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20058",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20058",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20058",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20058",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20058",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20058",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20058",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20058",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:20058",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Ukrainian drone attacked oil facility near Moscow"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:UA",
+  "type": "ATTACKED",
+  "post": "post:20058",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Russian air defence shot down Ukrainian drone"
+ },
+ {
+  "source": "post:20059",
+  "target": "keyword:sanctions",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20059",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20059",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20059",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20059",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20059",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20059",
+  "target": "country:IR",
+  "type": "LOCATED_IN",
+  "post": "post:20059",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20059",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20059",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:AL",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:AT",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:BE",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:DE",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:ES",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:EU",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:FI",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:FR",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:IT",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:LT",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:LV",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:NL",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:SE",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:SI",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:SK",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20060",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20060",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:AT",
+  "type": "THREATENED",
+  "post": "post:20060",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian threat to foreign diplomats to leave Kyiv"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:BE",
+  "type": "THREATENED",
+  "post": "post:20060",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian threat to foreign diplomats to leave Kyiv"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:DE",
+  "type": "THREATENED",
+  "post": "post:20060",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian threat to foreign diplomats to leave Kyiv"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:ES",
+  "type": "THREATENED",
+  "post": "post:20060",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian threat to foreign diplomats to leave Kyiv"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:IT",
+  "type": "THREATENED",
+  "post": "post:20060",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian threat to foreign diplomats to leave Kyiv"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:LV",
+  "type": "THREATENED",
+  "post": "post:20060",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian threat to foreign diplomats to leave Kyiv"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:LT",
+  "type": "THREATENED",
+  "post": "post:20060",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian threat to foreign diplomats to leave Kyiv"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:NL",
+  "type": "THREATENED",
+  "post": "post:20060",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian threat to foreign diplomats to leave Kyiv"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:SK",
+  "type": "THREATENED",
+  "post": "post:20060",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian threat to foreign diplomats to leave Kyiv"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:SI",
+  "type": "THREATENED",
+  "post": "post:20060",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian threat to foreign diplomats to leave Kyiv"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:FI",
+  "type": "THREATENED",
+  "post": "post:20060",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian threat to foreign diplomats to leave Kyiv"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:FR",
+  "type": "THREATENED",
+  "post": "post:20060",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian threat to foreign diplomats to leave Kyiv"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:SE",
+  "type": "THREATENED",
+  "post": "post:20060",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian threat to foreign diplomats to leave Kyiv"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:AL",
+  "type": "THREATENED",
+  "post": "post:20060",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian threat to foreign diplomats to leave Kyiv"
+ },
+ {
+  "source": "post:20061",
+  "target": "country:MD",
+  "type": "MENTIONS",
+  "post": "post:20061",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20061",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20061",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20061",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20061",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20061",
+  "target": "country:MD",
+  "type": "LOCATED_IN",
+  "post": "post:20061",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20061",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20061",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:MD",
+  "type": "ATTACKED",
+  "post": "post:20061",
+  "date": "2026-10-05",
+  "confidence": 0.9,
+  "category": "category:war",
+  "why": "Russian shell hit bus at Moldovan checkpoint"
+ },
+ {
+  "source": "post:20062",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20062",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20062",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20062",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20062",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20062",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20062",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20062",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:UA",
+  "type": "ATTACKED",
+  "post": "post:20062",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Russian strikes damaged Ukrainian locomotives"
+ },
+ {
+  "source": "post:20063",
+  "target": "country:EU",
+  "type": "MENTIONS",
+  "post": "post:20063",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20063",
+  "target": "country:FI",
+  "type": "MENTIONS",
+  "post": "post:20063",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20063",
+  "target": "country:GB",
+  "type": "MENTIONS",
+  "post": "post:20063",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20063",
+  "target": "country:IS",
+  "type": "MENTIONS",
+  "post": "post:20063",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20063",
+  "target": "country:NL",
+  "type": "MENTIONS",
+  "post": "post:20063",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20063",
+  "target": "category:gen",
+  "type": "HAS_CATEGORY",
+  "post": "post:20063",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20064",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20064",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20064",
+  "target": "country:YE",
+  "type": "LOCATED_IN",
+  "post": "post:20064",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20064",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20064",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20065",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20065",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20065",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20065",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20065",
+  "target": "country:SA",
+  "type": "LOCATED_IN",
+  "post": "post:20065",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20065",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:20065",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "country:YE",
+  "target": "country:SA",
+  "type": "ATTACKED",
+  "post": "post:20065",
+  "date": "2026-10-05",
+  "confidence": 0.8,
+  "category": "category:mil",
+  "why": "Houthis attacked Saudi pump stations"
+ },
+ {
+  "source": "post:20066",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20066",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20066",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20066",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20066",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20066",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20066",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:20066",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20067",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20067",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20067",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20067",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20067",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20067",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20068",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20068",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20068",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20068",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20068",
+  "target": "category:hum",
+  "type": "HAS_CATEGORY",
+  "post": "post:20068",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20069",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20069",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20069",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20069",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20069",
+  "target": "country:RO",
+  "type": "MENTIONS",
+  "post": "post:20069",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20069",
+  "target": "country:TR",
+  "type": "MENTIONS",
+  "post": "post:20069",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20069",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20069",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20070",
+  "target": "country:TR",
+  "type": "MENTIONS",
+  "post": "post:20070",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20070",
+  "target": "country:TR",
+  "type": "LOCATED_IN",
+  "post": "post:20070",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20070",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:20070",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20071",
+  "target": "country:PK",
+  "type": "MENTIONS",
+  "post": "post:20071",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20071",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20071",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20071",
+  "target": "country:TR",
+  "type": "MENTIONS",
+  "post": "post:20071",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20071",
+  "target": "country:SA",
+  "type": "LOCATED_IN",
+  "post": "post:20071",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20071",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:20071",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20072",
+  "target": "country:GB",
+  "type": "MENTIONS",
+  "post": "post:20072",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20072",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20072",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20072",
+  "target": "country:GB",
+  "type": "LOCATED_IN",
+  "post": "post:20072",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20072",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20072",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "country:GB",
+  "target": "country:IL",
+  "type": "THREATENED",
+  "post": "post:20072",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "UK threatens expulsion of Israeli diplomats if consulate closed"
+ },
+ {
+  "source": "post:20073",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20073",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20073",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20073",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20073",
+  "target": "country:YE",
+  "type": "LOCATED_IN",
+  "post": "post:20073",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "post:20073",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20073",
+  "date": "2026-10-05"
+ },
+ {
+  "source": "country:SA",
+  "target": "country:YE",
+  "type": "ATTACKED",
+  "post": "post:20073",
+  "date": "2026-10-05",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Saudi strikes hit Houthi‑controlled Sana'a"
+ },
+ {
+  "source": "post:20074",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20074",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20074",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20074",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20074",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20074",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20074",
+  "target": "country:PW",
+  "type": "MENTIONS",
+  "post": "post:20074",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20074",
+  "target": "country:TG",
+  "type": "MENTIONS",
+  "post": "post:20074",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20074",
+  "target": "country:BG",
+  "type": "LOCATED_IN",
+  "post": "post:20074",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20074",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20074",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20075",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20075",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20075",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20075",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20075",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20075",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20075",
+  "target": "country:IN",
+  "type": "MENTIONS",
+  "post": "post:20075",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20075",
+  "target": "country:TR",
+  "type": "MENTIONS",
+  "post": "post:20075",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20075",
+  "target": "country:BG",
+  "type": "LOCATED_IN",
+  "post": "post:20075",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20075",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20075",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20076",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20076",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20076",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20076",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20076",
+  "target": "country:BG",
+  "type": "LOCATED_IN",
+  "post": "post:20076",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20076",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20076",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20077",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20077",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20077",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20077",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20077",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20077",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20077",
+  "target": "country:HU",
+  "type": "MENTIONS",
+  "post": "post:20077",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20077",
+  "target": "country:BG",
+  "type": "LOCATED_IN",
+  "post": "post:20077",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20077",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20077",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20078",
+  "target": "keyword:nuclear",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20078",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20078",
+  "target": "country:DE",
+  "type": "MENTIONS",
+  "post": "post:20078",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20078",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20078",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20078",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20078",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20078",
+  "target": "country:DE",
+  "type": "LOCATED_IN",
+  "post": "post:20078",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20078",
+  "target": "category:nuc",
+  "type": "HAS_CATEGORY",
+  "post": "post:20078",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20079",
+  "target": "keyword:sanctions",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20079",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20079",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20079",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20079",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20079",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20079",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20079",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20079",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:20079",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20080",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20080",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20080",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20080",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20080",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20080",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20080",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20080",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20080",
+  "target": "country:TR",
+  "type": "MENTIONS",
+  "post": "post:20080",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20080",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20080",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20080",
+  "target": "country:BG",
+  "type": "LOCATED_IN",
+  "post": "post:20080",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20080",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20080",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:BG",
+  "type": "ATTACKED",
+  "post": "post:20080",
+  "date": "2026-10-06",
+  "confidence": 0.9,
+  "category": "category:sea",
+  "why": "Russian submarine bomb hit ship in Bulgarian EEZ"
+ },
+ {
+  "source": "post:20081",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20081",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20081",
+  "target": "keyword:nuclear",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20081",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20081",
+  "target": "country:FR",
+  "type": "MENTIONS",
+  "post": "post:20081",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20081",
+  "target": "category:nuc",
+  "type": "HAS_CATEGORY",
+  "post": "post:20081",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20082",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20082",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20082",
+  "target": "country:PS",
+  "type": "MENTIONS",
+  "post": "post:20082",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20082",
+  "target": "country:IL",
+  "type": "LOCATED_IN",
+  "post": "post:20082",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20082",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20082",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "country:IL",
+  "target": "country:PS",
+  "type": "THREATENED",
+  "post": "post:20082",
+  "date": "2026-10-06",
+  "confidence": 0.95,
+  "category": "category:war",
+  "why": "Israeli minister orders preparation for attacks on Palestinian forces"
+ },
+ {
+  "source": "post:20083",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20083",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20083",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20083",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20083",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20083",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20083",
+  "target": "country:RO",
+  "type": "MENTIONS",
+  "post": "post:20083",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20083",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20083",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20083",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20083",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20083",
+  "target": "country:BG",
+  "type": "LOCATED_IN",
+  "post": "post:20083",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20083",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20083",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20084",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20084",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20084",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20084",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20084",
+  "target": "country:SE",
+  "type": "MENTIONS",
+  "post": "post:20084",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20084",
+  "target": "country:BG",
+  "type": "LOCATED_IN",
+  "post": "post:20084",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20084",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20084",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20085",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20085",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20085",
+  "target": "country:EU",
+  "type": "MENTIONS",
+  "post": "post:20085",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20085",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20085",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20085",
+  "target": "country:BG",
+  "type": "LOCATED_IN",
+  "post": "post:20085",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20085",
+  "target": "category:dis",
+  "type": "HAS_CATEGORY",
+  "post": "post:20085",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20086",
+  "target": "country:KG",
+  "type": "MENTIONS",
+  "post": "post:20086",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20086",
+  "target": "country:KZ",
+  "type": "MENTIONS",
+  "post": "post:20086",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20086",
+  "target": "country:MN",
+  "type": "MENTIONS",
+  "post": "post:20086",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20086",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20086",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20086",
+  "target": "country:UZ",
+  "type": "MENTIONS",
+  "post": "post:20086",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20086",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20086",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20087",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20087",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20087",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20087",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20087",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20087",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20087",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20087",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20087",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20087",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20089",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20089",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20089",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20089",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20089",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20089",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20089",
+  "target": "category:hum",
+  "type": "HAS_CATEGORY",
+  "post": "post:20089",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20090",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20090",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20090",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20090",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20090",
+  "target": "category:hum",
+  "type": "HAS_CATEGORY",
+  "post": "post:20090",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20091",
+  "target": "country:EE",
+  "type": "MENTIONS",
+  "post": "post:20091",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20091",
+  "target": "country:LV",
+  "type": "MENTIONS",
+  "post": "post:20091",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20091",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20091",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20091",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20091",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "post:20091",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20091",
+  "date": "2026-10-06"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:EE",
+  "type": "THREATENED",
+  "post": "post:20091",
+  "date": "2026-10-06",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian prosecutor accuses Estonia of Nazi collaboration"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:LV",
+  "type": "THREATENED",
+  "post": "post:20091",
+  "date": "2026-10-06",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Russian prosecutor accuses Latvia of Nazi collaboration"
+ },
+ {
+  "source": "post:20092",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20092",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20092",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20092",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20092",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20092",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20093",
+  "target": "country:EU",
+  "type": "MENTIONS",
+  "post": "post:20093",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20093",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20093",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20093",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20093",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20093",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20093",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20094",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20094",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20094",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20094",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20094",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20094",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20094",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20094",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:20094",
+  "date": "2026-10-07",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Ukrainian drones hit Russian trucks"
+ },
+ {
+  "source": "post:20095",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20095",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20095",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20095",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20095",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20095",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20095",
+  "target": "country:EG",
+  "type": "MENTIONS",
+  "post": "post:20095",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20095",
+  "target": "country:SY",
+  "type": "MENTIONS",
+  "post": "post:20095",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20095",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20095",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20096",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20096",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20096",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20096",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20096",
+  "target": "country:EG",
+  "type": "MENTIONS",
+  "post": "post:20096",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20096",
+  "target": "country:SY",
+  "type": "MENTIONS",
+  "post": "post:20096",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20096",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20096",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20096",
+  "target": "country:BG",
+  "type": "LOCATED_IN",
+  "post": "post:20096",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20096",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20096",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20097",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20097",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20097",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20097",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20097",
+  "target": "country:BD",
+  "type": "MENTIONS",
+  "post": "post:20097",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20097",
+  "target": "country:DZ",
+  "type": "MENTIONS",
+  "post": "post:20097",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20097",
+  "target": "country:EG",
+  "type": "MENTIONS",
+  "post": "post:20097",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20097",
+  "target": "country:MA",
+  "type": "MENTIONS",
+  "post": "post:20097",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20097",
+  "target": "country:PH",
+  "type": "MENTIONS",
+  "post": "post:20097",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20097",
+  "target": "country:PK",
+  "type": "MENTIONS",
+  "post": "post:20097",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20097",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20097",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20097",
+  "target": "country:SD",
+  "type": "MENTIONS",
+  "post": "post:20097",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20097",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20097",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20097",
+  "target": "country:SA",
+  "type": "LOCATED_IN",
+  "post": "post:20097",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20097",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20097",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "country:YE",
+  "target": "country:SA",
+  "type": "ATTACKED",
+  "post": "post:20097",
+  "date": "2026-10-07",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Houthi missile/drone attacks on Saudi airports"
+ },
+ {
+  "source": "post:20098",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20098",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20098",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20098",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20098",
+  "target": "country:QA",
+  "type": "MENTIONS",
+  "post": "post:20098",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20098",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20098",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20099",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20099",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20099",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20099",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20099",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:20099",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20099",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:20099",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20100",
+  "target": "country:ER",
+  "type": "MENTIONS",
+  "post": "post:20100",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20100",
+  "target": "country:ET",
+  "type": "MENTIONS",
+  "post": "post:20100",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20100",
+  "target": "country:ET",
+  "type": "LOCATED_IN",
+  "post": "post:20100",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "post:20100",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20100",
+  "date": "2026-10-07"
+ },
+ {
+  "source": "country:ER",
+  "target": "country:ET",
+  "type": "ATTACKED",
+  "post": "post:20100",
+  "date": "2026-10-07",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Eritrean troops crossed into Ethiopia"
+ },
+ {
+  "source": "post:20101",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20101",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20101",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20101",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20101",
+  "target": "country:SA",
+  "type": "LOCATED_IN",
+  "post": "post:20101",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20101",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20101",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20102",
+  "target": "country:KP",
+  "type": "MENTIONS",
+  "post": "post:20102",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20102",
+  "target": "country:KR",
+  "type": "MENTIONS",
+  "post": "post:20102",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20102",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20102",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20102",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20102",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20102",
+  "target": "country:KR",
+  "type": "LOCATED_IN",
+  "post": "post:20102",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20102",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20102",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "country:KR",
+  "target": "country:UA",
+  "type": "THREATENED",
+  "post": "post:20102",
+  "date": "2026-10-08",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "KR recalled ambassador, threatens retaliation unless Ukraine apologizes"
+ },
+ {
+  "source": "country:KP",
+  "target": "country:UA",
+  "type": "ATTACKED",
+  "post": "post:20102",
+  "date": "2026-10-08",
+  "confidence": 0.9,
+  "category": "category:dip",
+  "why": "NK soldiers fought for Russia in Ukraine"
+ },
+ {
+  "source": "post:20103",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20103",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20103",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20103",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20103",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20103",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20103",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20103",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20103",
+  "target": "category:air",
+  "type": "HAS_CATEGORY",
+  "post": "post:20103",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:20103",
+  "date": "2026-10-08",
+  "confidence": 1.0,
+  "category": "category:air",
+  "why": "Ukrainian drones attacked Yandex data center causing fire"
+ },
+ {
+  "source": "post:20104",
+  "target": "keyword:sanctions",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20104",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20104",
+  "target": "country:GB",
+  "type": "MENTIONS",
+  "post": "post:20104",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20104",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20104",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20104",
+  "target": "country:IL",
+  "type": "LOCATED_IN",
+  "post": "post:20104",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20104",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20104",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "country:IL",
+  "target": "country:GB",
+  "type": "THREATENED",
+  "post": "post:20104",
+  "date": "2026-10-08",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "Israel expelled British diplomats over settlement sanctions"
+ },
+ {
+  "source": "post:20105",
+  "target": "country:DE",
+  "type": "MENTIONS",
+  "post": "post:20105",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20105",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20105",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20105",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20105",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20105",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20105",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20105",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20105",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20106",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20106",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20106",
+  "target": "country:AE",
+  "type": "MENTIONS",
+  "post": "post:20106",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20106",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20106",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20106",
+  "target": "country:AE",
+  "type": "LOCATED_IN",
+  "post": "post:20106",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20106",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20106",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "country:IR",
+  "target": "country:AE",
+  "type": "ATTACKED",
+  "post": "post:20106",
+  "date": "2026-10-08",
+  "confidence": 1.0,
+  "category": "category:sea",
+  "why": "Iran struck UAE tanker near Fujairah"
+ },
+ {
+  "source": "post:20107",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20107",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20107",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20107",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20107",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20107",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20107",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20107",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20107",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20107",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:20107",
+  "date": "2026-10-08",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Ukrainian drones attacked Russian refinery"
+ },
+ {
+  "source": "post:20108",
+  "target": "country:PK",
+  "type": "MENTIONS",
+  "post": "post:20108",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20108",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20108",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20108",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20108",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20108",
+  "target": "country:YE",
+  "type": "LOCATED_IN",
+  "post": "post:20108",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20108",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20108",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "country:PK",
+  "target": "country:YE",
+  "type": "ATTACKED",
+  "post": "post:20108",
+  "date": "2026-10-08",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Pakistani jets strike Houthi positions"
+ },
+ {
+  "source": "post:20109",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20109",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20109",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20109",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20109",
+  "target": "country:SA",
+  "type": "LOCATED_IN",
+  "post": "post:20109",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20109",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20109",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20110",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20110",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20110",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20110",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20110",
+  "target": "country:YE",
+  "type": "LOCATED_IN",
+  "post": "post:20110",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20110",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20110",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "country:SA",
+  "target": "country:YE",
+  "type": "ATTACKED",
+  "post": "post:20110",
+  "date": "2026-10-08",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Saudi air strikes on Hodeidah airport"
+ },
+ {
+  "source": "post:20111",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20111",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20111",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20111",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20111",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20111",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20111",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20111",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:UA",
+  "type": "ATTACKED",
+  "post": "post:20111",
+  "date": "2026-10-08",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Russian strike on bus stop"
+ },
+ {
+  "source": "post:20112",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20112",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20112",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20112",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20112",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20112",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20112",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20112",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20112",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20112",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:UA",
+  "type": "ATTACKED",
+  "post": "post:20112",
+  "date": "2026-10-08",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Russian strikes killed civilians across Ukraine"
+ },
+ {
+  "source": "post:20113",
+  "target": "country:ML",
+  "type": "MENTIONS",
+  "post": "post:20113",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20113",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20113",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20113",
+  "target": "country:ML",
+  "type": "LOCATED_IN",
+  "post": "post:20113",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20113",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20113",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:ML",
+  "type": "ATTACKED",
+  "post": "post:20113",
+  "date": "2026-10-08",
+  "confidence": 0.9,
+  "category": "category:war",
+  "why": "Russian air strikes on Kidal"
+ },
+ {
+  "source": "post:20114",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20114",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20114",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20114",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20114",
+  "target": "country:SY",
+  "type": "MENTIONS",
+  "post": "post:20114",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20114",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20114",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20115",
+  "target": "country:GB",
+  "type": "MENTIONS",
+  "post": "post:20115",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20115",
+  "target": "country:LV",
+  "type": "MENTIONS",
+  "post": "post:20115",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20115",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20115",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20115",
+  "target": "country:GB",
+  "type": "LOCATED_IN",
+  "post": "post:20115",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20115",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:20115",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "country:LV",
+  "target": "country:GB",
+  "type": "ATTACKED",
+  "post": "post:20115",
+  "date": "2026-10-08",
+  "confidence": 1.0,
+  "category": "category:sec",
+  "why": "Latvian nationals breached RAF base fence"
+ },
+ {
+  "source": "post:20116",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20116",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20116",
+  "target": "country:PL",
+  "type": "MENTIONS",
+  "post": "post:20116",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20116",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20116",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20116",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20116",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20116",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:20116",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20117",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20117",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20117",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20117",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20117",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20117",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20118",
+  "target": "country:IQ",
+  "type": "MENTIONS",
+  "post": "post:20118",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20118",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20118",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20118",
+  "target": "country:IQ",
+  "type": "LOCATED_IN",
+  "post": "post:20118",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20118",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20118",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "country:IR",
+  "target": "country:IQ",
+  "type": "ATTACKED",
+  "post": "post:20118",
+  "date": "2026-10-08",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Iranian attack on Erbil, Iraqi Kurdistan"
+ },
+ {
+  "source": "post:20120",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20120",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20120",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20120",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20120",
+  "target": "country:YE",
+  "type": "LOCATED_IN",
+  "post": "post:20120",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20120",
+  "target": "category:air",
+  "type": "HAS_CATEGORY",
+  "post": "post:20120",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "country:SA",
+  "target": "country:YE",
+  "type": "ATTACKED",
+  "post": "post:20120",
+  "date": "2026-10-08",
+  "confidence": 1.0,
+  "category": "category:air",
+  "why": "Saudi air strikes on Yemen's capital Sana'a"
+ },
+ {
+  "source": "post:20121",
+  "target": "country:GB",
+  "type": "MENTIONS",
+  "post": "post:20121",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20121",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20121",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20121",
+  "target": "country:GB",
+  "type": "LOCATED_IN",
+  "post": "post:20121",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20121",
+  "target": "category:gen",
+  "type": "HAS_CATEGORY",
+  "post": "post:20121",
+  "date": "2026-10-08"
+ },
+ {
+  "source": "post:20122",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20122",
+  "date": "2026-10-09"
+ },
+ {
+  "source": "post:20122",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20122",
+  "date": "2026-10-09"
+ },
+ {
+  "source": "post:20122",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20122",
+  "date": "2026-10-09"
+ },
+ {
+  "source": "post:20122",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20122",
+  "date": "2026-10-09"
+ },
+ {
+  "source": "post:20122",
+  "target": "country:BG",
+  "type": "LOCATED_IN",
+  "post": "post:20122",
+  "date": "2026-10-09"
+ },
+ {
+  "source": "post:20122",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20122",
+  "date": "2026-10-09"
+ },
+ {
+  "source": "post:20123",
+  "target": "country:ME",
+  "type": "MENTIONS",
+  "post": "post:20123",
+  "date": "2026-10-09"
+ },
+ {
+  "source": "post:20123",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20123",
+  "date": "2026-10-09"
+ },
+ {
+  "source": "post:20123",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20123",
+  "date": "2026-10-09"
+ },
+ {
+  "source": "post:20123",
+  "target": "country:ME",
+  "type": "LOCATED_IN",
+  "post": "post:20123",
+  "date": "2026-10-09"
+ },
+ {
+  "source": "post:20123",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:20123",
+  "date": "2026-10-09"
+ },
+ {
+  "source": "post:20124",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20124",
+  "date": "2026-10-09"
+ },
+ {
+  "source": "post:20124",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20124",
+  "date": "2026-10-09"
+ },
+ {
+  "source": "post:20124",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:20124",
+  "date": "2026-10-09"
+ },
+ {
+  "source": "post:20124",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20124",
+  "date": "2026-10-09"
+ },
+ {
+  "source": "post:20125",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20125",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20125",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20125",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20125",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:20125",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20125",
+  "target": "category:eng",
+  "type": "HAS_CATEGORY",
+  "post": "post:20125",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20126",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20126",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20126",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20126",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20126",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20126",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20126",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20126",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:20126",
+  "date": "2026-10-10",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Ukraine struck Yandex data center"
+ },
+ {
+  "source": "post:20127",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20127",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20127",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20127",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20127",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20127",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20127",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20127",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20127",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20127",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:20127",
+  "date": "2026-10-10",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Ukrainian attack on Russian oil terminal"
+ },
+ {
+  "source": "post:20128",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20128",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20128",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20128",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20128",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20128",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20128",
+  "target": "country:SA",
+  "type": "LOCATED_IN",
+  "post": "post:20128",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20128",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20128",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "country:YE",
+  "target": "country:SA",
+  "type": "ATTACKED",
+  "post": "post:20128",
+  "date": "2026-10-10",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Houthis ballistic missile hit Saudi Ghawar oil field"
+ },
+ {
+  "source": "post:20129",
+  "target": "keyword:sanctions",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20129",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20129",
+  "target": "country:AF",
+  "type": "MENTIONS",
+  "post": "post:20129",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20129",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20129",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20129",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20129",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20129",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:20129",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20129",
+  "target": "category:dis",
+  "type": "HAS_CATEGORY",
+  "post": "post:20129",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20130",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20130",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20130",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20130",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20130",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20130",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20130",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20130",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "post:20130",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20130",
+  "date": "2026-10-10"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:UA",
+  "type": "ATTACKED",
+  "post": "post:20130",
+  "date": "2026-10-10",
+  "confidence": 0.9,
+  "category": "category:war",
+  "why": "Russian drone struck oil pumping station"
+ },
+ {
+  "source": "post:20131",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20131",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20131",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20131",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20131",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20131",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20131",
+  "target": "country:SA",
+  "type": "LOCATED_IN",
+  "post": "post:20131",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20131",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20131",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "country:YE",
+  "target": "country:SA",
+  "type": "ATTACKED",
+  "post": "post:20131",
+  "date": "2026-10-11",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Houthi rocket hit King Khalid airport"
+ },
+ {
+  "source": "post:20132",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20132",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20132",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20132",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20132",
+  "target": "country:SY",
+  "type": "MENTIONS",
+  "post": "post:20132",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20132",
+  "target": "country:SY",
+  "type": "LOCATED_IN",
+  "post": "post:20132",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20132",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20132",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "country:IL",
+  "target": "country:SY",
+  "type": "ATTACKED",
+  "post": "post:20132",
+  "date": "2026-10-11",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Israeli convoy entered Arne; drones over Damascus"
+ },
+ {
+  "source": "post:20133",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20133",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20133",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20133",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20133",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20133",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20134",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20134",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20134",
+  "target": "country:LB",
+  "type": "MENTIONS",
+  "post": "post:20134",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20134",
+  "target": "country:LB",
+  "type": "LOCATED_IN",
+  "post": "post:20134",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20134",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20134",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "country:IL",
+  "target": "country:LB",
+  "type": "ATTACKED",
+  "post": "post:20134",
+  "date": "2026-10-11",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Israeli forces shelled southern Lebanon"
+ },
+ {
+  "source": "post:20135",
+  "target": "category:gen",
+  "type": "HAS_CATEGORY",
+  "post": "post:20135",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20136",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20136",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20136",
+  "target": "country:AE",
+  "type": "MENTIONS",
+  "post": "post:20136",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20136",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20136",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20136",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20136",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20136",
+  "target": "country:AE",
+  "type": "LOCATED_IN",
+  "post": "post:20136",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20136",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20136",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "country:IR",
+  "target": "country:AE",
+  "type": "ATTACKED",
+  "post": "post:20136",
+  "date": "2026-10-11",
+  "confidence": 1.0,
+  "category": "category:sea",
+  "why": "Iranian sea mine hit oil tanker near UAE"
+ },
+ {
+  "source": "post:20137",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20137",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20137",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20137",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20137",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:20137",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20137",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20137",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "country:US",
+  "target": "country:RU",
+  "type": "THREATENED",
+  "post": "post:20137",
+  "date": "2026-10-11",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "US bill to block Russian fuel purchases"
+ },
+ {
+  "source": "post:20138",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20138",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20138",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20138",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20138",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20138",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20138",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20138",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20139",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20139",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20139",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20139",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20139",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20139",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20139",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20139",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20139",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20139",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:UA",
+  "type": "ATTACKED",
+  "post": "post:20139",
+  "date": "2026-10-11",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Russian strikes on Kyiv"
+ },
+ {
+  "source": "post:20140",
+  "target": "country:DE",
+  "type": "MENTIONS",
+  "post": "post:20140",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20140",
+  "target": "country:EU",
+  "type": "MENTIONS",
+  "post": "post:20140",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20140",
+  "target": "country:FR",
+  "type": "MENTIONS",
+  "post": "post:20140",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20140",
+  "target": "country:GB",
+  "type": "MENTIONS",
+  "post": "post:20140",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20140",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20140",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20140",
+  "target": "country:GB",
+  "type": "LOCATED_IN",
+  "post": "post:20140",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20140",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20140",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "country:GB",
+  "target": "country:RU",
+  "type": "THREATENED",
+  "post": "post:20140",
+  "date": "2026-10-11",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "UK PM accuses Russia of Brexit interference"
+ },
+ {
+  "source": "post:20141",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20141",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20141",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20141",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20141",
+  "target": "country:SA",
+  "type": "LOCATED_IN",
+  "post": "post:20141",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20141",
+  "target": "category:avi",
+  "type": "HAS_CATEGORY",
+  "post": "post:20141",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20142",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20142",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20142",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20142",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20142",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20142",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20142",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20142",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "post:20142",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20142",
+  "date": "2026-10-11"
+ },
+ {
+  "source": "country:RU",
+  "target": "country:UA",
+  "type": "ATTACKED",
+  "post": "post:20142",
+  "date": "2026-10-11",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Russian strike hit power plant in Kharkiv region"
+ },
+ {
+  "source": "post:20143",
+  "target": "country:PL",
+  "type": "MENTIONS",
+  "post": "post:20143",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20143",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20143",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20143",
+  "target": "country:PL",
+  "type": "LOCATED_IN",
+  "post": "post:20143",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20143",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:20143",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20144",
+  "target": "keyword:sanctions",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20144",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20144",
+  "target": "country:EU",
+  "type": "MENTIONS",
+  "post": "post:20144",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20144",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20144",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20144",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20144",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "country:EU",
+  "target": "country:RU",
+  "type": "THREATENED",
+  "post": "post:20144",
+  "date": "2026-10-12",
+  "confidence": 1.0,
+  "category": "category:dip",
+  "why": "EU sanctions package against Russia"
+ },
+ {
+  "source": "post:20145",
+  "target": "country:AU",
+  "type": "MENTIONS",
+  "post": "post:20145",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20145",
+  "target": "country:CA",
+  "type": "MENTIONS",
+  "post": "post:20145",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20145",
+  "target": "country:GB",
+  "type": "MENTIONS",
+  "post": "post:20145",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20145",
+  "target": "country:JP",
+  "type": "MENTIONS",
+  "post": "post:20145",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20145",
+  "target": "country:KR",
+  "type": "MENTIONS",
+  "post": "post:20145",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20145",
+  "target": "country:NZ",
+  "type": "MENTIONS",
+  "post": "post:20145",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20145",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20145",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20145",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20145",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20145",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20145",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20145",
+  "target": "country:SA",
+  "type": "LOCATED_IN",
+  "post": "post:20145",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20145",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20145",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20146",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20146",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20146",
+  "target": "country:YE",
+  "type": "LOCATED_IN",
+  "post": "post:20146",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20146",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20146",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20147",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20147",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20147",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20147",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20147",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20147",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20147",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20147",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20148",
+  "target": "country:SA",
+  "type": "MENTIONS",
+  "post": "post:20148",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20148",
+  "target": "country:YE",
+  "type": "MENTIONS",
+  "post": "post:20148",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20148",
+  "target": "country:YE",
+  "type": "LOCATED_IN",
+  "post": "post:20148",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20148",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20148",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "country:SA",
+  "target": "country:YE",
+  "type": "ATTACKED",
+  "post": "post:20148",
+  "date": "2026-10-12",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Saudi strike hit position in Sana'a"
+ },
+ {
+  "source": "post:20149",
+  "target": "country:ER",
+  "type": "MENTIONS",
+  "post": "post:20149",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20149",
+  "target": "country:ET",
+  "type": "MENTIONS",
+  "post": "post:20149",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20149",
+  "target": "country:ET",
+  "type": "LOCATED_IN",
+  "post": "post:20149",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20149",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20149",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20150",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20150",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20150",
+  "target": "country:IL",
+  "type": "LOCATED_IN",
+  "post": "post:20150",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20150",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20150",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20151",
+  "target": "country:ET",
+  "type": "MENTIONS",
+  "post": "post:20151",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20151",
+  "target": "country:ET",
+  "type": "LOCATED_IN",
+  "post": "post:20151",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20151",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20151",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20152",
+  "target": "keyword:naval",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20152",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20152",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20152",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20152",
+  "target": "category:sea",
+  "type": "HAS_CATEGORY",
+  "post": "post:20152",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20153",
+  "target": "keyword:cyber",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20153",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20153",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20153",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20153",
+  "target": "country:BG",
+  "type": "LOCATED_IN",
+  "post": "post:20153",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20153",
+  "target": "category:cyb",
+  "type": "HAS_CATEGORY",
+  "post": "post:20153",
+  "date": "2026-10-12"
+ },
+ {
+  "source": "post:20270",
+  "target": "country:ES",
+  "type": "MENTIONS",
+  "post": "post:20270",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20270",
+  "target": "country:FR",
+  "type": "MENTIONS",
+  "post": "post:20270",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20270",
+  "target": "category:ter",
+  "type": "HAS_CATEGORY",
+  "post": "post:20270",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20271",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20271",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20271",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20271",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20271",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20271",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20271",
+  "target": "category:mil",
+  "type": "HAS_CATEGORY",
+  "post": "post:20271",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20272",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20272",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20272",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20272",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20272",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20272",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20272",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20272",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20272",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20272",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:20272",
+  "date": "2026-10-24",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Storm Shadow missile attack on Russian plant"
+ },
+ {
+  "source": "post:20273",
+  "target": "country:BG",
+  "type": "MENTIONS",
+  "post": "post:20273",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20273",
+  "target": "country:BG",
+  "type": "LOCATED_IN",
+  "post": "post:20273",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20273",
+  "target": "category:gen",
+  "type": "HAS_CATEGORY",
+  "post": "post:20273",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20274",
+  "target": "country:FR",
+  "type": "MENTIONS",
+  "post": "post:20274",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20274",
+  "target": "country:FR",
+  "type": "LOCATED_IN",
+  "post": "post:20274",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20274",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20274",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20275",
+  "target": "country:PH",
+  "type": "MENTIONS",
+  "post": "post:20275",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20275",
+  "target": "country:PH",
+  "type": "LOCATED_IN",
+  "post": "post:20275",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20275",
+  "target": "category:air",
+  "type": "HAS_CATEGORY",
+  "post": "post:20275",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20276",
+  "target": "keyword:sanctions",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20276",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20276",
+  "target": "country:AR",
+  "type": "MENTIONS",
+  "post": "post:20276",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20276",
+  "target": "country:GB",
+  "type": "MENTIONS",
+  "post": "post:20276",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20276",
+  "target": "country:IL",
+  "type": "MENTIONS",
+  "post": "post:20276",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20276",
+  "target": "country:IL",
+  "type": "LOCATED_IN",
+  "post": "post:20276",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20276",
+  "target": "category:dip",
+  "type": "HAS_CATEGORY",
+  "post": "post:20276",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "country:GB",
+  "target": "country:IL",
+  "type": "THREATENED",
+  "post": "post:20276",
+  "date": "2026-10-24",
+  "confidence": 0.85,
+  "category": "category:dip",
+  "why": "UK sanctions settlements affecting Israel"
+ },
+ {
+  "source": "post:20277",
+  "target": "country:IT",
+  "type": "MENTIONS",
+  "post": "post:20277",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20277",
+  "target": "country:PS",
+  "type": "MENTIONS",
+  "post": "post:20277",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20277",
+  "target": "country:IT",
+  "type": "LOCATED_IN",
+  "post": "post:20277",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20277",
+  "target": "category:pro",
+  "type": "HAS_CATEGORY",
+  "post": "post:20277",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20278",
+  "target": "country:DE",
+  "type": "MENTIONS",
+  "post": "post:20278",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20278",
+  "target": "country:DE",
+  "type": "LOCATED_IN",
+  "post": "post:20278",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20278",
+  "target": "category:gen",
+  "type": "HAS_CATEGORY",
+  "post": "post:20278",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20279",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20279",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20279",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20279",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20279",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20279",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20279",
+  "target": "country:UA",
+  "type": "LOCATED_IN",
+  "post": "post:20279",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20279",
+  "target": "category:gen",
+  "type": "HAS_CATEGORY",
+  "post": "post:20279",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20280",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20280",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20280",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20280",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20280",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20280",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20280",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20280",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:20280",
+  "date": "2026-10-24",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "strike on Russian military plant in Oryol"
+ },
+ {
+  "source": "post:20281",
+  "target": "keyword:missiles",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20281",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20281",
+  "target": "country:RU",
+  "type": "MENTIONS",
+  "post": "post:20281",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20281",
+  "target": "country:UA",
+  "type": "MENTIONS",
+  "post": "post:20281",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20281",
+  "target": "country:RU",
+  "type": "LOCATED_IN",
+  "post": "post:20281",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "post:20281",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20281",
+  "date": "2026-10-24"
+ },
+ {
+  "source": "country:UA",
+  "target": "country:RU",
+  "type": "ATTACKED",
+  "post": "post:20281",
+  "date": "2026-10-24",
+  "confidence": 0.95,
+  "category": "category:war",
+  "why": "strike on petrochemical plant in Samara oblast"
+ },
+ {
+  "source": "post:20282",
+  "target": "keyword:drones",
+  "type": "MENTIONS_KEYWORD",
+  "post": "post:20282",
+  "date": "2026-10-25"
+ },
+ {
+  "source": "post:20282",
+  "target": "country:IR",
+  "type": "MENTIONS",
+  "post": "post:20282",
+  "date": "2026-10-25"
+ },
+ {
+  "source": "post:20282",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20282",
+  "date": "2026-10-25"
+ },
+ {
+  "source": "post:20282",
+  "target": "country:IR",
+  "type": "LOCATED_IN",
+  "post": "post:20282",
+  "date": "2026-10-25"
+ },
+ {
+  "source": "post:20282",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20282",
+  "date": "2026-10-25"
+ },
+ {
+  "source": "country:IR",
+  "target": "country:US",
+  "type": "ATTACKED",
+  "post": "post:20282",
+  "date": "2026-10-25",
+  "confidence": 1.0,
+  "category": "category:war",
+  "why": "Iran shot down US drone over Bandar Abbas"
+ },
+ {
+  "source": "post:20283",
+  "target": "country:HT",
+  "type": "MENTIONS",
+  "post": "post:20283",
+  "date": "2026-10-25"
+ },
+ {
+  "source": "post:20283",
+  "target": "country:SV",
+  "type": "MENTIONS",
+  "post": "post:20283",
+  "date": "2026-10-25"
+ },
+ {
+  "source": "post:20283",
+  "target": "country:TD",
+  "type": "MENTIONS",
+  "post": "post:20283",
+  "date": "2026-10-25"
+ },
+ {
+  "source": "post:20283",
+  "target": "country:UN",
+  "type": "MENTIONS",
+  "post": "post:20283",
+  "date": "2026-10-25"
+ },
+ {
+  "source": "post:20283",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20283",
+  "date": "2026-10-25"
+ },
+ {
+  "source": "post:20283",
+  "target": "country:HT",
+  "type": "LOCATED_IN",
+  "post": "post:20283",
+  "date": "2026-10-25"
+ },
+ {
+  "source": "post:20283",
+  "target": "category:war",
+  "type": "HAS_CATEGORY",
+  "post": "post:20283",
+  "date": "2026-10-25"
+ },
+ {
+  "source": "post:20284",
+  "target": "country:US",
+  "type": "MENTIONS",
+  "post": "post:20284",
+  "date": "2026-10-25"
+ },
+ {
+  "source": "post:20284",
+  "target": "country:US",
+  "type": "LOCATED_IN",
+  "post": "post:20284",
+  "date": "2026-10-25"
+ },
+ {
+  "source": "post:20284",
+  "target": "category:sec",
+  "type": "HAS_CATEGORY",
+  "post": "post:20284",
+  "date": "2026-10-25"
+ }
+]

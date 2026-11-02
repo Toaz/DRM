@@ -1,0 +1,7326 @@
+{
+ "version": 1,
+ "model": "groq/openai/gpt-oss-120b",
+ "done": {
+  "n:москв": [
+   "place",
+   ""
+  ],
+  "n:киев": [
+   "place",
+   ""
+  ],
+  "n:нато": [
+   "org",
+   "NATO"
+  ],
+  "n:европ": [
+   "place",
+   ""
+  ],
+  "n:техеран": [
+   "place",
+   ""
+  ],
+  "n:доналд тръмп": [
+   "person",
+   "Donald Trump"
+  ],
+  "n:министерств": [
+   "other",
+   ""
+  ],
+  "n:обединен": [
+   "other",
+   ""
+  ],
+  "n:европей": [
+   "other",
+   ""
+  ],
+  "n:близк": [
+   "other",
+   ""
+  ],
+  "n:съединен": [
+   "other",
+   ""
+  ],
+  "n:саудит араб": [
+   "country",
+   ""
+  ],
+  "n:владимир путин": [
+   "person",
+   "Vladimir Putin"
+  ],
+  "n:южен ливан": [
+   "place",
+   ""
+  ],
+  "n:донецк": [
+   "place",
+   ""
+  ],
+  "n:дамаск": [
+   "place",
+   ""
+  ],
+  "n:ислям": [
+   "other",
+   ""
+  ],
+  "n:харк": [
+   "place",
+   ""
+  ],
+  "n:революционн": [
+   "other",
+   ""
+  ],
+  "n:ройтерс": [
+   "media",
+   ""
+  ],
+  "n:крим": [
+   "place",
+   ""
+  ],
+  "n:пекин": [
+   "place",
+   ""
+  ],
+  "n:ивиц газа": [
+   "place",
+   ""
+  ],
+  "n:съвет": [
+   "other",
+   ""
+  ],
+  "n:бенямин нетанях": [
+   "person",
+   "Benjamin Netanyahu"
+  ],
+  "n:володимир зелен": [
+   "person",
+   "Volodymyr Zelensky"
+  ],
+  "n:херсон": [
+   "place",
+   ""
+  ],
+  "n:ввс": [
+   "other",
+   ""
+  ],
+  "n:черно": [
+   "other",
+   ""
+  ],
+  "n:вагнер": [
+   "org",
+   "Wagner"
+  ],
+  "n:бейрут": [
+   "place",
+   ""
+  ],
+  "n:бели": [
+   "other",
+   ""
+  ],
+  "n:националн": [
+   "other",
+   ""
+  ],
+  "n:курск": [
+   "place",
+   ""
+  ],
+  "n:тел авив": [
+   "place",
+   ""
+  ],
+  "n:ормузк": [
+   "place",
+   ""
+  ],
+  "n:персий": [
+   "place",
+   ""
+  ],
+  "n:бахмут": [
+   "place",
+   ""
+  ],
+  "n:ормуз": [
+   "place",
+   ""
+  ],
+  "n:западн": [
+   "other",
+   ""
+  ],
+  "n:сащ доналд тръмп": [
+   "other",
+   ""
+  ],
+  "n:международн": [
+   "other",
+   ""
+  ],
+  "n:алепо": [
+   "place",
+   ""
+  ],
+  "n:одес": [
+   "place",
+   ""
+  ],
+  "n:белгород": [
+   "place",
+   ""
+  ],
+  "n:запорож": [
+   "place",
+   ""
+  ],
+  "d:F-16": [
+   "weapon",
+   "F-16"
+  ],
+  "n:държавн": [
+   "other",
+   ""
+  ],
+  "n:червено": [
+   "place",
+   ""
+  ],
+  "n:централн": [
+   "other",
+   ""
+  ],
+  "n:мариупол": [
+   "place",
+   ""
+  ],
+  "n:запад": [
+   "other",
+   ""
+  ],
+  "n:пкк": [
+   "org",
+   "PKK"
+  ],
+  "n:ид": [
+   "org",
+   "Islamic State"
+  ],
+  "n:генералн": [
+   "other",
+   ""
+  ],
+  "n:анкар": [
+   "place",
+   ""
+  ],
+  "n:канал": [
+   "other",
+   ""
+  ],
+  "n:донбас": [
+   "place",
+   ""
+  ],
+  "n:cnn": [
+   "media",
+   ""
+  ],
+  "n:брюксел": [
+   "place",
+   ""
+  ],
+  "n:конгрес": [
+   "org",
+   "Congress"
+  ],
+  "n:пво": [
+   "other",
+   ""
+  ],
+  "n:багдад": [
+   "place",
+   ""
+  ],
+  "n:bloomberg": [
+   "media",
+   ""
+  ],
+  "n:африк": [
+   "place",
+   ""
+  ],
+  "n:въоръжен": [
+   "other",
+   ""
+  ],
+  "n:париж": [
+   "place",
+   ""
+  ],
+  "n:financial times": [
+   "media",
+   ""
+  ],
+  "n:джо байдън": [
+   "person",
+   "Joe Biden"
+  ],
+  "n:си дзинпин": [
+   "person",
+   "Xi Jinping"
+  ],
+  "n:де ре милитар": [
+   "other",
+   ""
+  ],
+  "n:лондон": [
+   "place",
+   ""
+  ],
+  "n:силит": [
+   "other",
+   ""
+  ],
+  "n:еманюел макрон": [
+   "person",
+   "Emmanuel Macron"
+  ],
+  "n:луган": [
+   "place",
+   ""
+  ],
+  "n:телеграм": [
+   "media",
+   ""
+  ],
+  "n:рост": [
+   "place",
+   ""
+  ],
+  "n:дрм": [
+   "other",
+   ""
+  ],
+  "n:западен": [
+   "other",
+   ""
+  ],
+  "n:patriot": [
+   "weapon",
+   "Patriot"
+  ],
+  "n:африкан": [
+   "other",
+   ""
+  ],
+  "n:рафах": [
+   "place",
+   ""
+  ],
+  "n:служб": [
+   "other",
+   ""
+  ],
+  "n:фсб": [
+   "org",
+   "FSB"
+  ],
+  "n:южна сири": [
+   "place",
+   ""
+  ],
+  "n:rsf": [
+   "org",
+   "Rapid Support Forces"
+  ],
+  "n:запорожк": [
+   "place",
+   ""
+  ],
+  "n:ал кайд": [
+   "org",
+   "Al-Qaeda"
+  ],
+  "n:берлин": [
+   "place",
+   ""
+  ],
+  "n:главн": [
+   "other",
+   ""
+  ],
+  "n:министерство": [
+   "other",
+   ""
+  ],
+  "n:башар асад": [
+   "person",
+   "Bashar al-Assad"
+  ],
+  "n:сбу": [
+   "org",
+   "SBU"
+  ],
+  "n:световн": [
+   "other",
+   ""
+  ],
+  "d:F-35": [
+   "weapon",
+   "F-35"
+  ],
+  "n:the new york times": [
+   "media",
+   ""
+  ],
+  "n:източн украйн": [
+   "place",
+   ""
+  ],
+  "n:шахед": [
+   "weapon",
+   "Shahed"
+  ],
+  "n:вмс": [
+   "other",
+   ""
+  ],
+  "n:йерусалим": [
+   "place",
+   ""
+  ],
+  "n:върховн": [
+   "other",
+   ""
+  ],
+  "n:балтий": [
+   "other",
+   ""
+  ],
+  "n:ирак кюрдистан": [
+   "place",
+   ""
+  ],
+  "n:истанбул": [
+   "place",
+   ""
+  ],
+  "n:северн": [
+   "other",
+   ""
+  ],
+  "n:fpv": [
+   "other",
+   ""
+  ],
+  "n:днепър": [
+   "place",
+   ""
+  ],
+  "n:азия": [
+   "place",
+   ""
+  ],
+  "n:северен израел": [
+   "place",
+   ""
+  ],
+  "n:азов": [
+   "place",
+   ""
+  ],
+  "n:авдиевк": [
+   "place",
+   ""
+  ],
+  "n:черномор": [
+   "place",
+   ""
+  ],
+  "n:leopard": [
+   "weapon",
+   "Leopard"
+  ],
+  "n:голан": [
+   "place",
+   ""
+  ],
+  "n:дубай": [
+   "place",
+   ""
+  ],
+  "n:крал": [
+   "other",
+   ""
+  ],
+  "n:ню йорк": [
+   "place",
+   ""
+  ],
+  "n:хама": [
+   "place",
+   ""
+  ],
+  "n:shahed": [
+   "weapon",
+   "Shahed"
+  ],
+  "n:белград": [
+   "place",
+   ""
+  ],
+  "n:никол": [
+   "place",
+   ""
+  ],
+  "n:рияд": [
+   "place",
+   ""
+  ],
+  "n:център": [
+   "other",
+   ""
+  ],
+  "n:the times": [
+   "media",
+   ""
+  ],
+  "n:дейр": [
+   "place",
+   ""
+  ],
+  "n:израел кац": [
+   "person",
+   "Israel Katz"
+  ],
+  "n:алианс": [
+   "other",
+   ""
+  ],
+  "n:белг": [
+   "country",
+   ""
+  ],
+  "n:гренланд": [
+   "place",
+   ""
+  ],
+  "n:лиман": [
+   "place",
+   ""
+  ],
+  "n:санкт петербург": [
+   "place",
+   ""
+  ],
+  "n:сенат": [
+   "other",
+   ""
+  ],
+  "n:луганск": [
+   "place",
+   ""
+  ],
+  "n:ft": [
+   "media",
+   ""
+  ],
+  "n:бразил": [
+   "country",
+   ""
+  ],
+  "n:буркин фасо": [
+   "country",
+   ""
+  ],
+  "n:дара": [
+   "place",
+   ""
+  ],
+  "n:камбодж": [
+   "country",
+   ""
+  ],
+  "n:краснодар": [
+   "place",
+   ""
+  ],
+  "n:сергей лавр": [
+   "person",
+   "Sergei Lavrov"
+  ],
+  "n:суейд": [
+   "place",
+   ""
+  ],
+  "n:суми": [
+   "place",
+   ""
+  ],
+  "n:швейцар": [
+   "country",
+   ""
+  ],
+  "n:идлиб": [
+   "place",
+   ""
+  ],
+  "n:кабул": [
+   "place",
+   ""
+  ],
+  "n:моск": [
+   "place",
+   ""
+  ],
+  "n:севастопол": [
+   "place",
+   ""
+  ],
+  "n:сумск": [
+   "place",
+   ""
+  ],
+  "n:черниг": [
+   "place",
+   ""
+  ],
+  "n:втор": [
+   "other",
+   ""
+  ],
+  "n:демократичн": [
+   "country",
+   ""
+  ],
+  "n:маринк": [
+   "place",
+   ""
+  ],
+  "d:C-300": [
+   "weapon",
+   "S-300"
+  ],
+  "n:федералн": [
+   "other",
+   ""
+  ],
+  "n:the guardian": [
+   "media",
+   ""
+  ],
+  "n:пхенян": [
+   "place",
+   ""
+  ],
+  "n:араб": [
+   "other",
+   ""
+  ],
+  "n:ербил": [
+   "place",
+   ""
+  ],
+  "n:камар": [
+   "other",
+   ""
+  ],
+  "n:латак": [
+   "place",
+   ""
+  ],
+  "n:лвов": [
+   "place",
+   ""
+  ],
+  "n:северн сири": [
+   "place",
+   ""
+  ],
+  "n:хайф": [
+   "place",
+   ""
+  ],
+  "n:афп": [
+   "media",
+   ""
+  ],
+  "n:америк": [
+   "country",
+   ""
+  ],
+  "n:исфахан": [
+   "place",
+   ""
+  ],
+  "n:средиземно": [
+   "place",
+   ""
+  ],
+  "n:хан юнис": [
+   "place",
+   ""
+  ],
+  "n:sdf": [
+   "org",
+   "Syrian Democratic Forces"
+  ],
+  "n:taliban": [
+   "org",
+   "Taliban"
+  ],
+  "n:the economist": [
+   "media",
+   ""
+  ],
+  "n:бвп": [
+   "other",
+   ""
+  ],
+  "n:варшав": [
+   "place",
+   ""
+  ],
+  "n:военномор": [
+   "other",
+   ""
+  ],
+  "n:искандер": [
+   "weapon",
+   "Iskander"
+  ],
+  "n:организац": [
+   "other",
+   ""
+  ],
+  "n:руанд": [
+   "country",
+   ""
+  ],
+  "n:the wall street journal": [
+   "media",
+   ""
+  ],
+  "n:рф": [
+   "country",
+   ""
+  ],
+  "n:сащ джо байдън": [
+   "person",
+   "Joe Biden"
+  ],
+  "n:калибър": [
+   "weapon",
+   "Kalibr"
+  ],
+  "n:кариб": [
+   "place",
+   ""
+  ],
+  "n:колумб": [
+   "country",
+   ""
+  ],
+  "n:одеск": [
+   "place",
+   ""
+  ],
+  "n:узбекистан": [
+   "country",
+   ""
+  ],
+  "n:afp": [
+   "media",
+   ""
+  ],
+  "n:reuters": [
+   "media",
+   ""
+  ],
+  "n:аден": [
+   "place",
+   ""
+  ],
+  "n:азовстал": [
+   "other",
+   ""
+  ],
+  "n:др конго": [
+   "country",
+   ""
+  ],
+  "n:днипро": [
+   "place",
+   ""
+  ],
+  "n:мо": [
+   "other",
+   ""
+  ],
+  "n:ню йорк таймс": [
+   "media",
+   ""
+  ],
+  "n:александър вучич": [
+   "person",
+   "Aleksandar Vučić"
+  ],
+  "n:ахмад": [
+   "other",
+   ""
+  ],
+  "n:ковид": [
+   "other",
+   ""
+  ],
+  "n:общото": [
+   "other",
+   ""
+  ],
+  "n:студен": [
+   "other",
+   ""
+  ],
+  "n:таджикистан": [
+   "country",
+   ""
+  ],
+  "n:цру": [
+   "org",
+   "CIA"
+  ],
+  "n:fox news": [
+   "media",
+   ""
+  ],
+  "n:индо-тихоокеан": [
+   "other",
+   ""
+  ],
+  "n:комис": [
+   "other",
+   ""
+  ],
+  "n:мелитопол": [
+   "place",
+   ""
+  ],
+  "n:сдс": [
+   "org",
+   "Syrian Democratic Forces"
+  ],
+  "n:тбилис": [
+   "place",
+   ""
+  ],
+  "n:тиграй": [
+   "place",
+   ""
+  ],
+  "n:баб": [
+   "other",
+   ""
+  ],
+  "n:гур": [
+   "org",
+   "HUR"
+  ],
+  "n:ереван": [
+   "place",
+   ""
+  ],
+  "n:женев": [
+   "place",
+   ""
+  ],
+  "n:закон": [
+   "other",
+   ""
+  ],
+  "n:изюм": [
+   "place",
+   ""
+  ],
+  "n:кайро": [
+   "place",
+   ""
+  ],
+  "n:каспий": [
+   "place",
+   ""
+  ],
+  "n:кишин": [
+   "place",
+   ""
+  ],
+  "n:лукойл": [
+   "org",
+   "Lukoil"
+  ],
+  "d:MИ-8": [
+   "weapon",
+   "Mi-8"
+  ],
+  "n:набат": [
+   "place",
+   ""
+  ],
+  "n:пригожин": [
+   "person",
+   "Yevgeny Prigozhin"
+  ],
+  "n:рсзо": [
+   "weapon",
+   "MLRS"
+  ],
+  "n:сахел": [
+   "place",
+   ""
+  ],
+  "n:сили": [
+   "other",
+   ""
+  ],
+  "n:украйн володимир зелен": [
+   "person",
+   "Volodymyr Zelensky"
+  ],
+  "n:урсул": [
+   "person",
+   "Ursula von der Leyen"
+  ],
+  "n:ходейд": [
+   "place",
+   ""
+  ],
+  "n:чад": [
+   "country",
+   ""
+  ],
+  "n:южна украйн": [
+   "place",
+   ""
+  ],
+  "n:afghanistan": [
+   "country",
+   ""
+  ],
+  "n:boeing": [
+   "org",
+   "Boeing"
+  ],
+  "n:ал джазир": [
+   "media",
+   ""
+  ],
+  "n:военн": [
+   "other",
+   ""
+  ],
+  "n:военновъздушн": [
+   "other",
+   ""
+  ],
+  "n:гру": [
+   "org",
+   "GRU"
+  ],
+  "n:днр": [
+   "org",
+   "Donetsk People's Republic"
+  ],
+  "n:енгелс": [
+   "place",
+   ""
+  ],
+  "n:калининград": [
+   "place",
+   ""
+  ],
+  "n:мохамед": [
+   "other",
+   ""
+  ],
+  "n:мюнхен": [
+   "place",
+   ""
+  ],
+  "n:реджеп тайип ердоган": [
+   "person",
+   "Recep Tayyip Erdoğan"
+  ],
+  "n:си цзинпин": [
+   "person",
+   "Xi Jinping"
+  ],
+  "n:стив уиткоф": [
+   "person",
+   "Steve Witkoff"
+  ],
+  "n:хонконг": [
+   "place",
+   ""
+  ],
+  "n:централн азия": [
+   "place",
+   ""
+  ],
+  "n:israel": [
+   "country",
+   ""
+  ],
+  "n:бла": [
+   "other",
+   ""
+  ],
+  "n:владимир зелен": [
+   "person",
+   "Volodymyr Zelensky"
+  ],
+  "n:корей": [
+   "other",
+   ""
+  ],
+  "n:латин америк": [
+   "place",
+   ""
+  ],
+  "n:риа новост": [
+   "media",
+   ""
+  ],
+  "n:самар": [
+   "place",
+   ""
+  ],
+  "n:северен": [
+   "other",
+   ""
+  ],
+  "n:wsj": [
+   "media",
+   ""
+  ],
+  "n:бмп": [
+   "weapon",
+   "BMP"
+  ],
+  "n:будапещ": [
+   "place",
+   ""
+  ],
+  "n:вучич": [
+   "person",
+   "Aleksandar Vučić"
+  ],
+  "n:източн европ": [
+   "place",
+   ""
+  ],
+  "n:институт": [
+   "other",
+   ""
+  ],
+  "n:кени": [
+   "country",
+   ""
+  ],
+  "n:краматорск": [
+   "place",
+   ""
+  ],
+  "n:португал": [
+   "country",
+   ""
+  ],
+  "n:рим": [
+   "place",
+   ""
+  ],
+  "d:CY-34": [
+   "weapon",
+   "Su-34"
+  ],
+  "n:токио": [
+   "place",
+   ""
+  ],
+  "n:хърват": [
+   "country",
+   ""
+  ],
+  "n:чешк": [
+   "other",
+   ""
+  ],
+  "n:storm shadow": [
+   "weapon",
+   "Storm Shadow"
+  ],
+  "n:белуджистан": [
+   "place",
+   ""
+  ],
+  "n:бердянск": [
+   "place",
+   ""
+  ],
+  "n:буча": [
+   "place",
+   ""
+  ],
+  "n:днепропетр": [
+   "place",
+   ""
+  ],
+  "n:договор": [
+   "other",
+   ""
+  ],
+  "n:западн африк": [
+   "place",
+   ""
+  ],
+  "d:ИЛ-76": [
+   "weapon",
+   "Il-76"
+  ],
+  "n:илон мъск": [
+   "person",
+   "Elon Musk"
+  ],
+  "n:индонез": [
+   "country",
+   ""
+  ],
+  "n:австр": [
+   "country",
+   ""
+  ],
+  "n:ал кудс": [
+   "org",
+   "Al Quds"
+  ],
+  "n:арктик": [
+   "place",
+   ""
+  ],
+  "n:бека": [
+   "place",
+   ""
+  ],
+  "n:волгоград": [
+   "place",
+   ""
+  ],
+  "n:салман": [
+   "other",
+   ""
+  ],
+  "n:сибир": [
+   "place",
+   ""
+  ],
+  "n:сингапур": [
+   "country",
+   ""
+  ],
+  "d:T-72": [
+   "weapon",
+   "T-72"
+  ],
+  "n:флорид": [
+   "place",
+   ""
+  ],
+  "n:югоизточн азия": [
+   "place",
+   ""
+  ],
+  "n:bayraktar": [
+   "weapon",
+   "Bayraktar TB2"
+  ],
+  "n:ап": [
+   "other",
+   ""
+  ],
+  "n:алжир": [
+   "country",
+   ""
+  ],
+  "n:арми": [
+   "other",
+   ""
+  ],
+  "n:босн": [
+   "place",
+   ""
+  ],
+  "n:джабал": [
+   "place",
+   ""
+  ],
+  "n:итамар бен-гвир": [
+   "person",
+   "Itamar Ben-Gvir"
+  ],
+  "n:мадрид": [
+   "place",
+   ""
+  ],
+  "n:могадиш": [
+   "place",
+   ""
+  ],
+  "n:нарендр моди": [
+   "person",
+   "Narendra Modi"
+  ],
+  "n:нова зеланд": [
+   "country",
+   ""
+  ],
+  "n:пейтр": [
+   "weapon",
+   "Patriot"
+  ],
+  "n:рамщайн": [
+   "place",
+   ""
+  ],
+  "n:сащ марко рубио": [
+   "person",
+   "Marco Rubio"
+  ],
+  "n:северн македон": [
+   "country",
+   ""
+  ],
+  "n:северозападн сири": [
+   "place",
+   ""
+  ],
+  "n:трет": [
+   "other",
+   ""
+  ],
+  "n:трипол": [
+   "place",
+   ""
+  ],
+  "n:хасак": [
+   "place",
+   ""
+  ],
+  "n:шааб": [
+   "unit",
+   "Hashd al-Shaabi"
+  ],
+  "n:al jazeera": [
+   "media",
+   ""
+  ],
+  "n:lockheed martin": [
+   "org",
+   "Lockheed Martin"
+  ],
+  "n:the taliban": [
+   "org",
+   "Taliban"
+  ],
+  "n:абас арагч": [
+   "person",
+   "Abbas Araghchi"
+  ],
+  "n:адис абеб": [
+   "place",
+   ""
+  ],
+  "n:ал касам": [
+   "unit",
+   "Al-Qassam Brigades"
+  ],
+  "n:албан": [
+   "country",
+   ""
+  ],
+  "n:газпром": [
+   "org",
+   "Gazprom"
+  ],
+  "n:дружб": [
+   "other",
+   ""
+  ],
+  "n:еквадор": [
+   "country",
+   ""
+  ],
+  "n:исланд": [
+   "country",
+   ""
+  ],
+  "n:малайз": [
+   "country",
+   ""
+  ],
+  "n:мароко": [
+   "country",
+   ""
+  ],
+  "n:пит хегсет": [
+   "person",
+   "Pete Hegseth"
+  ],
+  "n:полтав": [
+   "place",
+   ""
+  ],
+  "n:рамзан кадир": [
+   "person",
+   "Ramzan Kadyrov"
+  ],
+  "n:рустем умер": [
+   "person",
+   "Rustem Umerov"
+  ],
+  "n:сергей шойг": [
+   "person",
+   "Sergei Shoigu"
+  ],
+  "n:стокхолм": [
+   "place",
+   ""
+  ],
+  "d:CY-35": [
+   "weapon",
+   "Su-35"
+  ],
+  "n:тир": [
+   "place",
+   ""
+  ],
+  "d:X-101": [
+   "weapon",
+   "Kh-101"
+  ],
+  "n:хашд": [
+   "unit",
+   "Hashd al-Shaabi"
+  ],
+  "n:черн": [
+   "other",
+   ""
+  ],
+  "n:би би си": [
+   "media",
+   ""
+  ],
+  "n:виетнам": [
+   "country",
+   ""
+  ],
+  "n:зрк": [
+   "weapon",
+   "SAM system"
+  ],
+  "n:ирланд": [
+   "country",
+   ""
+  ],
+  "n:киргизстан": [
+   "country",
+   ""
+  ],
+  "n:рдк": [
+   "org",
+   "Russian Volunteer Corps"
+  ],
+  "n:сащ лойд остин": [
+   "person",
+   "Lloyd Austin"
+  ],
+  "n:северодонецк": [
+   "place",
+   ""
+  ],
+  "n:сеул": [
+   "place",
+   ""
+  ],
+  "n:си": [
+   "other",
+   ""
+  ],
+  "n:соледар": [
+   "place",
+   ""
+  ],
+  "n:судж": [
+   "place",
+   ""
+  ],
+  "n:фбр": [
+   "org",
+   "FBI"
+  ],
+  "n:фронт": [
+   "other",
+   ""
+  ],
+  "n:херцеговин": [
+   "place",
+   ""
+  ],
+  "d:F-15": [
+   "weapon",
+   "F-15"
+  ],
+  "n:facebook": [
+   "media",
+   ""
+  ],
+  "d:MQ-9": [
+   "weapon",
+   "MQ-9 Reaper"
+  ],
+  "n:nbc news": [
+   "media",
+   ""
+  ],
+  "n:twitter": [
+   "media",
+   ""
+  ],
+  "n:аляск": [
+   "place",
+   ""
+  ],
+  "n:антън блинкен": [
+   "person",
+   "Antony Blinken"
+  ],
+  "n:безалел смотрич": [
+   "person",
+   "Bezalel Smotrich"
+  ],
+  "n:виен": [
+   "place",
+   ""
+  ],
+  "n:вилнюс": [
+   "place",
+   ""
+  ],
+  "n:доналд туск": [
+   "person",
+   "Donald Tusk"
+  ],
+  "n:един": [
+   "other",
+   ""
+  ],
+  "n:кинжал": [
+   "weapon",
+   "Kinzhal"
+  ],
+  "n:ленинград": [
+   "other",
+   ""
+  ],
+  "n:маае": [
+   "other",
+   ""
+  ],
+  "n:мнс": [
+   "other",
+   ""
+  ],
+  "n:никол пашинян": [
+   "person",
+   "Nikol Pashinyan"
+  ],
+  "n:рязан": [
+   "place",
+   ""
+  ],
+  "n:северн африк": [
+   "place",
+   ""
+  ],
+  "n:хага": [
+   "place",
+   ""
+  ],
+  "n:халиф хафтар": [
+   "person",
+   "Khalifa Haftar"
+  ],
+  "n:хасан насрал": [
+   "person",
+   "Hassan Nasrallah"
+  ],
+  "n:южни": [
+   "other",
+   ""
+  ],
+  "n:iris": [
+   "weapon",
+   "IRIS-T"
+  ],
+  "n:kabul": [
+   "place",
+   ""
+  ],
+  "n:nikkei": [
+   "media",
+   ""
+  ],
+  "n:байрактар": [
+   "weapon",
+   "Bayraktar TB2"
+  ],
+  "n:бандар абас": [
+   "place",
+   ""
+  ],
+  "n:вухледар": [
+   "place",
+   ""
+  ],
+  "n:геран": [
+   "weapon",
+   "Geran-2"
+  ],
+  "n:дарфур": [
+   "place",
+   ""
+  ],
+  "n:западн украйн": [
+   "place",
+   ""
+  ],
+  "n:йоав галант": [
+   "person",
+   "Yoav Gallant"
+  ],
+  "n:кнесет": [
+   "org",
+   "Knesset"
+  ],
+  "n:орбан": [
+   "person",
+   "Viktor Orbán"
+  ],
+  "d:CY-25": [
+   "weapon",
+   "Su-25"
+  ],
+  "n:субсахар африк": [
+   "place",
+   ""
+  ],
+  "n:хмеймим": [
+   "place",
+   ""
+  ],
+  "n:шанхай": [
+   "place",
+   ""
+  ],
+  "n:шин бет": [
+   "org",
+   "Shin Bet"
+  ],
+  "n:block": [
+   "other",
+   ""
+  ],
+  "d:KC-135": [
+   "weapon",
+   "KC-135"
+  ],
+  "n:space": [
+   "other",
+   ""
+  ],
+  "n:александър лукашенко": [
+   "person",
+   "Alexander Lukashenko"
+  ],
+  "n:гвард": [
+   "other",
+   ""
+  ],
+  "n:житомир": [
+   "place",
+   ""
+  ],
+  "n:жозеф аун": [
+   "person",
+   "Joseph Aoun"
+  ],
+  "n:зор": [
+   "place",
+   ""
+  ],
+  "n:кирило будан": [
+   "person",
+   "Kyrylo Budanov"
+  ],
+  "n:нато марк рюте": [
+   "other",
+   ""
+  ],
+  "d:PПГ-7": [
+   "weapon",
+   "RPG-7"
+  ],
+  "n:риши сунак": [
+   "person",
+   "Rishi Sunak"
+  ],
+  "n:роберт фицо": [
+   "person",
+   "Robert Fico"
+  ],
+  "n:словен": [
+   "country",
+   ""
+  ],
+  "n:сухопътн": [
+   "other",
+   ""
+  ],
+  "n:табриз": [
+   "place",
+   ""
+  ],
+  "n:хаит": [
+   "country",
+   ""
+  ],
+  "n:шам": [
+   "place",
+   ""
+  ],
+  "n:abrams": [
+   "weapon",
+   "M1 Abrams"
+  ],
+  "n:afghan": [
+   "other",
+   ""
+  ],
+  "n:sky news": [
+   "media",
+   ""
+  ],
+  "n:балкан": [
+   "place",
+   ""
+  ],
+  "n:басидж": [
+   "other",
+   ""
+  ],
+  "n:бенин": [
+   "country",
+   ""
+  ],
+  "n:брент": [
+   "other",
+   ""
+  ],
+  "n:ванс": [
+   "other",
+   ""
+  ],
+  "n:гардиън": [
+   "media",
+   ""
+  ],
+  "n:гвиан": [
+   "place",
+   ""
+  ],
+  "n:гома": [
+   "place",
+   ""
+  ],
+  "d:KA-52": [
+   "weapon",
+   "Ka-52"
+  ],
+  "n:кидал": [
+   "place",
+   ""
+  ],
+  "n:лнр": [
+   "org",
+   "Luhansk People's Republic"
+  ],
+  "n:мвр": [
+   "other",
+   ""
+  ],
+  "n:праг": [
+   "place",
+   ""
+  ],
+  "n:републикан": [
+   "other",
+   ""
+  ],
+  "d:TY-95MC": [
+   "weapon",
+   "Tu-95"
+  ],
+  "n:туитър": [
+   "media",
+   ""
+  ],
+  "n:хали": [
+   "other",
+   ""
+  ],
+  "n:централен израел": [
+   "place",
+   ""
+  ],
+  "n:чабахар": [
+   "place",
+   ""
+  ],
+  "n:google": [
+   "other",
+   ""
+  ],
+  "n:атлантич": [
+   "place",
+   ""
+  ],
+  "n:бамако": [
+   "place",
+   ""
+  ],
+  "n:бундесвер": [
+   "org",
+   "Bundeswehr"
+  ],
+  "n:град": [
+   "weapon",
+   "BM-21 Grad"
+  ],
+  "n:джордж мелон": [
+   "person",
+   "Giorgia Meloni"
+  ],
+  "n:еритр": [
+   "country",
+   ""
+  ],
+  "n:железен": [
+   "other",
+   ""
+  ],
+  "n:керчен": [
+   "place",
+   ""
+  ],
+  "n:копенхаген": [
+   "place",
+   ""
+  ],
+  "n:кривий рих": [
+   "place",
+   ""
+  ],
+  "n:лойд остин": [
+   "person",
+   "Lloyd Austin"
+  ],
+  "n:нато йенс столтенберг": [
+   "org",
+   "NATO"
+  ],
+  "n:нагорн карабах": [
+   "place",
+   ""
+  ],
+  "n:нижн новгород": [
+   "place",
+   ""
+  ],
+  "n:рака": [
+   "other",
+   ""
+  ],
+  "n:сащ антън блинкен": [
+   "country",
+   ""
+  ],
+  "n:ссср": [
+   "country",
+   ""
+  ],
+  "n:сайд": [
+   "place",
+   ""
+  ],
+  "n:североизточн сири": [
+   "place",
+   ""
+  ],
+  "n:централноафрикан": [
+   "country",
+   ""
+  ],
+  "n:шри ланк": [
+   "country",
+   ""
+  ],
+  "n:юг": [
+   "other",
+   ""
+  ],
+  "n:южен": [
+   "other",
+   ""
+  ],
+  "n:bbc": [
+   "media",
+   ""
+  ],
+  "n:cbs news": [
+   "media",
+   ""
+  ],
+  "n:fla": [
+   "other",
+   ""
+  ],
+  "n:middle east eye": [
+   "media",
+   ""
+  ],
+  "n:tik": [
+   "media",
+   ""
+  ],
+  "n:ukmto": [
+   "org",
+   "UKMTO"
+  ],
+  "n:брикс": [
+   "org",
+   "BRICS"
+  ],
+  "n:бушехр": [
+   "place",
+   ""
+  ],
+  "n:дагестан": [
+   "place",
+   ""
+  ],
+  "n:даниел хагар": [
+   "person",
+   "Daniel Hagari"
+  ],
+  "n:демократич": [
+   "other",
+   ""
+  ],
+  "n:джаред кушнер": [
+   "person",
+   "Jared Kushner"
+  ],
+  "n:дон": [
+   "other",
+   ""
+  ],
+  "n:еял замир": [
+   "person",
+   "Eyal Zamir"
+  ],
+  "n:калифорн": [
+   "place",
+   ""
+  ],
+  "n:карабах": [
+   "place",
+   ""
+  ],
+  "n:катаиб хизбул": [
+   "org",
+   "Kataib Hizbullah"
+  ],
+  "n:литан": [
+   "place",
+   ""
+  ],
+  "n:нова": [
+   "other",
+   ""
+  ],
+  "n:панам": [
+   "country",
+   ""
+  ],
+  "n:пашинян": [
+   "person",
+   "Nikol Pashinyan"
+  ],
+  "n:покр": [
+   "place",
+   ""
+  ],
+  "n:първ": [
+   "other",
+   ""
+  ],
+  "n:рамал": [
+   "place",
+   ""
+  ],
+  "n:сарат": [
+   "place",
+   ""
+  ],
+  "n:тец": [
+   "other",
+   ""
+  ],
+  "n:тасним": [
+   "media",
+   ""
+  ],
+  "n:уганд": [
+   "country",
+   ""
+  ],
+  "n:хаят тахрир": [
+   "org",
+   "Hayat Tahrir al-Sham"
+  ],
+  "n:хмелницк": [
+   "place",
+   ""
+  ],
+  "n:часов яр": [
+   "place",
+   ""
+  ],
+  "n:шахид": [
+   "other",
+   ""
+  ],
+  "n:южен израел": [
+   "place",
+   ""
+  ],
+  "n:bild": [
+   "media",
+   ""
+  ],
+  "n:challenger": [
+   "weapon",
+   "Challenger 2"
+  ],
+  "n:der spiegel": [
+   "media",
+   ""
+  ],
+  "n:irna": [
+   "media",
+   ""
+  ],
+  "n:le monde": [
+   "media",
+   ""
+  ],
+  "n:truth social": [
+   "media",
+   ""
+  ],
+  "n:us": [
+   "country",
+   ""
+  ],
+  "n:you": [
+   "other",
+   ""
+  ],
+  "n:арсенал": [
+   "other",
+   ""
+  ],
+  "n:блинкен": [
+   "person",
+   "Antony Blinken"
+  ],
+  "n:давос": [
+   "place",
+   ""
+  ],
+  "n:ейлат": [
+   "place",
+   ""
+  ],
+  "n:залив": [
+   "other",
+   ""
+  ],
+  "n:йенс столтенберг": [
+   "person",
+   "Jens Stoltenberg"
+  ],
+  "n:кашмир": [
+   "place",
+   ""
+  ],
+  "n:керч": [
+   "place",
+   ""
+  ],
+  "n:кирят шмон": [
+   "place",
+   ""
+  ],
+  "n:кунейтр": [
+   "place",
+   ""
+  ],
+  "n:лисичанск": [
+   "place",
+   ""
+  ],
+  "n:масуд пезешкиан": [
+   "person",
+   "Masud Pezeshkian"
+  ],
+  "n:машхад": [
+   "place",
+   ""
+  ],
+  "n:мъск": [
+   "person",
+   "Elon Musk"
+  ],
+  "n:ноак": [
+   "org",
+   "People's Liberation Army"
+  ],
+  "n:овалн": [
+   "other",
+   ""
+  ],
+  "n:осло": [
+   "place",
+   ""
+  ],
+  "n:рубио": [
+   "person",
+   "Marco Rubio"
+  ],
+  "n:северно": [
+   "other",
+   ""
+  ],
+  "n:суецк": [
+   "place",
+   ""
+  ],
+  "n:таиз": [
+   "place",
+   ""
+  ],
+  "n:татарстан": [
+   "place",
+   ""
+  ],
+  "d:TY-95": [
+   "weapon",
+   "Tu-95"
+  ],
+  "n:фумио кишид": [
+   "person",
+   "Fumio Kishida"
+  ],
+  "n:яир лапид": [
+   "person",
+   "Yair Lapid"
+  ],
+  "n:ai": [
+   "other",
+   ""
+  ],
+  "d:B-52": [
+   "weapon",
+   "B-52"
+  ],
+  "n:bae systems": [
+   "org",
+   "BAE Systems"
+  ],
+  "d:C-17": [
+   "weapon",
+   "C-17"
+  ],
+  "n:haaretz": [
+   "media",
+   ""
+  ],
+  "n:israeli": [
+   "other",
+   ""
+  ],
+  "n:kyiv independent": [
+   "media",
+   ""
+  ],
+  "n:osint": [
+   "other",
+   ""
+  ],
+  "n:reaper": [
+   "weapon",
+   "MQ-9 Reaper"
+  ],
+  "n:азауад": [
+   "other",
+   ""
+  ],
+  "n:айн": [
+   "place",
+   ""
+  ],
+  "n:ал араб": [
+   "media",
+   ""
+  ],
+  "n:ал шифа": [
+   "place",
+   ""
+  ],
+  "n:аман": [
+   "place",
+   ""
+  ],
+  "n:бангладеш": [
+   "country",
+   ""
+  ],
+  "n:борис писториус": [
+   "person",
+   "Boris Pistorius"
+  ],
+  "n:брадл": [
+   "weapon",
+   "M2 Bradley"
+  ],
+  "n:виктор": [
+   "place",
+   ""
+  ],
+  "n:джибут": [
+   "country",
+   ""
+  ],
+  "n:евген пригожин": [
+   "person",
+   "Yevgeny Prigozhin"
+  ],
+  "n:евгений пригожин": [
+   "person",
+   "Yevgeny Prigozhin"
+  ],
+  "n:източнокитай": [
+   "place",
+   ""
+  ],
+  "n:кадир": [
+   "person",
+   "Ramzan Kadyrov"
+  ],
+  "n:камишл": [
+   "place",
+   ""
+  ],
+  "n:кац": [
+   "person",
+   "Israel Katz"
+  ],
+  "n:комитет": [
+   "other",
+   ""
+  ],
+  "n:махмуд абас": [
+   "person",
+   "Mahmoud Abbas"
+  ],
+  "n:нова каховк": [
+   "place",
+   ""
+  ],
+  "n:олександър сирск": [
+   "person",
+   "Oleksandr Syrskyi"
+  ],
+  "n:пзрк": [
+   "weapon",
+   "MANPADS"
+  ],
+  "n:палмир": [
+   "place",
+   ""
+  ],
+  "n:педро санчес": [
+   "person",
+   "Pedro Sanchez"
+  ],
+  "n:песк": [
+   "person",
+   "Dmitry Peskov"
+  ],
+  "n:републик българ": [
+   "country",
+   ""
+  ],
+  "n:румен радев": [
+   "person",
+   "Rumen Radev"
+  ],
+  "n:скот бесент": [
+   "person",
+   "Scott Bessent"
+  ],
+  "n:уст-луг": [
+   "place",
+   ""
+  ],
+  "n:фламинго": [
+   "weapon",
+   "Flamingo"
+  ],
+  "n:фордо": [
+   "place",
+   ""
+  ],
+  "n:хтш": [
+   "org",
+   "Hayat Tahrir al-Sham"
+  ],
+  "n:цезар": [
+   "weapon",
+   "Caesar"
+  ],
+  "n:чечен": [
+   "place",
+   ""
+  ],
+  "n:шара": [
+   "person",
+   "Ahmed al-Sharaa"
+  ],
+  "n:шолц": [
+   "person",
+   "Olaf Scholz"
+  ],
+  "n:южен иран": [
+   "place",
+   ""
+  ],
+  "n:deep": [
+   "other",
+   ""
+  ],
+  "n:gepard": [
+   "weapon",
+   "Gepard"
+  ],
+  "n:ice": [
+   "org",
+   "US Immigration and Customs Enforcement"
+  ],
+  "n:iran": [
+   "country",
+   ""
+  ],
+  "n:uss abraham lincoln": [
+   "unit",
+   "USS Abraham Lincoln"
+  ],
+  "d:A-50": [
+   "weapon",
+   "A-50"
+  ],
+  "n:авдеевк": [
+   "place",
+   ""
+  ],
+  "n:азербайджан илхам алиев": [
+   "person",
+   "Ilham Aliyev"
+  ],
+  "n:ал маядин": [
+   "media",
+   ""
+  ],
+  "n:аржентин": [
+   "country",
+   ""
+  ],
+  "n:балакл": [
+   "place",
+   ""
+  ],
+  "n:бен уолъс": [
+   "person",
+   "Ben Wallace"
+  ],
+  "n:будан": [
+   "person",
+   "Kyrylo Budanov"
+  ],
+  "n:вдв": [
+   "org",
+   "Russian Airborne Forces"
+  ],
+  "n:вкс": [
+   "org",
+   "Russian Aerospace Forces"
+  ],
+  "n:варн": [
+   "place",
+   ""
+  ],
+  "n:гао": [
+   "place",
+   ""
+  ],
+  "n:граждан": [
+   "other",
+   ""
+  ],
+  "n:дунав": [
+   "place",
+   ""
+  ],
+  "n:кавказ": [
+   "place",
+   ""
+  ],
+  "n:карадж": [
+   "other",
+   ""
+  ],
+  "n:командван": [
+   "other",
+   ""
+  ],
+  "n:комунистич": [
+   "other",
+   ""
+  ],
+  "n:константиновк": [
+   "place",
+   ""
+  ],
+  "n:купян": [
+   "place",
+   ""
+  ],
+  "n:манбидж": [
+   "place",
+   ""
+  ],
+  "n:марин": [
+   "other",
+   ""
+  ],
+  "d:MИ-17": [
+   "weapon",
+   "Mi-17"
+  ],
+  "n:мурманск": [
+   "place",
+   ""
+  ],
+  "n:ниамей": [
+   "place",
+   ""
+  ],
+  "n:оссе": [
+   "other",
+   ""
+  ],
+  "n:реб": [
+   "other",
+   ""
+  ],
+  "n:сау": [
+   "other",
+   ""
+  ],
+  "n:северн америк": [
+   "place",
+   ""
+  ],
+  "n:споразумен": [
+   "other",
+   ""
+  ],
+  "d:CY-27": [
+   "weapon",
+   "Su-27"
+  ],
+  "n:съвместн": [
+   "other",
+   ""
+  ],
+  "n:торецк": [
+   "place",
+   ""
+  ],
+  "d:TY-22M3": [
+   "weapon",
+   "Tu-22M3"
+  ],
+  "n:уиткоф": [
+   "other",
+   ""
+  ],
+  "n:фицо": [
+   "person",
+   "Robert Fico"
+  ],
+  "n:хамбург": [
+   "place",
+   ""
+  ],
+  "d:A-18": [
+   "weapon",
+   "F/A-18"
+  ],
+  "n:abc news": [
+   "media",
+   ""
+  ],
+  "n:airbus": [
+   "org",
+   "Airbus"
+  ],
+  "n:isw": [
+   "media",
+   ""
+  ],
+  "n:javelin": [
+   "weapon",
+   "Javelin"
+  ],
+  "n:mlrs": [
+   "weapon",
+   "MLRS"
+  ],
+  "n:microsoft": [
+   "other",
+   ""
+  ],
+  "n:russia": [
+   "country",
+   ""
+  ],
+  "n:the insider": [
+   "media",
+   ""
+  ],
+  "n:the jerusalem post": [
+   "media",
+   ""
+  ],
+  "n:аарец": [
+   "media",
+   ""
+  ],
+  "n:ал шабаб": [
+   "org",
+   "Al-Shabaab"
+  ],
+  "n:алтернатив": [
+   "other",
+   ""
+  ],
+  "n:антон": [
+   "other",
+   ""
+  ],
+  "n:асошиейтед": [
+   "media",
+   ""
+  ],
+  "n:ахмед": [
+   "other",
+   ""
+  ],
+  "n:бпла": [
+   "other",
+   ""
+  ],
+  "n:башар": [
+   "person",
+   "Bashar al-Assad"
+  ],
+  "n:божидар колев": [
+   "person",
+   "Bozhidar Kolev"
+  ],
+  "n:борис джонсън": [
+   "person",
+   "Boris Johnson"
+  ],
+  "n:гана": [
+   "country",
+   ""
+  ],
+  "n:грузин": [
+   "other",
+   ""
+  ],
+  "n:далечн": [
+   "other",
+   ""
+  ],
+  "n:движен": [
+   "other",
+   ""
+  ],
+  "n:капитол": [
+   "place",
+   ""
+  ],
+  "n:кая калас": [
+   "person",
+   "Kaja Kallas"
+  ],
+  "n:кобан": [
+   "place",
+   ""
+  ],
+  "n:колед": [
+   "other",
+   ""
+  ],
+  "n:кремъл дмитрий песк": [
+   "person",
+   "Dmitry Peskov"
+  ],
+  "n:кудс": [
+   "other",
+   ""
+  ],
+  "n:лос анджелис": [
+   "place",
+   ""
+  ],
+  "n:люксембург": [
+   "country",
+   ""
+  ],
+  "n:малт": [
+   "country",
+   ""
+  ],
+  "n:министер": [
+   "other",
+   ""
+  ],
+  "n:наса": [
+   "org",
+   "NASA"
+  ],
+  "n:национален": [
+   "other",
+   ""
+  ],
+  "n:пийт хегсет": [
+   "person",
+   "Pete Hegseth"
+  ],
+  "n:росгвард": [
+   "org",
+   "Rosgvardiya"
+  ],
+  "n:роснефт": [
+   "org",
+   "Rosneft"
+  ],
+  "n:северно киву": [
+   "place",
+   ""
+  ],
+  "n:синай": [
+   "place",
+   ""
+  ],
+  "n:синало": [
+   "org",
+   "Sinaloa Cartel"
+  ],
+  "n:сомалиленд": [
+   "other",
+   ""
+  ],
+  "n:сочи": [
+   "place",
+   ""
+  ],
+  "n:специалн": [
+   "other",
+   ""
+  ],
+  "n:спецназ": [
+   "other",
+   ""
+  ],
+  "d:TY-160": [
+   "weapon",
+   "Tu-160"
+  ],
+  "n:устав": [
+   "other",
+   ""
+  ],
+  "n:шираз": [
+   "place",
+   ""
+  ],
+  "n:южна": [
+   "other",
+   ""
+  ],
+  "n:юн": [
+   "other",
+   ""
+  ],
+  "n:af": [
+   "other",
+   ""
+  ],
+  "n:amazon": [
+   "other",
+   ""
+  ],
+  "n:china": [
+   "country",
+   ""
+  ],
+  "n:exxon": [
+   "org",
+   "ExxonMobil"
+  ],
+  "n:france": [
+   "country",
+   ""
+  ],
+  "n:huawei": [
+   "org",
+   "Huawei"
+  ],
+  "n:jdam": [
+   "weapon",
+   "JDAM"
+  ],
+  "n:maxar": [
+   "org",
+   "Maxar"
+  ],
+  "n:saab": [
+   "org",
+   "Saab"
+  ],
+  "n:uss gerald": [
+   "unit",
+   "USS Gerald R. Ford"
+  ],
+  "n:абдел фатах": [
+   "other",
+   ""
+  ],
+  "n:абий ахмед": [
+   "person",
+   "Abiy Ahmed"
+  ],
+  "n:алмат": [
+   "place",
+   ""
+  ],
+  "n:атин": [
+   "place",
+   ""
+  ],
+  "d:БM-21": [
+   "weapon",
+   "BM-21 Grad"
+  ],
+  "n:букурещ": [
+   "place",
+   ""
+  ],
+  "n:владивосток": [
+   "place",
+   ""
+  ],
+  "d:Г-20": [
+   "org",
+   "G20"
+  ],
+  "n:граничн": [
+   "other",
+   ""
+  ],
+  "n:гуляйпол": [
+   "place",
+   ""
+  ],
+  "n:густаво петро": [
+   "person",
+   "Gustavo Petro"
+  ],
+  "n:дин": [
+   "other",
+   ""
+  ],
+  "n:дмитрий песк": [
+   "person",
+   "Dmitry Peskov"
+  ],
+  "n:жозеп борел": [
+   "person",
+   "Josep Borrell"
+  ],
+  "n:израел бенямин нетанях": [
+   "person",
+   "Benjamin Netanyahu"
+  ],
+  "n:източн либи": [
+   "place",
+   ""
+  ],
+  "n:интерфакс": [
+   "media",
+   ""
+  ],
+  "n:карач": [
+   "place",
+   ""
+  ],
+  "n:касем солейман": [
+   "person",
+   "Qasem Soleimani"
+  ],
+  "n:конвенц": [
+   "other",
+   ""
+  ],
+  "n:констанц": [
+   "place",
+   ""
+  ],
+  "n:крокус": [
+   "other",
+   ""
+  ],
+  "n:лайпциг": [
+   "place",
+   ""
+  ],
+  "n:леопард": [
+   "weapon",
+   "Leopard"
+  ],
+  "n:марк рюте": [
+   "person",
+   "Mark Rutte"
+  ],
+  "n:махс амин": [
+   "person",
+   "Mahsa Amini"
+  ],
+  "n:ми": [
+   "other",
+   ""
+  ],
+  "d:MИ-28": [
+   "weapon",
+   "Mi-28"
+  ],
+  "n:моджтаб хаменей": [
+   "person",
+   "Mojtaba Khamenei"
+  ],
+  "n:мозамбик": [
+   "country",
+   ""
+  ],
+  "n:молот": [
+   "other",
+   ""
+  ],
+  "n:новомихайловк": [
+   "place",
+   ""
+  ],
+  "n:олимпий": [
+   "other",
+   ""
+  ],
+  "n:ракк": [
+   "place",
+   ""
+  ],
+  "n:рамадан": [
+   "other",
+   ""
+  ],
+  "n:рюте": [
+   "other",
+   ""
+  ],
+  "n:свр": [
+   "org",
+   "SVR"
+  ],
+  "n:сзо": [
+   "org",
+   "WHO"
+  ],
+  "n:северноатлантич": [
+   "other",
+   ""
+  ],
+  "n:сенегал": [
+   "country",
+   ""
+  ],
+  "n:силв": [
+   "other",
+   ""
+  ],
+  "n:систан": [
+   "place",
+   ""
+  ],
+  "n:ставропол": [
+   "place",
+   ""
+  ],
+  "d:CY-24": [
+   "weapon",
+   "Su-24"
+  ],
+  "d:CY-30": [
+   "weapon",
+   "Su-30"
+  ],
+  "n:тайп": [
+   "place",
+   ""
+  ],
+  "n:тексас": [
+   "place",
+   ""
+  ],
+  "n:тип": [
+   "other",
+   ""
+  ],
+  "n:туркменистан": [
+   "country",
+   ""
+  ],
+  "n:университет": [
+   "other",
+   ""
+  ],
+  "n:файненшъл": [
+   "media",
+   ""
+  ],
+  "n:феодос": [
+   "place",
+   ""
+  ],
+  "n:харг": [
+   "other",
+   ""
+  ],
+  "n:хелзинк": [
+   "place",
+   ""
+  ],
+  "d:B-2": [
+   "weapon",
+   "B-2"
+  ],
+  "n:cbs": [
+   "media",
+   ""
+  ],
+  "n:eurofighter typhoon": [
+   "weapon",
+   "Eurofighter Typhoon"
+  ],
+  "d:F-35A": [
+   "weapon",
+   "F-35"
+  ],
+  "n:fars": [
+   "media",
+   ""
+  ],
+  "n:lng": [
+   "other",
+   ""
+  ],
+  "n:mirage": [
+   "weapon",
+   "Mirage 2000"
+  ],
+  "n:rt": [
+   "media",
+   ""
+  ],
+  "n:rafale": [
+   "weapon",
+   "Rafale"
+  ],
+  "n:rivet joint": [
+   "weapon",
+   "Rivet Joint"
+  ],
+  "n:samp": [
+   "weapon",
+   "SAMP/T"
+  ],
+  "n:swift": [
+   "other",
+   ""
+  ],
+  "n:saturday": [
+   "other",
+   ""
+  ],
+  "n:ynet": [
+   "media",
+   ""
+  ],
+  "n:асеан": [
+   "org",
+   "ASEAN"
+  ],
+  "n:асошиейтед прес": [
+   "media",
+   ""
+  ],
+  "d:БMП-1": [
+   "weapon",
+   "BMP-1"
+  ],
+  "n:бен-гвир": [
+   "person",
+   "Itamar Ben-Gvir"
+  ],
+  "n:блумбърг": [
+   "media",
+   ""
+  ],
+  "n:босфор": [
+   "place",
+   ""
+  ],
+  "n:вмз": [
+   "other",
+   ""
+  ],
+  "n:вирджин": [
+   "other",
+   ""
+  ],
+  "n:вовчанск": [
+   "place",
+   ""
+  ],
+  "n:галант": [
+   "other",
+   ""
+  ],
+  "n:глобалн": [
+   "other",
+   ""
+  ],
+  "n:гол": [
+   "other",
+   ""
+  ],
+  "n:грозн": [
+   "place",
+   ""
+  ],
+  "n:груп": [
+   "other",
+   ""
+  ],
+  "n:гуам": [
+   "place",
+   ""
+  ],
+  "n:дахи": [
+   "place",
+   ""
+  ],
+  "n:джанкой": [
+   "place",
+   ""
+  ],
+  "n:джейк съливан": [
+   "person",
+   "Jake Sullivan"
+  ],
+  "n:днепропетровск": [
+   "place",
+   ""
+  ],
+  "n:емил ефтим": [
+   "person",
+   "Emil Eftimov"
+  ],
+  "n:ефрат": [
+   "place",
+   ""
+  ],
+  "n:жаир болсонаро": [
+   "person",
+   "Jair Bolsonaro"
+  ],
+  "n:жан-ноел баро": [
+   "person",
+   "Jean-Noël Barrot"
+  ],
+  "n:западен иран": [
+   "place",
+   ""
+  ],
+  "n:ии": [
+   "other",
+   ""
+  ],
+  "n:ирпин": [
+   "place",
+   ""
+  ],
+  "n:камерун": [
+   "country",
+   ""
+  ],
+  "n:керманшах": [
+   "place",
+   ""
+  ],
+  "n:киншас": [
+   "place",
+   ""
+  ],
+  "n:коалиц": [
+   "other",
+   ""
+  ],
+  "n:кунайтр": [
+   "other",
+   ""
+  ],
+  "n:ликуд": [
+   "org",
+   "Likud"
+  ],
+  "n:льо пен": [
+   "person",
+   "Marine Le Pen"
+  ],
+  "n:маскат": [
+   "place",
+   ""
+  ],
+  "n:мерц": [
+   "person",
+   "Friedrich Merz"
+  ],
+  "d:MИГ-31": [
+   "weapon",
+   "MiG-31"
+  ],
+  "n:муктад садр": [
+   "person",
+   "Muqtada al-Sadr"
+  ],
+  "n:нанс пелос": [
+   "person",
+   "Nancy Pelosi"
+  ],
+  "n:нахичеван": [
+   "place",
+   ""
+  ],
+  "n:нови сад": [
+   "place",
+   ""
+  ],
+  "n:оае сили": [
+   "other",
+   ""
+  ],
+  "n:одкб": [
+   "org",
+   "CSTO"
+  ],
+  "n:опек": [
+   "org",
+   "OPEC"
+  ],
+  "n:парт": [
+   "other",
+   ""
+  ],
+  "n:пенсилван": [
+   "place",
+   ""
+  ],
+  "n:перм": [
+   "place",
+   ""
+  ],
+  "n:порт-о-пренс": [
+   "place",
+   ""
+  ],
+  "n:принц султан": [
+   "place",
+   ""
+  ],
+  "n:реджеп ердоган": [
+   "person",
+   "Recep Tayyip Erdoğan"
+  ],
+  "n:рихтер": [
+   "other",
+   ""
+  ],
+  "n:сна": [
+   "org",
+   "Syrian National Army"
+  ],
+  "n:саки": [
+   "place",
+   ""
+  ],
+  "n:север": [
+   "other",
+   ""
+  ],
+  "n:стармър": [
+   "other",
+   ""
+  ],
+  "n:таганрог": [
+   "place",
+   ""
+  ],
+  "n:тахрир": [
+   "other",
+   ""
+  ],
+  "n:твер": [
+   "place",
+   ""
+  ],
+  "n:тихоокеан": [
+   "other",
+   ""
+  ],
+  "n:фатах": [
+   "org",
+   "Fatah"
+  ],
+  "n:хакан фидан": [
+   "person",
+   "Hakan Fidan"
+  ],
+  "n:херц халев": [
+   "person",
+   "Herzi Halevi"
+  ],
+  "n:хузестан": [
+   "place",
+   ""
+  ],
+  "n:шарл": [
+   "other",
+   ""
+  ],
+  "n:шейх максуд": [
+   "other",
+   ""
+  ],
+  "n:южен судан": [
+   "place",
+   ""
+  ],
+  "n:южна америк": [
+   "place",
+   ""
+  ],
+  "n:южно киву": [
+   "place",
+   ""
+  ],
+  "n:al arabiya": [
+   "media",
+   ""
+  ],
+  "n:american": [
+   "other",
+   ""
+  ],
+  "n:baykar": [
+   "org",
+   "Baykar"
+  ],
+  "n:defense": [
+   "other",
+   ""
+  ],
+  "d:F-22": [
+   "weapon",
+   "F-22"
+  ],
+  "n:marder": [
+   "weapon",
+   "Marder"
+  ],
+  "n:mk": [
+   "other",
+   ""
+  ],
+  "n:new york times": [
+   "media",
+   ""
+  ],
+  "d:PAC-3": [
+   "weapon",
+   "PAC-3"
+  ],
+  "n:panther": [
+   "other",
+   ""
+  ],
+  "n:stinger": [
+   "weapon",
+   "Stinger"
+  ],
+  "n:tplf": [
+   "org",
+   "Tigray People's Liberation Front"
+  ],
+  "n:tigray": [
+   "place",
+   ""
+  ],
+  "n:total": [
+   "other",
+   ""
+  ],
+  "n:yonhap": [
+   "media",
+   ""
+  ],
+  "n:ал-акс": [
+   "place",
+   ""
+  ],
+  "n:алексей навалн": [
+   "person",
+   "Alexei Navalny"
+  ],
+  "n:али": [
+   "other",
+   ""
+  ],
+  "n:али лариджан": [
+   "person",
+   "Ali Larijani"
+  ],
+  "n:анджей дуда": [
+   "person",
+   "Andrzej Duda"
+  ],
+  "n:ахваз": [
+   "place",
+   ""
+  ],
+  "n:баренцово": [
+   "place",
+   ""
+  ],
+  "n:бени ганц": [
+   "person",
+   "Benny Gantz"
+  ],
+  "n:билохоривк": [
+   "place",
+   ""
+  ],
+  "n:боинг": [
+   "org",
+   "Boeing"
+  ],
+  "n:болсонаро": [
+   "person",
+   "Jair Bolsonaro"
+  ],
+  "n:бригад": [
+   "other",
+   ""
+  ],
+  "n:бургас": [
+   "place",
+   ""
+  ],
+  "n:бурунд": [
+   "country",
+   ""
+  ],
+  "n:виниц": [
+   "place",
+   ""
+  ],
+  "n:гидеон саар": [
+   "person",
+   "Gideon Sa'ar"
+  ],
+  "n:дейр хафер": [
+   "place",
+   ""
+  ],
+  "n:департамент": [
+   "other",
+   ""
+  ],
+  "n:джед": [
+   "place",
+   ""
+  ],
+  "n:дирекц": [
+   "other",
+   ""
+  ],
+  "n:дмитрий медвед": [
+   "person",
+   "Dmitry Medvedev"
+  ],
+  "n:ебрахим раис": [
+   "person",
+   "Ebrahim Raisi"
+  ],
+  "n:екатеринбург": [
+   "place",
+   ""
+  ],
+  "n:запорожко": [
+   "place",
+   ""
+  ],
+  "n:земят": [
+   "other",
+   ""
+  ],
+  "n:змий": [
+   "other",
+   ""
+  ],
+  "n:ивано-франковск": [
+   "place",
+   ""
+  ],
+  "n:източен йерусалим": [
+   "place",
+   ""
+  ],
+  "n:икономич": [
+   "other",
+   ""
+  ],
+  "n:илхам алиев": [
+   "person",
+   "Ilham Aliyev"
+  ],
+  "n:казан": [
+   "place",
+   ""
+  ],
+  "n:липецк": [
+   "place",
+   ""
+  ],
+  "n:локхийд мартин": [
+   "org",
+   "Lockheed Martin"
+  ],
+  "n:луис инасио лула": [
+   "person",
+   "Luiz Inácio Lula da Silva"
+  ],
+  "n:манил": [
+   "place",
+   ""
+  ],
+  "n:мансур": [
+   "other",
+   ""
+  ],
+  "n:мариуш блашчак": [
+   "person",
+   "Mariusz Błaszczak"
+  ],
+  "n:мая санд": [
+   "person",
+   "Maia Sandu"
+  ],
+  "n:меркав": [
+   "weapon",
+   "Merkava"
+  ],
+  "n:мете фредериксен": [
+   "person",
+   "Mette Frederiksen"
+  ],
+  "d:MИ-24": [
+   "weapon",
+   "Mi-24"
+  ],
+  "n:михаил федор": [
+   "person",
+   "Mikhail Fedorov"
+  ],
+  "n:монгол": [
+   "country",
+   ""
+  ],
+  "n:наблус": [
+   "place",
+   ""
+  ],
+  "n:насрал": [
+   "person",
+   "Hassan Nasrallah"
+  ],
+  "n:непал": [
+   "country",
+   ""
+  ],
+  "n:омар": [
+   "other",
+   ""
+  ],
+  "n:отав": [
+   "place",
+   ""
+  ],
+  "n:пен": [
+   "person",
+   "Marine Le Pen"
+  ],
+  "n:пуерто рико": [
+   "place",
+   ""
+  ],
+  "n:раис": [
+   "person",
+   "Ebrahim Raisi"
+  ],
+  "n:римск": [
+   "other",
+   ""
+  ],
+  "n:сащ стив уиткоф": [
+   "person",
+   "Steve Witkoff"
+  ],
+  "n:ссо": [
+   "other",
+   ""
+  ],
+  "n:сирик": [
+   "place",
+   ""
+  ],
+  "n:средиземномор": [
+   "place",
+   ""
+  ],
+  "n:стрел": [
+   "other",
+   ""
+  ],
+  "n:токмак": [
+   "place",
+   ""
+  ],
+  "n:тулч": [
+   "place",
+   ""
+  ],
+  "n:фарс": [
+   "place",
+   ""
+  ],
+  "n:фуджейр": [
+   "place",
+   ""
+  ],
+  "n:чвк": [
+   "other",
+   ""
+  ],
+  "n:чернобил": [
+   "place",
+   ""
+  ],
+  "n:шос": [
+   "org",
+   "Shanghai Cooperation Organization"
+  ],
+  "n:шотланд": [
+   "place",
+   ""
+  ],
+  "n:юн сук йол": [
+   "person",
+   "Yoon Suk-yeol"
+  ],
+  "n:awacs": [
+   "weapon",
+   "AWACS"
+  ],
+  "n:associated press": [
+   "media",
+   ""
+  ],
+  "n:cjng": [
+   "org",
+   "CJNG"
+  ],
+  "n:galaxy leader": [
+   "other",
+   ""
+  ],
+  "n:hermes": [
+   "other",
+   ""
+  ],
+  "n:instagram": [
+   "media",
+   ""
+  ],
+  "n:kan": [
+   "media",
+   ""
+  ],
+  "n:kyiv post": [
+   "media",
+   ""
+  ],
+  "n:mohajer": [
+   "weapon",
+   "Mohajer-6"
+  ],
+  "n:nbc": [
+   "media",
+   ""
+  ],
+  "n:orient-le jour": [
+   "media",
+   ""
+  ],
+  "n:patreon": [
+   "media",
+   ""
+  ],
+  "n:pr": [
+   "other",
+   ""
+  ],
+  "n:russian": [
+   "other",
+   ""
+  ],
+  "n:semafor": [
+   "media",
+   ""
+  ],
+  "n:sky": [
+   "media",
+   ""
+  ],
+  "n:stryker": [
+   "weapon",
+   "Stryker"
+  ],
+  "n:the atlantic": [
+   "media",
+   ""
+  ],
+  "n:uk": [
+   "country",
+   ""
+  ],
+  "n:ypg": [
+   "org",
+   "YPG"
+  ],
+  "n:ал шабааб": [
+   "org",
+   "Al Shabaab"
+  ],
+  "n:алфа": [
+   "other",
+   ""
+  ],
+  "n:ангол": [
+   "country",
+   ""
+  ],
+  "n:антонио таян": [
+   "person",
+   "Antonio Tajani"
+  ],
+  "n:аризон": [
+   "place",
+   ""
+  ],
+  "n:астрахан": [
+   "place",
+   ""
+  ],
+  "n:афар": [
+   "place",
+   ""
+  ],
+  "n:ашдод": [
+   "place",
+   ""
+  ],
+  "n:ашкелон": [
+   "place",
+   ""
+  ],
+  "n:баср": [
+   "place",
+   ""
+  ],
+  "n:башкортостан": [
+   "place",
+   ""
+  ],
+  "n:бейт ханун": [
+   "place",
+   ""
+  ],
+  "n:бен гурион": [
+   "place",
+   ""
+  ],
+  "n:бинямин нетанях": [
+   "person",
+   "Benjamin Netanyahu"
+  ],
+  "n:богот": [
+   "place",
+   ""
+  ],
+  "n:болив": [
+   "country",
+   ""
+  ],
+  "n:внуково": [
+   "place",
+   ""
+  ],
+  "n:воронежк": [
+   "place",
+   ""
+  ],
+  "n:гагауз": [
+   "place",
+   ""
+  ],
+  "n:главно": [
+   "other",
+   ""
+  ],
+  "n:дрк": [
+   "country",
+   ""
+  ],
+  "n:денят": [
+   "other",
+   ""
+  ],
+  "n:диего гарс": [
+   "place",
+   ""
+  ],
+  "n:ес жозеп борел": [
+   "person",
+   "Josep Borrell"
+  ],
+  "n:енергодар": [
+   "place",
+   ""
+  ],
+  "n:западн балкан": [
+   "place",
+   ""
+  ],
+  "n:ит": [
+   "other",
+   ""
+  ],
+  "n:интерпол": [
+   "org",
+   "Interpol"
+  ],
+  "n:каб": [
+   "weapon",
+   "KAB"
+  ],
+  "n:калибр": [
+   "weapon",
+   "Kalibr"
+  ],
+  "n:кахов вец": [
+   "place",
+   ""
+  ],
+  "n:кийв": [
+   "place",
+   ""
+  ],
+  "n:коре": [
+   "country",
+   ""
+  ],
+  "n:кремин": [
+   "place",
+   ""
+  ],
+  "n:лаос": [
+   "country",
+   ""
+  ],
+  "n:манам": [
+   "place",
+   ""
+  ],
+  "n:марк карн": [
+   "person",
+   "Mark Carney"
+  ],
+  "n:михайло подоляк": [
+   "person",
+   "Mykhailo Podolyak"
+  ],
+  "n:мопт": [
+   "place",
+   ""
+  ],
+  "n:мохамед базум": [
+   "person",
+   "Mohamed Bazoum"
+  ],
+  "n:нафтал бенет": [
+   "person",
+   "Naftali Bennett"
+  ],
+  "n:нижнекамск": [
+   "place",
+   ""
+  ],
+  "n:одкс": [
+   "org",
+   "CSTO"
+  ],
+  "n:отдел": [
+   "other",
+   ""
+  ],
+  "n:перу": [
+   "country",
+   ""
+  ],
+  "n:порт судан": [
+   "place",
+   ""
+  ],
+  "n:примор": [
+   "place",
+   ""
+  ],
+  "n:радуан": [
+   "unit",
+   "Radwan Force"
+  ],
+  "n:рас лафан": [
+   "place",
+   ""
+  ],
+  "n:рибар": [
+   "other",
+   ""
+  ],
+  "n:роскомнадзор": [
+   "org",
+   "Roskomnadzor"
+  ],
+  "n:роскосмос": [
+   "org",
+   "Roscosmos"
+  ],
+  "n:садр": [
+   "person",
+   "Muqtada al-Sadr"
+  ],
+  "n:сдерот": [
+   "place",
+   ""
+  ],
+  "n:сидн": [
+   "place",
+   ""
+  ],
+  "n:сири ахмад": [
+   "person",
+   "Ahmed al-Sharaa"
+  ],
+  "n:стар": [
+   "other",
+   ""
+  ],
+  "n:сур": [
+   "place",
+   ""
+  ],
+  "n:табк": [
+   "place",
+   ""
+  ],
+  "n:талин": [
+   "place",
+   ""
+  ],
+  "n:тамб": [
+   "place",
+   ""
+  ],
+  "n:тернопол": [
+   "place",
+   ""
+  ],
+  "n:тодор тагар": [
+   "person",
+   "Todor Tagarev"
+  ],
+  "n:туапс": [
+   "place",
+   ""
+  ],
+  "n:фейсбук": [
+   "media",
+   ""
+  ],
+  "n:хаван": [
+   "place",
+   ""
+  ],
+  "n:хафтар": [
+   "other",
+   ""
+  ],
+  "n:хегсет": [
+   "other",
+   ""
+  ],
+  "n:хостомел": [
+   "place",
+   ""
+  ],
+  "n:цар": [
+   "country",
+   ""
+  ],
+  "n:централн африк": [
+   "place",
+   ""
+  ],
+  "n:циркон": [
+   "weapon",
+   "Zircon"
+  ],
+  "n:черкас": [
+   "place",
+   ""
+  ],
+  "n:чечн": [
+   "place",
+   ""
+  ],
+  "n:шейх мансур": [
+   "other",
+   ""
+  ],
+  "n:южното": [
+   "other",
+   ""
+  ],
+  "d:AH-64": [
+   "weapon",
+   "AH-64 Apache"
+  ],
+  "n:akm": [
+   "weapon",
+   "AKM"
+  ],
+  "n:ambrey": [
+   "media",
+   ""
+  ],
+  "n:apache": [
+   "weapon",
+   "AH-64 Apache"
+  ],
+  "n:august": [
+   "other",
+   ""
+  ],
+  "d:B-1": [
+   "weapon",
+   "B-1"
+  ],
+  "n:de re militari": [
+   "other",
+   ""
+  ],
+  "n:die welt": [
+   "media",
+   ""
+  ],
+  "n:endf": [
+   "org",
+   "Ethiopian National Defense Force"
+  ],
+  "d:F-15E": [
+   "weapon",
+   "F-15"
+  ],
+  "n:friday": [
+   "other",
+   ""
+  ],
+  "n:gmlrs": [
+   "weapon",
+   "GMLRS"
+  ],
+  "n:gripen": [
+   "weapon",
+   "Gripen"
+  ],
+  "n:iran international": [
+   "media",
+   ""
+  ],
+  "n:iranian": [
+   "other",
+   ""
+  ],
+  "n:net": [
+   "other",
+   ""
+  ],
+  "n:news": [
+   "other",
+   ""
+  ],
+  "n:nvidia": [
+   "org",
+   "Nvidia"
+  ],
+  "n:pegasus": [
+   "other",
+   ""
+  ],
+  "n:rfe": [
+   "media",
+   ""
+  ],
+  "n:thaad": [
+   "weapon",
+   "THAAD"
+  ],
+  "n:tesla": [
+   "other",
+   ""
+  ],
+  "n:times": [
+   "media",
+   ""
+  ],
+  "n:wafa": [
+   "media",
+   ""
+  ],
+  "n:war": [
+   "other",
+   ""
+  ],
+  "n:wildberries": [
+   "other",
+   ""
+  ],
+  "n:аец": [
+   "other",
+   ""
+  ],
+  "n:абхаз": [
+   "place",
+   ""
+  ],
+  "n:авдийвк": [
+   "place",
+   ""
+  ],
+  "n:акротир": [
+   "place",
+   ""
+  ],
+  "n:амхар": [
+   "place",
+   ""
+  ],
+  "n:аракан": [
+   "place",
+   ""
+  ],
+  "n:асоциац": [
+   "other",
+   ""
+  ],
+  "n:аун сан су чи": [
+   "person",
+   "Aung San Suu Kyi"
+  ],
+  "n:баалбек": [
+   "place",
+   ""
+  ],
+  "n:бинт джбейл": [
+   "place",
+   ""
+  ],
+  "n:близък": [
+   "other",
+   ""
+  ],
+  "n:богдановк": [
+   "place",
+   ""
+  ],
+  "n:братислав": [
+   "place",
+   ""
+  ],
+  "n:вс": [
+   "other",
+   ""
+  ],
+  "n:гдбоп": [
+   "org",
+   "GDBOP"
+  ],
+  "n:галил": [
+   "place",
+   ""
+  ],
+  "n:ганц": [
+   "person",
+   "Benny Gantz"
+  ],
+  "n:гвин": [
+   "country",
+   ""
+  ],
+  "n:дан кейн": [
+   "person",
+   "Dan Caine"
+  ],
+  "n:делх": [
+   "place",
+   ""
+  ],
+  "n:димон": [
+   "place",
+   ""
+  ],
+  "n:донецко": [
+   "place",
+   ""
+  ],
+  "n:елисей": [
+   "place",
+   ""
+  ],
+  "n:западн европ": [
+   "place",
+   ""
+  ],
+  "n:илан шор": [
+   "person",
+   "Ilan Shor"
+  ],
+  "n:ингушет": [
+   "place",
+   ""
+  ],
+  "n:инициатив": [
+   "other",
+   ""
+  ],
+  "n:иран али хаменей": [
+   "person",
+   "Ali Khamenei"
+  ],
+  "n:иркутск": [
+   "place",
+   ""
+  ],
+  "n:кгб": [
+   "org",
+   "KGB"
+  ],
+  "n:кабо делгадо": [
+   "place",
+   ""
+  ],
+  "n:карел": [
+   "place",
+   ""
+  ],
+  "n:кирил": [
+   "other",
+   ""
+  ],
+  "n:колск": [
+   "place",
+   ""
+  ],
+  "n:комерсант": [
+   "media",
+   ""
+  ],
+  "n:конституционн": [
+   "other",
+   ""
+  ],
+  "n:контактн": [
+   "other",
+   ""
+  ],
+  "n:кременчук": [
+   "place",
+   ""
+  ],
+  "n:кум": [
+   "other",
+   ""
+  ],
+  "n:кушнер": [
+   "person",
+   "Jared Kushner"
+  ],
+  "n:лейбъристк": [
+   "other",
+   ""
+  ],
+  "n:линдз греъм": [
+   "person",
+   "Lindsey Graham"
+  ],
+  "n:мвф": [
+   "org",
+   "IMF"
+  ],
+  "n:мазлум абди": [
+   "person",
+   "Mazlum Abdi"
+  ],
+  "n:мариб": [
+   "place",
+   ""
+  ],
+  "n:мари захар": [
+   "person",
+   "Maria Zakharova"
+  ],
+  "n:маям": [
+   "place",
+   ""
+  ],
+  "n:медин": [
+   "person",
+   "Vladimir Medinsky"
+  ],
+  "n:метул": [
+   "place",
+   ""
+  ],
+  "d:MИГ-31K": [
+   "weapon",
+   "MiG-31"
+  ],
+  "n:мичиган": [
+   "place",
+   ""
+  ],
+  "n:мохамад": [
+   "other",
+   ""
+  ],
+  "n:мохамад галибаф": [
+   "person",
+   "Mohammad Ghalibaf"
+  ],
+  "n:найроб": [
+   "place",
+   ""
+  ],
+  "n:нептун": [
+   "weapon",
+   "Neptune"
+  ],
+  "n:нецарим": [
+   "place",
+   ""
+  ],
+  "n:никопол": [
+   "place",
+   ""
+  ],
+  "n:нова каледон": [
+   "place",
+   ""
+  ],
+  "n:ново": [
+   "other",
+   ""
+  ],
+  "n:новошахтинск": [
+   "place",
+   ""
+  ],
+  "n:оон антон гутериш": [
+   "person",
+   "Antonio Guterres"
+  ],
+  "n:птрк": [
+   "weapon",
+   "ATGM"
+  ],
+  "n:петербург": [
+   "place",
+   ""
+  ],
+  "n:попасн": [
+   "place",
+   ""
+  ],
+  "n:рпг": [
+   "weapon",
+   "RPG"
+  ],
+  "n:рас": [
+   "other",
+   ""
+  ],
+  "n:росатом": [
+   "org",
+   "Rosatom"
+  ],
+  "n:саад": [
+   "place",
+   ""
+  ],
+  "n:сараево": [
+   "place",
+   ""
+  ],
+  "n:северн европ": [
+   "place",
+   ""
+  ],
+  "n:синдзян": [
+   "place",
+   ""
+  ],
+  "n:сирск": [
+   "other",
+   ""
+  ],
+  "d:CY-57": [
+   "weapon",
+   "Su-57"
+  ],
+  "n:суайд": [
+   "other",
+   ""
+  ],
+  "n:таурус": [
+   "weapon",
+   "Taurus"
+  ],
+  "n:тик": [
+   "other",
+   ""
+  ],
+  "n:того": [
+   "country",
+   ""
+  ],
+  "n:том барак": [
+   "person",
+   "Tom Barrack"
+  ],
+  "n:томахоук": [
+   "weapon",
+   "Tomahawk"
+  ],
+  "n:тулкарм": [
+   "other",
+   ""
+  ],
+  "n:тунис": [
+   "place",
+   ""
+  ],
+  "n:умер": [
+   "person",
+   "Rustem Umerov"
+  ],
+  "n:уолстрийт": [
+   "place",
+   ""
+  ],
+  "n:уфа": [
+   "place",
+   ""
+  ],
+  "n:франц еманюел макрон": [
+   "person",
+   "Emmanuel Macron"
+  ],
+  "d:X-22": [
+   "weapon",
+   "Kh-22"
+  ],
+  "n:хдс": [
+   "org",
+   "CDU/CSU"
+  ],
+  "n:хизбул хасан насрал": [
+   "person",
+   "Hassan Nasrallah"
+  ],
+  "n:часив яр": [
+   "place",
+   ""
+  ],
+  "n:черноморск": [
+   "place",
+   ""
+  ],
+  "n:чили": [
+   "place",
+   ""
+  ],
+  "n:шан": [
+   "place",
+   ""
+  ],
+  "n:южна азия": [
+   "place",
+   ""
+  ],
+  "n:ярмук": [
+   "place",
+   ""
+  ],
+  "d:A-10": [
+   "weapon",
+   "A-10"
+  ],
+  "n:alfa watan": [
+   "other",
+   ""
+  ],
+  "n:an": [
+   "other",
+   ""
+  ],
+  "n:aramco": [
+   "org",
+   "Aramco"
+  ],
+  "n:arrow": [
+   "weapon",
+   "Arrow"
+  ],
+  "n:bnd": [
+   "org",
+   "BND"
+  ],
+  "n:bradley": [
+   "weapon",
+   "M2 Bradley"
+  ],
+  "d:C-130": [
+   "weapon",
+   "C-130"
+  ],
+  "n:csis": [
+   "media",
+   ""
+  ],
+  "n:chevron": [
+   "org",
+   "Chevron"
+  ],
+  "n:europe": [
+   "place",
+   ""
+  ],
+  "n:flightradar": [
+   "media",
+   ""
+  ],
+  "n:foreign affairs": [
+   "other",
+   ""
+  ],
+  "n:hawk": [
+   "weapon",
+   "Hawk"
+  ],
+  "n:iraq": [
+   "place",
+   ""
+  ],
+  "n:islamic state": [
+   "org",
+   "Islamic State"
+  ],
+  "n:journal": [
+   "media",
+   ""
+  ],
+  "d:KN-23": [
+   "weapon",
+   "KN-23"
+  ],
+  "n:lightning ii": [
+   "weapon",
+   "F-35"
+  ],
+  "n:mrap": [
+   "weapon",
+   "MRAP"
+  ],
+  "n:moscow": [
+   "place",
+   ""
+  ],
+  "n:nikkei asia": [
+   "media",
+   ""
+  ],
+  "n:open": [
+   "other",
+   ""
+  ],
+  "n:orient today": [
+   "media",
+   ""
+  ],
+  "n:panjshir": [
+   "place",
+   ""
+  ],
+  "n:poseidon": [
+   "other",
+   ""
+  ],
+  "n:qatar": [
+   "place",
+   ""
+  ],
+  "n:raytheon": [
+   "org",
+   "Raytheon"
+  ],
+  "n:stc": [
+   "org",
+   "Southern Transitional Council"
+  ],
+  "n:sky news arabia": [
+   "media",
+   ""
+  ],
+  "n:the kyiv independent": [
+   "media",
+   ""
+  ],
+  "n:the us": [
+   "other",
+   ""
+  ],
+  "n:thunder": [
+   "other",
+   ""
+  ],
+  "n:walla": [
+   "media",
+   ""
+  ],
+  "n:whats": [
+   "other",
+   ""
+  ],
+  "n:ал акса": [
+   "place",
+   ""
+  ],
+  "n:алиев": [
+   "person",
+   "Ilham Aliyev"
+  ],
+  "n:алма": [
+   "other",
+   ""
+  ],
+  "n:амур": [
+   "place",
+   ""
+  ],
+  "d:AH-26": [
+   "weapon",
+   "An-26"
+  ],
+  "n:англ": [
+   "place",
+   ""
+  ],
+  "n:андрий ермак": [
+   "person",
+   "Andriy Yermak"
+  ],
+  "n:андрий сибих": [
+   "person",
+   "Andriy Sibiga"
+  ],
+  "n:антон коща": [
+   "person",
+   "António Costa"
+  ],
+  "n:софи": [
+   "place",
+   ""
+  ],
+  "n:хартум": [
+   "place",
+   ""
+  ],
+  "n:хомс": [
+   "place",
+   ""
+  ],
+  "n:южна африк": [
+   "country",
+   ""
+  ],
+  "n:баку": [
+   "place",
+   ""
+  ],
+  "n:косово": [
+   "place",
+   ""
+  ],
+  "d:MИГ-29": [
+   "weapon",
+   "MiG-29"
+  ],
+  "n:минск": [
+   "place",
+   ""
+  ],
+  "n:народн": [
+   "other",
+   ""
+  ],
+  "n:червен": [
+   "other",
+   ""
+  ],
+  "n:axios": [
+   "media",
+   ""
+  ],
+  "n:jnim": [
+   "org",
+   "JNIM"
+  ],
+  "d:Г-7": [
+   "org",
+   "G7"
+  ],
+  "n:каракас": [
+   "place",
+   ""
+  ],
+  "n:лайен": [
+   "person",
+   "Ursula von der Leyen"
+  ],
+  "n:марко рубио": [
+   "person",
+   "Marco Rubio"
+  ],
+  "n:покровск": [
+   "place",
+   ""
+  ],
+  "n:филипин": [
+   "country",
+   ""
+  ],
+  "n:the telegraph": [
+   "media",
+   ""
+  ],
+  "n:абу даби": [
+   "place",
+   ""
+  ],
+  "n:али хаменей": [
+   "person",
+   "Ali Khamenei"
+  ],
+  "n:източн": [
+   "other",
+   ""
+  ],
+  "n:николас мадуро": [
+   "person",
+   "Nicolás Maduro"
+  ],
+  "n:олаф шолц": [
+   "person",
+   "Olaf Scholz"
+  ],
+  "n:северен ирак": [
+   "place",
+   ""
+  ],
+  "n:тасс": [
+   "media",
+   ""
+  ],
+  "n:деня": [
+   "other",
+   ""
+  ],
+  "n:източн сири": [
+   "place",
+   ""
+  ],
+  "n:куба": [
+   "country",
+   ""
+  ],
+  "n:сана": [
+   "place",
+   ""
+  ],
+  "n:тартус": [
+   "place",
+   ""
+  ],
+  "n:южнокитай": [
+   "other",
+   ""
+  ],
+  "n:the washington post": [
+   "media",
+   ""
+  ],
+  "n:виктор орбан": [
+   "person",
+   "Viktor Orbán"
+  ],
+  "n:купянск": [
+   "place",
+   ""
+  ],
+  "n:тихи": [
+   "other",
+   ""
+  ],
+  "n:фридрих мерц": [
+   "person",
+   "Friedrich Merz"
+  ],
+  "n:gps": [
+   "other",
+   ""
+  ],
+  "n:starlink": [
+   "other",
+   ""
+  ],
+  "n:wall street journal": [
+   "media",
+   ""
+  ],
+  "n:агенц": [
+   "other",
+   ""
+  ],
+  "n:воронеж": [
+   "place",
+   ""
+  ],
+  "n:исламабад": [
+   "place",
+   ""
+  ],
+  "n:кипър": [
+   "country",
+   ""
+  ],
+  "n:ню делх": [
+   "place",
+   ""
+  ],
+  "n:свобод": [
+   "other",
+   ""
+  ],
+  "n:славянск": [
+   "place",
+   ""
+  ],
+  "n:politico": [
+   "media",
+   ""
+  ],
+  "n:брянск": [
+   "place",
+   ""
+  ],
+  "n:доха": [
+   "place",
+   ""
+  ],
+  "n:киър стармър": [
+   "person",
+   "Keir Starmer"
+  ],
+  "n:кюрд": [
+   "other",
+   ""
+  ],
+  "n:мосад": [
+   "org",
+   "Mossad"
+  ],
+  "n:новоросийск": [
+   "place",
+   ""
+  ],
+  "n:панцир": [
+   "weapon",
+   "Pantsir"
+  ],
+  "d:C-400": [
+   "weapon",
+   "S-400"
+  ],
+  "n:rheinmetall": [
+   "org",
+   "Rheinmetall"
+  ],
+  "n:washington post": [
+   "media",
+   ""
+  ],
+  "n:брян": [
+   "other",
+   ""
+  ],
+  "n:дженин": [
+   "place",
+   ""
+  ],
+  "n:украйн": [
+   "country",
+   ""
+  ],
+  "n:сащ": [
+   "country",
+   ""
+  ],
+  "n:руси": [
+   "country",
+   ""
+  ],
+  "n:иран": [
+   "country",
+   ""
+  ],
+  "n:израел": [
+   "country",
+   ""
+  ],
+  "n:тръмп": [
+   "person",
+   "Donald Trump"
+  ],
+  "n:китай": [
+   "country",
+   ""
+  ],
+  "n:газа": [
+   "place",
+   ""
+  ],
+  "n:сири": [
+   "country",
+   ""
+  ],
+  "n:руск": [
+   "other",
+   ""
+  ],
+  "n:хизбул": [
+   "org",
+   "Hezbollah"
+  ],
+  "n:ливан": [
+   "country",
+   ""
+  ],
+  "n:ес": [
+   "country",
+   ""
+  ],
+  "n:оон": [
+   "country",
+   ""
+  ],
+  "n:хамас": [
+   "org",
+   "Hamas"
+  ],
+  "n:вашингтон": [
+   "place",
+   ""
+  ],
+  "n:турц": [
+   "country",
+   ""
+  ],
+  "n:герман": [
+   "country",
+   ""
+  ],
+  "n:франц": [
+   "country",
+   ""
+  ],
+  "n:путин": [
+   "person",
+   "Vladimir Putin"
+  ],
+  "n:великобритан": [
+   "country",
+   ""
+  ],
+  "n:ирак": [
+   "country",
+   ""
+  ],
+  "n:българ": [
+   "country",
+   ""
+  ],
+  "n:полш": [
+   "country",
+   ""
+  ],
+  "n:зелен": [
+   "person",
+   "Volodymyr Zelensky"
+  ],
+  "n:кремъл": [
+   "org",
+   "Kremlin"
+  ],
+  "n:асад": [
+   "person",
+   "Bashar al-Assad"
+  ],
+  "n:беларус": [
+   "country",
+   ""
+  ],
+  "n:оае": [
+   "country",
+   ""
+  ],
+  "n:йемен": [
+   "country",
+   ""
+  ],
+  "n:катар": [
+   "country",
+   ""
+  ],
+  "n:инди": [
+   "country",
+   ""
+  ],
+  "n:нетанях": [
+   "person",
+   "Benjamin Netanyahu"
+  ],
+  "n:румън": [
+   "country",
+   ""
+  ],
+  "n:япон": [
+   "country",
+   ""
+  ],
+  "n:пакистан": [
+   "country",
+   ""
+  ],
+  "n:байдън": [
+   "person",
+   "Joe Biden"
+  ],
+  "n:венецуел": [
+   "country",
+   ""
+  ],
+  "n:тайван": [
+   "place",
+   ""
+  ],
+  "n:египет": [
+   "country",
+   ""
+  ],
+  "n:северн коре": [
+   "country",
+   ""
+  ],
+  "n:йордан": [
+   "country",
+   ""
+  ],
+  "n:афганистан": [
+   "country",
+   ""
+  ],
+  "n:литв": [
+   "country",
+   ""
+  ],
+  "n:пентагон": [
+   "org",
+   "Pentagon"
+  ],
+  "n:южна коре": [
+   "country",
+   ""
+  ],
+  "n:азербайджан": [
+   "country",
+   ""
+  ],
+  "n:испан": [
+   "country",
+   ""
+  ],
+  "n:канад": [
+   "country",
+   ""
+  ],
+  "n:финланд": [
+   "country",
+   ""
+  ],
+  "n:швец": [
+   "country",
+   ""
+  ],
+  "n:нигер": [
+   "country",
+   ""
+  ],
+  "n:нидерланд": [
+   "country",
+   ""
+  ],
+  "n:итал": [
+   "country",
+   ""
+  ],
+  "n:сирий": [
+   "other",
+   ""
+  ],
+  "n:мали": [
+   "country",
+   ""
+  ],
+  "n:унгар": [
+   "country",
+   ""
+  ],
+  "n:молд": [
+   "country",
+   ""
+  ],
+  "n:оман": [
+   "country",
+   ""
+  ],
+  "n:норвег": [
+   "country",
+   ""
+  ],
+  "n:армен": [
+   "country",
+   ""
+  ],
+  "n:дани": [
+   "country",
+   ""
+  ],
+  "n:австрал": [
+   "country",
+   ""
+  ],
+  "n:бахрейн": [
+   "country",
+   ""
+  ],
+  "n:судан": [
+   "country",
+   ""
+  ],
+  "n:всу": [
+   "org",
+   "Ukrainian Armed Forces"
+  ],
+  "n:кувейт": [
+   "country",
+   ""
+  ],
+  "n:сърб": [
+   "country",
+   ""
+  ],
+  "n:естон": [
+   "country",
+   ""
+  ],
+  "n:палестин": [
+   "place",
+   ""
+  ],
+  "n:словак": [
+   "country",
+   ""
+  ],
+  "n:казахстан": [
+   "country",
+   ""
+  ],
+  "n:латв": [
+   "country",
+   ""
+  ],
+  "n:груз": [
+   "country",
+   ""
+  ],
+  "n:макрон": [
+   "person",
+   "Emmanuel Macron"
+  ],
+  "n:гърц": [
+   "country",
+   ""
+  ],
+  "n:тайланд": [
+   "country",
+   ""
+  ],
+  "n:либи": [
+   "country",
+   ""
+  ],
+  "n:чехи": [
+   "country",
+   ""
+  ],
+  "n:сомал": [
+   "country",
+   ""
+  ],
+  "n:конго": [
+   "country",
+   ""
+  ],
+  "n:мексико": [
+   "country",
+   ""
+  ],
+  "n:цахал": [
+   "org",
+   "Israel Defense Forces"
+  ],
+  "n:етиоп": [
+   "country",
+   ""
+  ],
+  "n:мадуро": [
+   "person",
+   "Nicolás Maduro"
+  ],
+  "n:мианмар": [
+   "country",
+   ""
+  ],
+  "n:ердоган": [
+   "person",
+   "Recep Tayyip Erdoğan"
+  ],
+  "n:приднестр": [
+   "place",
+   ""
+  ],
+  "n:ким чен ун": [
+   "person",
+   "Kim Jong Un"
+  ],
+  "n:лавр": [
+   "person",
+   "Sergei Lavrov"
+  ],
+  "n:кндр": [
+   "country",
+   ""
+  ],
+  "n:хаменей": [
+   "person",
+   "Ali Khamenei"
+  ],
+  "n:индий": [
+   "other",
+   ""
+  ],
+  "n:лукашенко": [
+   "person",
+   "Alexander Lukashenko"
+  ],
+  "n:idf": [
+   "org",
+   "Israel Defense Forces"
+  ],
+  "n:емирств": [
+   "country",
+   ""
+  ],
+  "n:кюрдистан": [
+   "place",
+   ""
+  ],
+  "n:американ": [
+   "other",
+   ""
+  ],
+  "n:ким чен-ун": [
+   "person",
+   "Kim Jong Un"
+  ],
+  "n:украин": [
+   "other",
+   ""
+  ],
+  "n:моди": [
+   "person",
+   "Narendra Modi"
+  ],
+  "n:ивиц": [
+   "place",
+   ""
+  ],
+  "n:астан": [
+   "place",
+   ""
+  ],
+  "n:атанас запрян": [
+   "person",
+   "Atanas Zapryanov"
+  ],
+  "n:африн": [
+   "place",
+   ""
+  ],
+  "n:бтр": [
+   "weapon",
+   "BTR"
+  ],
+  "n:баас": [
+   "other",
+   ""
+  ],
+  "n:балтик": [
+   "other",
+   ""
+  ],
+  "n:боко харам": [
+   "org",
+   "Boko Haram"
+  ],
+  "n:борд": [
+   "other",
+   ""
+  ],
+  "n:борно": [
+   "place",
+   ""
+  ],
+  "n:бук": [
+   "weapon",
+   "Buk"
+  ],
+  "n:букав": [
+   "place",
+   ""
+  ],
+  "n:бундестаг": [
+   "org",
+   "Bundestag"
+  ],
+  "n:венецуел николас мадуро": [
+   "person",
+   "Nicolás Maduro"
+  ],
+  "n:висш": [
+   "other",
+   ""
+  ],
+  "n:вътрешн": [
+   "other",
+   ""
+  ],
+  "n:гвоздик": [
+   "weapon",
+   "Gvozdika"
+  ],
+  "n:гербер": [
+   "weapon",
+   "Gerbera"
+  ],
+  "n:готланд": [
+   "place",
+   ""
+  ],
+  "n:дейвид камерън": [
+   "person",
+   "David Cameron"
+  ],
+  "n:джефр епстийн": [
+   "person",
+   "Jeffrey Epstein"
+  ],
+  "n:джъстин трюдо": [
+   "person",
+   "Justin Trudeau"
+  ],
+  "n:ейбрамс": [
+   "weapon",
+   "M1 Abrams"
+  ],
+  "n:ел салвадор": [
+   "country",
+   ""
+  ],
+  "n:ел-обейд": [
+   "place",
+   ""
+  ],
+  "n:зайед": [
+   "person",
+   "Mohammed bin Zayed"
+  ],
+  "n:захедан": [
+   "place",
+   ""
+  ],
+  "n:израел голан": [
+   "place",
+   ""
+  ],
+  "n:източн средиземномор": [
+   "place",
+   ""
+  ],
+  "n:калас": [
+   "other",
+   ""
+  ],
+  "n:калин джорджеск": [
+   "person",
+   "Călin Georgescu"
+  ],
+  "n:камал харис": [
+   "person",
+   "Kamala Harris"
+  ],
+  "n:кастус калин": [
+   "person",
+   "Kastus Kalinovski"
+  ],
+  "n:кешм": [
+   "place",
+   ""
+  ],
+  "n:ким": [
+   "other",
+   ""
+  ],
+  "n:кирил дмитр": [
+   "person",
+   "Kirill Dmitriev"
+  ],
+  "n:киркук": [
+   "place",
+   ""
+  ],
+  "n:конституц": [
+   "other",
+   ""
+  ],
+  "n:корпус": [
+   "other",
+   ""
+  ],
+  "n:кот": [
+   "other",
+   ""
+  ],
+  "n:куал лумпур": [
+   "place",
+   ""
+  ],
+  "n:кулиакан": [
+   "place",
+   ""
+  ],
+  "n:ламанш": [
+   "place",
+   ""
+  ],
+  "n:лвив": [
+   "place",
+   ""
+  ],
+  "n:либий": [
+   "other",
+   ""
+  ],
+  "n:мавритан": [
+   "country",
+   ""
+  ],
+  "n:макеевк": [
+   "place",
+   ""
+  ],
+  "n:мандеб": [
+   "place",
+   ""
+  ],
+  "n:мексико сити": [
+   "place",
+   ""
+  ],
+  "n:мелон": [
+   "person",
+   "Giorgia Meloni"
+  ],
+  "n:минесот": [
+   "place",
+   ""
+  ],
+  "n:мир": [
+   "other",
+   ""
+  ],
+  "n:многонационалн": [
+   "other",
+   ""
+  ],
+  "n:муафак салт": [
+   "place",
+   ""
+  ],
+  "n:наказателн": [
+   "other",
+   ""
+  ],
+  "n:омдурман": [
+   "place",
+   ""
+  ],
+  "n:оникс": [
+   "weapon",
+   "Onyx"
+  ],
+  "n:операц": [
+   "other",
+   ""
+  ],
+  "n:орел": [
+   "other",
+   ""
+  ],
+  "n:орешник": [
+   "weapon",
+   "Oreshnik"
+  ],
+  "n:орлан": [
+   "weapon",
+   "Orlan-10"
+  ],
+  "n:остин": [
+   "place",
+   ""
+  ],
+  "n:пкк сирий": [
+   "other",
+   ""
+  ],
+  "n:пала": [
+   "country",
+   ""
+  ],
+  "n:парижк": [
+   "other",
+   ""
+  ],
+  "n:петер мадяр": [
+   "person",
+   "Péter Mádár"
+  ],
+  "n:петр фиал": [
+   "person",
+   "Petr Fiala"
+  ],
+  "n:претор": [
+   "place",
+   ""
+  ],
+  "n:рига": [
+   "place",
+   ""
+  ],
+  "n:роман абрамович": [
+   "person",
+   "Roman Abramovich"
+  ],
+  "n:ротердам": [
+   "place",
+   ""
+  ],
+  "n:сащ том барак": [
+   "person",
+   "Tom Barrack"
+  ],
+  "n:сахн": [
+   "place",
+   ""
+  ],
+  "n:свободн": [
+   "other",
+   ""
+  ],
+  "n:северен дарфур": [
+   "place",
+   ""
+  ],
+  "n:север донец": [
+   "place",
+   ""
+  ],
+  "n:сеут": [
+   "place",
+   ""
+  ],
+  "n:симферопол": [
+   "place",
+   ""
+  ],
+  "n:скоп": [
+   "place",
+   ""
+  ],
+  "n:смоленск": [
+   "place",
+   ""
+  ],
+  "n:смотрич": [
+   "person",
+   "Bezalel Smotrich"
+  ],
+  "n:страйкър": [
+   "weapon",
+   "Stryker"
+  ],
+  "d:CY-30CM": [
+   "weapon",
+   "Su-30"
+  ],
+  "n:суровикин": [
+   "person",
+   "Sergey Surovikin"
+  ],
+  "n:танзан": [
+   "country",
+   ""
+  ],
+  "n:тимбукт": [
+   "place",
+   ""
+  ],
+  "n:тиран": [
+   "place",
+   ""
+  ],
+  "n:тобаго": [
+   "country",
+   ""
+  ],
+  "n:турск": [
+   "other",
+   ""
+  ],
+  "n:феникс": [
+   "other",
+   ""
+  ],
+  "n:фонд": [
+   "other",
+   ""
+  ],
+  "n:франкфурт": [
+   "place",
+   ""
+  ],
+  "n:франциск": [
+   "person",
+   "Pope Francis"
+  ],
+  "n:хамас исмаил хани": [
+   "person",
+   "Ismail Haniyeh"
+  ],
+  "n:хан": [
+   "other",
+   ""
+  ],
+  "n:хафез асад": [
+   "person",
+   "Hafez Assad"
+  ],
+  "n:хашем сафи": [
+   "person",
+   "Hashem Safi al-Din"
+  ],
+  "n:хеброн": [
+   "place",
+   ""
+  ],
+  "n:хормозган": [
+   "place",
+   ""
+  ],
+  "n:хост": [
+   "place",
+   ""
+  ],
+  "n:черк": [
+   "place",
+   ""
+  ],
+  "n:чернобаевк": [
+   "place",
+   ""
+  ],
+  "n:шарл мишел": [
+   "person",
+   "Charles Michel"
+  ],
+  "n:шарм": [
+   "place",
+   ""
+  ],
+  "n:шевченк": [
+   "place",
+   ""
+  ],
+  "n:шигер ишиб": [
+   "person",
+   "Shigeru Ishiba"
+  ],
+  "n:шор": [
+   "person",
+   "Ilan Shor"
+  ],
+  "n:югоизточн украйн": [
+   "place",
+   ""
+  ],
+  "n:южен йемен": [
+   "place",
+   ""
+  ],
+  "n:южен кавказ": [
+   "place",
+   ""
+  ],
+  "n:южна каролин": [
+   "place",
+   ""
+  ],
+  "n:янбу": [
+   "place",
+   ""
+  ],
+  "n:ais": [
+   "other",
+   ""
+  ],
+  "d:AK-74": [
+   "weapon",
+   "AK-74"
+  ],
+  "n:afghans": [
+   "other",
+   ""
+  ],
+  "n:ahmad massoud": [
+   "person",
+   "Ahmad Massoud"
+  ],
+  "n:air force one": [
+   "weapon",
+   "Air Force One"
+  ],
+  "n:arsenal": [
+   "other",
+   ""
+  ],
+  "n:black hawk": [
+   "weapon",
+   "Black Hawk"
+  ],
+  "n:chinese": [
+   "other",
+   ""
+  ],
+  "n:eln": [
+   "org",
+   "ELN"
+  ],
+  "n:euronews": [
+   "media",
+   ""
+  ],
+  "n:farc": [
+   "org",
+   "FARC"
+  ],
+  "n:february": [
+   "other",
+   ""
+  ],
+  "n:forbes": [
+   "media",
+   ""
+  ],
+  "n:ghf": [
+   "org",
+   "GHF"
+  ],
+  "n:goldman sachs": [
+   "org",
+   "Goldman Sachs"
+  ],
+  "n:helsing": [
+   "org",
+   "Helsing"
+  ],
+  "n:iban": [
+   "other",
+   ""
+  ],
+  "n:irib": [
+   "media",
+   ""
+  ],
+  "n:israel hayom": [
+   "media",
+   ""
+  ],
+  "d:JAS-39": [
+   "weapon",
+   "Gripen"
+  ],
+  "n:jerusalem post": [
+   "media",
+   ""
+  ],
+  "n:july": [
+   "other",
+   ""
+  ],
+  "n:mee": [
+   "other",
+   ""
+  ],
+  "d:MG-1M": [
+   "weapon",
+   "MG-1M"
+  ],
+  "d:MIM-104": [
+   "weapon",
+   "Patriot"
+  ],
+  "n:meta": [
+   "media",
+   ""
+  ],
+  "n:nna": [
+   "media",
+   ""
+  ],
+  "n:new york post": [
+   "media",
+   ""
+  ],
+  "n:november": [
+   "other",
+   ""
+  ],
+  "n:occrp": [
+   "media",
+   ""
+  ],
+  "d:OGI-7MA": [
+   "weapon",
+   "OGi-7MA"
+  ],
+  "d:P-8": [
+   "weapon",
+   "P-8 Poseidon"
+  ],
+  "d:PG-7V": [
+   "weapon",
+   "PG-7V"
+  ],
+  "n:pay": [
+   "other",
+   ""
+  ],
+  "n:scalp": [
+   "weapon",
+   "Storm Shadow"
+  ],
+  "n:svt": [
+   "media",
+   ""
+  ],
+  "n:september": [
+   "other",
+   ""
+  ],
+  "n:shell": [
+   "org",
+   "Shell"
+  ],
+  "n:switchblade": [
+   "weapon",
+   "Switchblade"
+  ],
+  "n:tasnim": [
+   "media",
+   ""
+  ],
+  "n:the": [
+   "other",
+   ""
+  ],
+  "n:turkey": [
+   "country",
+   ""
+  ],
+  "n:ugv": [
+   "weapon",
+   "UGV"
+  ],
+  "n:ukraine": [
+   "country",
+   ""
+  ],
+  "n:wednesday": [
+   "other",
+   ""
+  ],
+  "n:west texas intermediate": [
+   "other",
+   ""
+  ],
+  "n:yle": [
+   "media",
+   ""
+  ],
+  "d:AK-47": [
+   "weapon",
+   "AK-47"
+  ],
+  "n:авде": [
+   "place",
+   ""
+  ],
+  "n:ал баб": [
+   "place",
+   ""
+  ],
+  "n:ал удейд": [
+   "place",
+   ""
+  ],
+  "n:ал-шабаб": [
+   "org",
+   "Al-Shabaab"
+  ],
+  "n:албин курт": [
+   "person",
+   "Albin Kurti"
+  ],
+  "n:анален бербок": [
+   "person",
+   "Annalena Baerbock"
+  ],
+  "n:анбар": [
+   "place",
+   ""
+  ],
+  "n:анди бърнам": [
+   "person",
+   "Andy Burnham"
+  ],
+  "n:андрес мануел лопес обрадор": [
+   "person",
+   "Andrés Manuel López Obrador"
+  ],
+  "n:андриевк": [
+   "place",
+   ""
+  ],
+  "n:антак": [
+   "place",
+   ""
+  ],
+  "n:антал": [
+   "place",
+   ""
+  ],
+  "n:арагч": [
+   "person",
+   "Abbas Araghchi"
+  ],
+  "n:армен никол пашинян": [
+   "person",
+   "Nikol Pashinyan"
+  ],
+  "n:ахмат": [
+   "org",
+   "Akhmat"
+  ],
+  "n:ашраф": [
+   "place",
+   ""
+  ],
+  "d:БMП-2": [
+   "weapon",
+   "BMP-2"
+  ],
+  "n:базум": [
+   "other",
+   ""
+  ],
+  "n:банск": [
+   "place",
+   ""
+  ],
+  "n:барак равид": [
+   "person",
+   "Barak Ravid"
+  ],
+  "n:беер шева": [
+   "place",
+   ""
+  ],
+  "n:бейт лахи": [
+   "place",
+   ""
+  ],
+  "n:белбек": [
+   "place",
+   ""
+  ],
+  "n:бен гвир": [
+   "person",
+   "Itamar Ben-Gvir"
+  ],
+  "n:бенгаз": [
+   "place",
+   ""
+  ],
+  "n:бишкек": [
+   "place",
+   ""
+  ],
+  "n:богдан": [
+   "other",
+   ""
+  ],
+  "n:британ": [
+   "other",
+   ""
+  ],
+  "n:бровар": [
+   "place",
+   ""
+  ],
+  "n:бурж": [
+   "place",
+   ""
+  ],
+  "n:васил левск": [
+   "place",
+   ""
+  ],
+  "n:великден": [
+   "other",
+   ""
+  ],
+  "n:венецуел делс родригес": [
+   "person",
+   "Delcy Rodriguez"
+  ],
+  "n:владимир": [
+   "other",
+   ""
+  ],
+  "n:волчанск": [
+   "place",
+   ""
+  ],
+  "n:въгледар": [
+   "place",
+   ""
+  ],
+  "n:върховен": [
+   "other",
+   ""
+  ],
+  "n:гватемал": [
+   "country",
+   ""
+  ],
+  "n:глас": [
+   "other",
+   ""
+  ],
+  "n:грант шапс": [
+   "person",
+   "Grant Shapps"
+  ],
+  "n:граф игнатиево": [
+   "place",
+   ""
+  ],
+  "n:днк": [
+   "other",
+   ""
+  ],
+  "n:дейвид лами": [
+   "person",
+   "David Lami"
+  ],
+  "n:дейр ез зор": [
+   "place",
+   ""
+  ],
+  "n:декларац": [
+   "other",
+   ""
+  ],
+  "n:делс родригес": [
+   "person",
+   "Delcy Rodriguez"
+  ],
+  "n:джей ди ванс": [
+   "person",
+   "J.D. Vance"
+  ],
+  "n:джон кърб": [
+   "person",
+   "John Kirby"
+  ],
+  "n:джонсън": [
+   "person",
+   "Johnson"
+  ],
+  "n:джорджеск": [
+   "person",
+   "Georgescu"
+  ],
+  "n:димитър стоян": [
+   "person",
+   "Dimitar Stoyanov"
+  ],
+  "n:диял": [
+   "place",
+   ""
+  ],
+  "n:доминикан": [
+   "country",
+   ""
+  ],
+  "n:дунарит": [
+   "org",
+   "Dunarit"
+  ],
+  "n:дъблин": [
+   "place",
+   ""
+  ],
+  "n:дягилево": [
+   "place",
+   ""
+  ],
+  "n:ели коен": [
+   "person",
+   "Eli Cohen"
+  ],
+  "n:емко": [
+   "org",
+   "EMCO"
+  ],
+  "n:енергоатом": [
+   "org",
+   "Energoatom"
+  ],
+  "n:есекибо": [
+   "place",
+   ""
+  ],
+  "n:жешов": [
+   "place",
+   ""
+  ],
+  "n:жовенел моис": [
+   "person",
+   "Zhovnel Mois"
+  ],
+  "n:за": [
+   "other",
+   ""
+  ],
+  "n:западн руси": [
+   "place",
+   ""
+  ],
+  "n:запорожк аец": [
+   "place",
+   ""
+  ],
+  "n:иван федор": [
+   "person",
+   "Ivan Fedorov"
+  ],
+  "n:извест": [
+   "media",
+   ""
+  ],
+  "n:източен ливан": [
+   "place",
+   ""
+  ],
+  "n:източн азия": [
+   "place",
+   ""
+  ],
+  "n:източно конго": [
+   "place",
+   ""
+  ],
+  "n:имран хан": [
+   "person",
+   "Imran Khan"
+  ],
+  "n:инджирлик": [
+   "place",
+   ""
+  ],
+  "n:иркут": [
+   "place",
+   ""
+  ],
+  "n:итур": [
+   "place",
+   ""
+  ],
+  "d:K-2": [
+   "unit",
+   "K-2 Battalion"
+  ],
+  "n:каховк": [
+   "place",
+   ""
+  ],
+  "n:келог": [
+   "other",
+   ""
+  ],
+  "n:киев виталий кличко": [
+   "person",
+   "Vitaliy Klychko"
+  ],
+  "n:кило": [
+   "weapon",
+   "Kilo-class submarine"
+  ],
+  "n:киров": [
+   "place",
+   ""
+  ],
+  "n:клауд шейнбаум": [
+   "person",
+   "Claudia Sheinbaum"
+  ],
+  "n:козинк": [
+   "place",
+   ""
+  ],
+  "n:конарак": [
+   "place",
+   ""
+  ],
+  "n:кост рика": [
+   "country",
+   ""
+  ],
+  "n:кракен": [
+   "unit",
+   "Kraken"
+  ],
+  "n:крал халид": [
+   "place",
+   ""
+  ],
+  "n:крист ноем": [
+   "person",
+   "Christy Noem"
+  ],
+  "n:крит": [
+   "place",
+   ""
+  ],
+  "n:кфар кила": [
+   "place",
+   ""
+  ],
+  "n:лекар": [
+   "other",
+   ""
+  ],
+  "n:лисабон": [
+   "place",
+   ""
+  ],
+  "n:луцк": [
+   "place",
+   ""
+  ],
+  "n:люблин": [
+   "place",
+   ""
+  ],
+  "n:мкчк": [
+   "org",
+   "Red Cross"
+  ],
+  "n:маарив": [
+   "media",
+   ""
+  ],
+  "n:майк джонсън": [
+   "person",
+   "Mike Johnson"
+  ],
+  "n:мала токмачк": [
+   "place",
+   ""
+  ],
+  "n:марун": [
+   "place",
+   ""
+  ],
+  "n:маршал": [
+   "country",
+   ""
+  ],
+  "n:махачкал": [
+   "place",
+   ""
+  ],
+  "n:махер асад": [
+   "person",
+   "Maher Assad"
+  ],
+  "n:мекел": [
+   "place",
+   ""
+  ],
+  "n:мексикан": [
+   "place",
+   ""
+  ],
+  "n:милорад додик": [
+   "person",
+   "Milorad Dodik"
+  ],
+  "n:минеаполис": [
+   "place",
+   ""
+  ],
+  "n:мирноград": [
+   "place",
+   ""
+  ],
+  "n:михаил когълничан": [
+   "person",
+   "Mikhail Kogelnichanu"
+  ],
+  "n:моздок": [
+   "place",
+   ""
+  ],
+  "n:мока": [
+   "place",
+   ""
+  ],
+  "n:морск": [
+   "org",
+   "Maritime Administration of the United States"
+  ],
+  "n:набу": [
+   "org",
+   "National Anti-Corruption Bureau (NABU)"
+  ],
+  "n:нпо": [
+   "other",
+   ""
+  ],
+  "n:накур": [
+   "place",
+   ""
+  ],
+  "n:нангархар": [
+   "place",
+   ""
+  ],
+  "n:народноосвободителн": [
+   "org",
+   "People's Liberation Army"
+  ],
+  "n:нафтогаз": [
+   "org",
+   "Naftogaz"
+  ],
+  "n:неватим": [
+   "place",
+   ""
+  ],
+  "n:нижегород": [
+   "place",
+   ""
+  ],
+  "n:никараг": [
+   "country",
+   ""
+  ],
+  "n:новгород": [
+   "place",
+   ""
+  ],
+  "n:окинав": [
+   "place",
+   ""
+  ],
+  "n:окръжн": [
+   "other",
+   ""
+  ],
+  "n:олен": [
+   "place",
+   ""
+  ],
+  "n:онтарио": [
+   "place",
+   ""
+  ],
+  "n:пезешкиан": [
+   "other",
+   ""
+  ],
+  "n:пенджаб": [
+   "place",
+   ""
+  ],
+  "n:петер сиярто": [
+   "person",
+   "Peter Szijjarto"
+  ],
+  "n:пловдив": [
+   "place",
+   ""
+  ],
+  "n:проект": [
+   "unit",
+   "Project 11770 class “Serna”"
+  ],
+  "n:рбк": [
+   "media",
+   ""
+  ],
+  "n:радио свободн европ": [
+   "media",
+   ""
+  ],
+  "n:разузнаван": [
+   "other",
+   ""
+  ],
+  "n:рамафос": [
+   "other",
+   ""
+  ],
+  "n:рас танур": [
+   "place",
+   ""
+  ],
+  "n:рафаел грос": [
+   "person",
+   "Rafael Grossi"
+  ],
+  "n:рилск": [
+   "place",
+   ""
+  ],
+  "n:рио": [
+   "place",
+   ""
+  ],
+  "n:ровно": [
+   "place",
+   ""
+  ],
+  "n:рон дермер": [
+   "person",
+   "Ron Dermer"
+  ],
+  "n:ронен бар": [
+   "person",
+   "Ronen Bar"
+  ],
+  "n:росен желязк": [
+   "person",
+   "Rosen Zhelyazkov"
+  ],
+  "n:росрезерв": [
+   "org",
+   "Rosrezerv"
+  ],
+  "n:руси владимир путин": [
+   "person",
+   "Vladimir Putin"
+  ],
+  "n:руси сили": [
+   "other",
+   ""
+  ],
+  "n:сащ блинкен": [
+   "person",
+   "Antony Blinken"
+  ],
+  "n:сащ ванс": [
+   "other",
+   ""
+  ],
+  "n:сащ джей ди ванс": [
+   "person",
+   "J.D. Vance"
+  ],
+  "n:сащ пийт хегсет": [
+   "person",
+   "Pete Hegseth"
+  ],
+  "n:саддам хюсеин": [
+   "person",
+   "Saddam Hussein"
+  ],
+  "n:салвадор": [
+   "country",
+   ""
+  ],
+  "n:сбербанк": [
+   "org",
+   "Sberbank"
+  ],
+  "n:свободн европ": [
+   "other",
+   ""
+  ],
+  "n:северен кордофан": [
+   "place",
+   ""
+  ],
+  "n:северн ирланд": [
+   "place",
+   ""
+  ],
+  "n:северно косово": [
+   "place",
+   ""
+  ],
+  "n:северск": [
+   "place",
+   ""
+  ],
+  "n:сиверск": [
+   "place",
+   ""
+  ],
+  "n:сидон": [
+   "place",
+   ""
+  ],
+  "n:сирил рамафос": [
+   "person",
+   "Cyril Ramaphosa"
+  ],
+  "n:сиси": [
+   "other",
+   ""
+  ],
+  "n:сицил": [
+   "place",
+   ""
+  ],
+  "n:следствен": [
+   "other",
+   ""
+  ],
+  "n:сръб": [
+   "other",
+   ""
+  ],
+  "n:степанакерт": [
+   "place",
+   ""
+  ],
+  "n:столтенберг": [
+   "person",
+   "Jens Stoltenberg"
+  ],
+  "d:CY-35C": [
+   "weapon",
+   "Su-35S"
+  ],
+  "n:сулейман": [
+   "place",
+   ""
+  ],
+  "n:таанг": [
+   "org",
+   "Taang"
+  ],
+  "n:тайб": [
+   "place",
+   ""
+  ],
+  "n:таймс": [
+   "media",
+   ""
+  ],
+  "n:тал рифат": [
+   "place",
+   ""
+  ],
+  "n:тигър": [
+   "weapon",
+   "Tiger-M"
+  ],
+  "n:тор": [
+   "weapon",
+   "TOR"
+  ],
+  "d:TY-22": [
+   "weapon",
+   "Tu-22"
+  ],
+  "n:тула": [
+   "place",
+   ""
+  ],
+  "n:тулкарем": [
+   "place",
+   ""
+  ],
+  "n:уестминстър": [
+   "place",
+   ""
+  ],
+  "n:украйн кирило будан": [
+   "person",
+   "Kyrylo Budanov"
+  ],
+  "n:укроборонпром": [
+   "org",
+   "Ukroboronprom"
+  ],
+  "n:ураган": [
+   "weapon",
+   "Uragan"
+  ],
+  "n:фарк": [
+   "org",
+   "FARC"
+  ],
+  "n:фархан": [
+   "person",
+   "Faisal bin Farhan"
+  ],
+  "n:федор": [
+   "person",
+   "Fedotov"
+  ],
+  "n:фейърфорд": [
+   "place",
+   ""
+  ],
+  "n:филаделф": [
+   "place",
+   ""
+  ],
+  "n:фондац": [
+   "other",
+   ""
+  ],
+  "n:хамедан": [
+   "place",
+   ""
+  ],
+  "n:хани": [
+   "other",
+   ""
+  ],
+  "n:харт": [
+   "other",
+   ""
+  ],
+  "n:хермон": [
+   "place",
+   ""
+  ],
+  "n:хизбул наим касем": [
+   "person",
+   "Naim Qassem"
+  ],
+  "n:хокайдо": [
+   "place",
+   ""
+  ],
+  "n:хуар": [
+   "place",
+   ""
+  ],
+  "n:централен иран": [
+   "other",
+   ""
+  ],
+  "n:чикаго": [
+   "place",
+   ""
+  ],
+  "n:шариф": [
+   "other",
+   ""
+  ],
+  "n:шеба": [
+   "place",
+   ""
+  ],
+  "n:шебекино": [
+   "place",
+   ""
+  ],
+  "n:шенген": [
+   "other",
+   ""
+  ],
+  "n:шойг": [
+   "person",
+   "Shoigu"
+  ],
+  "n:югоизточен иран": [
+   "other",
+   ""
+  ],
+  "n:югослав": [
+   "country",
+   ""
+  ],
+  "n:южен бейрут": [
+   "place",
+   ""
+  ],
+  "n:южна осет": [
+   "place",
+   ""
+  ],
+  "n:юрий ушак": [
+   "person",
+   "Yuri Ushakov"
+  ],
+  "n:ярославъл": [
+   "place",
+   ""
+  ],
+  "n:ярун": [
+   "place",
+   ""
+  ],
+  "n:aasm": [
+   "weapon",
+   "AASM"
+  ],
+  "d:AH-64E": [
+   "weapon",
+   "AH-64E Apache"
+  ],
+  "d:AS-90": [
+   "weapon",
+   "AS-90"
+  ],
+  "n:aukus": [
+   "org",
+   "AUKUS"
+  ],
+  "n:al-yassin": [
+   "weapon",
+   "Al-Yassin"
+  ],
+  "n:america": [
+   "country",
+   ""
+  ],
+  "n:anonymous": [
+   "org",
+   "Anonymous"
+  ],
+  "n:apple": [
+   "org",
+   "Apple"
+  ],
+  "n:archer": [
+   "weapon",
+   "Archer"
+  ],
+  "n:byd": [
+   "org",
+   "BYD"
+  ],
+  "n:black panther": [
+   "weapon",
+   "K2 Black Panther"
+  ],
+  "n:browning": [
+   "weapon",
+   "M2 Browning"
+  ],
+  "n:bushmaster": [
+   "weapon",
+   "Bushmaster"
+  ],
+  "n:charikar": [
+   "place",
+   ""
+  ],
+  "n:ddg": [
+   "unit",
+   "DDG"
+  ],
+  "n:dhl": [
+   "org",
+   "DHL"
+  ],
+  "n:ethiopia": [
+   "country",
+   ""
+  ],
+  "n:eurofighter": [
+   "weapon",
+   "Eurofighter"
+  ],
+  "n:firms": [
+   "other",
+   ""
+  ],
+  "d:FP-5": [
+   "weapon",
+   "FP-5"
+  ],
+  "n:fateh": [
+   "weapon",
+   "Fateh"
+  ],
+  "n:foreign policy": [
+   "media",
+   ""
+  ],
+  "n:handelsblatt": [
+   "media",
+   ""
+  ],
+  "n:human rights watch": [
+   "org",
+   "Human Rights Watch"
+  ],
+  "n:irgc": [
+   "org",
+   "IRGC"
+  ],
+  "n:intel": [
+   "org",
+   "Intel"
+  ],
+  "d:J-16": [
+   "weapon",
+   "J-16"
+  ],
+  "n:kfor": [
+   "org",
+   "KFOR"
+  ],
+  "n:kill": [
+   "other",
+   ""
+  ],
+  "n:kosovo": [
+   "place",
+   ""
+  ],
+  "n:kpler": [
+   "org",
+   "Kpler"
+  ],
+  "n:kunduz": [
+   "place",
+   ""
+  ],
+  "n:le figaro": [
+   "media",
+   ""
+  ],
+  "n:leonardo": [
+   "org",
+   "Leonardo"
+  ],
+  "n:lufthansa": [
+   "org",
+   "Lufthansa"
+  ],
+  "n:monday": [
+   "other",
+   ""
+  ],
+  "n:nhk": [
+   "media",
+   ""
+  ],
+  "n:nlaw": [
+   "weapon",
+   "NLAW"
+  ],
+  "n:notam": [
+   "other",
+   ""
+  ],
+  "n:nso group": [
+   "org",
+   "NSO Group"
+  ],
+  "n:northrop grumman": [
+   "org",
+   "Northrop Grumman"
+  ],
+  "n:oryx": [
+   "media",
+   ""
+  ],
+  "n:park": [
+   "other",
+   ""
+  ],
+  "n:panzerhaubitze": [
+   "weapon",
+   "Panzerhaubitze"
+  ],
+  "n:planet labs": [
+   "org",
+   "Planet Labs"
+  ],
+  "n:pz": [
+   "other",
+   ""
+  ],
+  "n:ruen": [
+   "other",
+   ""
+  ],
+  "n:safe": [
+   "other",
+   ""
+  ],
+  "n:sana": [
+   "media",
+   ""
+  ],
+  "n:sar": [
+   "other",
+   ""
+  ],
+  "n:socar": [
+   "org",
+   "SOCAR"
+  ],
+  "n:sandworm": [
+   "org",
+   "Sandworm"
+  ],
+  "n:sentry": [
+   "weapon",
+   "Sentry"
+  ],
+  "n:somali": [
+   "other",
+   ""
+  ],
+  "n:stratofortress": [
+   "weapon",
+   "Stratofortress"
+  ],
+  "n:super hornet": [
+   "weapon",
+   "Super Hornet"
+  ],
+  "n:tow": [
+   "weapon",
+   "TOW"
+  ],
+  "d:TOC-1A": [
+   "weapon",
+   "TOС-1A"
+  ],
+  "n:tsmc": [
+   "org",
+   "TSMC"
+  ],
+  "n:thales": [
+   "org",
+   "Thales"
+  ],
+  "n:the moscow times": [
+   "media",
+   ""
+  ],
+  "n:the national": [
+   "media",
+   ""
+  ],
+  "n:the wall street": [
+   "media",
+   ""
+  ],
+  "n:tuesday": [
+   "other",
+   ""
+  ],
+  "n:turkish": [
+   "other",
+   ""
+  ],
+  "n:type": [
+   "other",
+   ""
+  ],
+  "n:typhoon": [
+   "weapon",
+   "Typhoon"
+  ],
+  "n:un": [
+   "org",
+   "UN"
+  ],
+  "n:uss george": [
+   "unit",
+   "USS George"
+  ],
+  "n:wfp": [
+   "org",
+   "WFP"
+  ],
+  "n:western": [
+   "other",
+   ""
+  ],
+  "d:Z-20": [
+   "weapon",
+   "Z-20"
+  ],
+  "n:zdf": [
+   "media",
+   ""
+  ],
+  "n:zala": [
+   "other",
+   ""
+  ],
+  "n:абдул": [
+   "person",
+   "Abdula"
+  ],
+  "n:автономн": [
+   "org",
+   "Autonomous Administration of North-East Syria"
+  ],
+  "n:адам": [
+   "org",
+   "Adam"
+  ],
+  "n:администрац": [
+   "org",
+   "Security Administration"
+  ],
+  "n:азот": [
+   "org",
+   "Azot"
+  ],
+  "n:айн иса": [
+   "person",
+   "Ayn Isa"
+  ],
+  "n:акац": [
+   "weapon",
+   "2S3 Akatsiya"
+  ],
+  "n:акта": [
+   "place",
+   ""
+  ],
+  "n:ал-ахл": [
+   "place",
+   ""
+  ],
+  "n:албърт": [
+   "other",
+   ""
+  ],
+  "n:александр": [
+   "place",
+   ""
+  ],
+  "n:али хамен": [
+   "person",
+   "Ali Khamenei"
+  ],
+  "n:амед": [
+   "place",
+   ""
+  ],
+  "n:амнест": [
+   "org",
+   "Amnesty International"
+  ],
+  "n:амстердам": [
+   "place",
+   ""
+  ],
+  "n:анефис": [
+   "place",
+   ""
+  ],
+  "n:анонимн": [
+   "other",
+   ""
+  ],
+  "n:анри": [
+   "person",
+   "Henri"
+  ],
+  "n:антън албанез": [
+   "person",
+   "Anthony Albanese"
+  ],
+  "n:араг": [
+   "org",
+   "Train de Aragua"
+  ],
+  "n:бнт": [
+   "media",
+   ""
+  ],
+  "d:БTP-60": [
+   "weapon",
+   "BTR-60"
+  ],
+  "n:балах": [
+   "place",
+   ""
+  ],
+  "n:банияс": [
+   "place",
+   ""
+  ],
+  "n:барак": [
+   "place",
+   ""
+  ],
+  "n:барселон": [
+   "place",
+   ""
+  ],
+  "n:бела": [
+   "media",
+   ""
+  ],
+  "n:белфаст": [
+   "place",
+   ""
+  ],
+  "n:борисоглебск": [
+   "place",
+   ""
+  ],
+  "n:брад купър": [
+   "person",
+   "Brad Cooper"
+  ],
+  "n:брекзит": [
+   "other",
+   ""
+  ],
+  "n:брест": [
+   "place",
+   ""
+  ],
+  "n:бруклин": [
+   "place",
+   ""
+  ],
+  "n:бюрото": [
+   "org",
+   "Bureau for Protection of Political ..."
+  ],
+  "n:бяла": [
+   "other",
+   ""
+  ],
+  "n:вец": [
+   "org",
+   "Kakhovka Hydroelectric Power Plant"
+  ],
+  "n:висбаден": [
+   "place",
+   ""
+  ],
+  "n:волин": [
+   "place",
+   ""
+  ],
+  "n:временн": [
+   "org",
+   "Temporary Forces of the UN in Lebanon"
+  ],
+  "n:въздушно-космич": [
+   "org",
+   "Russian Aerospace Forces"
+  ],
+  "n:възраждан": [
+   "org",
+   "Renaissance"
+  ],
+  "n:върховн рада": [
+   "org",
+   "Supreme Council of Ukraine"
+  ],
+  "n:гади айзенкот": [
+   "person",
+   "Gadi Eisenkot"
+  ],
+  "n:галац": [
+   "place",
+   ""
+  ],
+  "n:галибаф": [
+   "other",
+   ""
+  ],
+  "n:гвадар": [
+   "place",
+   ""
+  ],
+  "n:гвардей": [
+   "place",
+   ""
+  ],
+  "n:гвинея-бис": [
+   "place",
+   ""
+  ],
+  "n:герасим": [
+   "person",
+   "Valery Gerasimov"
+  ],
+  "n:герман фридрих мерц": [
+   "person",
+   "Friedrich Merz"
+  ],
+  "n:гибралтар": [
+   "place",
+   ""
+  ],
+  "n:голем": [
+   "other",
+   ""
+  ],
+  "n:гуадалахар": [
+   "org",
+   "Guadalajara Cartel"
+  ],
+  "d:Д-20": [
+   "weapon",
+   "D-20 howitzer"
+  ],
+  "n:даниел": [
+   "person",
+   "Daniel"
+  ],
+  "n:дарданел": [
+   "place",
+   ""
+  ],
+  "n:дари дугин": [
+   "person",
+   "Daria Dugina"
+  ],
+  "n:дарницк": [
+   "place",
+   ""
+  ],
+  "n:денис шмигал": [
+   "person",
+   "Denis Shmigal"
+  ],
+  "n:джакарт": [
+   "place",
+   ""
+  ],
+  "n:джам": [
+   "place",
+   ""
+  ],
+  "n:джаск": [
+   "place",
+   ""
+  ],
+  "n:джордж": [
+   "place",
+   ""
+  ],
+  "n:дмитро кулеб": [
+   "person",
+   "Dmitro Kuleba"
+  ],
+  "n:додик": [
+   "person",
+   "Dodik"
+  ],
+  "n:дума": [
+   "org",
+   "State Duma"
+  ],
+  "n:думат": [
+   "org",
+   "State Duma"
+  ],
+  "n:държавен": [
+   "media",
+   ""
+  ],
+  "n:ес кая калас": [
+   "person",
+   "Kaja Kallas"
+  ],
+  "n:ецб": [
+   "org",
+   "European Central Bank"
+  ],
+  "n:евин": [
+   "place",
+   ""
+  ],
+  "n:европол": [
+   "org",
+   "Europol"
+  ],
+  "n:еди рама": [
+   "person",
+   "Edi Rama"
+  ],
+  "n:единн руси": [
+   "org",
+   "United Russia"
+  ],
+  "n:ейск": [
+   "place",
+   ""
+  ],
+  "n:епстийн": [
+   "person",
+   "Jeffrey Epstein"
+  ],
+  "n:жанейро": [
+   "place",
+   ""
+  ],
+  "n:западен ирак": [
+   "place",
+   ""
+  ],
+  "n:западн сахар": [
+   "place",
+   ""
+  ],
+  "n:запориж": [
+   "place",
+   ""
+  ],
+  "n:заутар": [
+   "place",
+   ""
+  ],
+  "n:звезд": [
+   "media",
+   ""
+  ],
+  "n:золот": [
+   "place",
+   ""
+  ],
+  "n:иван": [
+   "place",
+   ""
+  ],
+  "n:ивоар": [
+   "country",
+   ""
+  ],
+  "n:игор кирил": [
+   "person",
+   "Igor Kirilov"
+  ],
+  "n:игор конашенк": [
+   "person",
+   "Igor Konashenkov"
+  ],
+  "n:измаил": [
+   "place",
+   ""
+  ]
+ }
+}

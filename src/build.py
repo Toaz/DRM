@@ -203,7 +203,11 @@ def assign_clusters(rows, stat):
     stat['event groups'] = n
 
 
-def main():
+def make_rows():
+    """Everything main() does before it writes the page: returns (rows, stat, texts, posts, SRC).
+    SRC[post id] says where the arrows of a row come from: 'curated', 'hand' (data/overrides*.json), 'llm'; a post not in SRC is rule-based.
+    graph.py reuses this, so the graph shows exactly what the map shows."""
+    SRC = {}
     posts = [m for m in load_all() if len(txt(m).strip()) > 20]
     cur = json.load(open(ROOT / 'data/curated.json', encoding='utf-8'))
     rows, stat = [], collections.Counter()
@@ -231,7 +235,7 @@ def main():
                 r = curated_arrows(r, ov, stat); stat['arrows by hand'] += 1
             else:
                 r.append([[a[6], '?'] for a in r[8]] if r[8] else None)     # the target of an old hand-placed arrow is not known
-            rows.append(r); stat['hand-placed'] += 1
+            rows.append(r); stat['hand-placed'] += 1; SRC[i] = 'hand' if ov is not None else 'curated'
             continue
         L = locate(t)
         tt = t[:NT] + ('\u2026' if len(t) > NT else '')
@@ -243,11 +247,13 @@ def main():
                 rec = {'ev': [], 'c': [], 'loc': L[2] if L else (D0[1][2] if D0 else None)}
             row = llm_row(rec, t, tt, i, d16, ex, L, stat, ov_ev=ov_events(ov), use_model=fresh)
             rows.append(row) if row else stat.update(unplaced=1)
+            SRC[i] = 'hand'
             stat['arrows by hand'] += 1
             stat['read by model'] += fresh
             continue
         if fresh:                                            # an edited post is read again, until then the old rules apply
             row = llm_row(rec, t, tt, i, d16, ex, L, stat)
+            SRC[i] = 'llm'
             if row:
                 rows.append(row)
             else:
@@ -286,6 +292,11 @@ def main():
     rows.sort(key=lambda r: r[0])
     if CLUSTER:
         assign_clusters(rows, stat)
+    return rows, stat, texts, posts, SRC
+
+
+def main():
+    rows, stat, texts, posts, SRC = make_rows()
     raw = json.dumps(rows, ensure_ascii=False, separators=(',', ':')).encode()
     b64 = base64.b64encode(gzip.compress(raw, 9)).decode()
     last = rows[-1][9][:10]
