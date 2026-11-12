@@ -182,7 +182,7 @@ class AskCompat(unittest.TestCase):
         extract.ask("y" * 2000, "m", "k", url, system="S", max_tokens=5, max_text=10, extra={"reasoning_effort": "low"})
         srv.shutdown()
         a, b = seen
-        self.assertEqual((a["max_tokens"], len(a["messages"][1]["content"]), a["messages"][0]["content"] == extract.SYSTEM), (2000, extract.MAX_TEXT, True))
+        self.assertEqual((a["max_tokens"], len(a["messages"][1]["content"]), a["messages"][0]["content"] == extract.SYSTEM), (2000, min(2000, extract.MAX_TEXT), True))  # the text sent is 2000 chars; MAX_TEXT is only the cap
         self.assertEqual(set(a), {"model", "temperature", "max_tokens", "messages"})
         self.assertEqual((b["max_tokens"], b["messages"][0]["content"], len(b["messages"][1]["content"]), b["reasoning_effort"]), (5, "S", 10, "low"))
 
