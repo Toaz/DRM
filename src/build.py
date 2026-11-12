@@ -26,6 +26,7 @@ GAZ = geo.Gazetteer(CI.values())   # every city geonamescache knows, by all its 
 MENTIONED_IN_FILTER = True   # True: a post also appears under every country the model found in it, not only its location/arrows
 FULL_TEXT_SEARCH = True   # True: the page also carries the full text of every post (compressed, read only when someone searches); False: search sees only the 360-character snippet
 FLAGS_INVOLVE = True   # True: every country whose flag is anywhere in a post counts as involved (it flashes and is found by the country filter); flags never make an attacker or move an arrow
+SPLIT_ITEMS = True   # True: a post the model split into several events (record field "it") gets one row, i.e. one dot, per event; False: one row per post
 CLUSTER = True   # True: posts with the same attacker, target and day get a group number, so the page can count them as one event
 
 
@@ -62,10 +63,12 @@ def jit(i, rad):
     return r * math.sin(a) * .7, r * math.cos(a)
 
 
-def llm_row(rec, t, tt, i, d16, ex, L, stat, ov_ev=None, use_model=True):
+def llm_row(rec, t, tt, i, d16, ex, L, stat, ov_ev=None, use_model=True, jk=None, item_cat=False):
     """Row for a post the model has read (arrows may be several), or None if the post cannot be placed.
 
-    ov_ev: arrows made by hand (data/overrides*.json) that replace the model's arrows. use_model False: rec is not a model result."""
+    ov_ev: arrows made by hand (data/overrides*.json) that replace the model's arrows. use_model False: rec is not a model result.
+    jk: key of the small random offset (default the post id), so the events of one post do not sit on top of each other.
+    item_cat: the model's category of this event wins over the keyword rules (the rules only see the whole post)."""
     G = geo.place_for(rec, GAZ) if (PLACE_FROM_LLM and use_model) else None
     if G:                                                         # a place the model named and the city list confirms, inside a country we trust
         stat['place from model'] += 1
@@ -80,12 +83,13 @@ def llm_row(rec, t, tt, i, d16, ex, L, stat, ov_ev=None, use_model=True):
     stat['arrows skipped (no coordinates)'] += len(skipped)
     mentioned = rec['c'] if MENTIONED_IN_FILTER else []
     c = cat(t)
-    if c == 'gen' and rec.get('cat'):
+    if (item_cat or c == 'gen') and rec.get('cat'):
         c = rec['cat']
+    jk = i if jk is None else jk
     if arr:
         main = arr[0]
         conf = main['conf']
-        dy, dx = jit(i, .2 if conf == 'p' else 1.2)           # every arrow of the post moves by the same offset
+        dy, dx = jit(jk, .2 if conf == 'p' else 1.2)           # every arrow of the post moves by the same offset
         la, lo = round(main['dest'][0] + dy, 2), round(main['dest'][1] + dx, 2)
         lst = [[round(a['org'][0], 2), round(a['org'][1], 2), round(a['dest'][0] + dy, 2), round(a['dest'][1] + dx, 2),
                 BGN.get(a['from'], a['from']) + ' \u2192 ' + (OPEN_TARGET if a['open'] else BGN.get(a['to'], a['to'])), a['kind'], a['from']] for a in arr]
@@ -100,10 +104,33 @@ def llm_row(rec, t, tt, i, d16, ex, L, stat, ov_ev=None, use_model=True):
     if not L:
         return None
     la, lo, iso, conf = L
-    dy, dx = jit(i, .25 if conf == 'p' else 1.6 if conf == 'a' else .7)
+    dy, dx = jit(jk, .25 if conf == 'p' else 1.6 if conf == 'a' else .7)
     _, inv = AR.country_ids([], mentioned, ids, iso)
     stat['placed'] += 1
     return [i, round(la + dy, 2), round(lo + dx, 2), theme(iso), conf, None, tt, c, None, d16, [], inv, ex]
+
+
+def item_rows(rec, t, tt, i, d16, ex, L, stat):
+    """A post the model split into several events (rec['it'], arrows carry 'i'): [(row, [item number, number of items, short text])], one per event.
+
+    Each event is placed like a post of its own, with its own place, countries, category and arrows. The first event keeps the keyword-located
+    place L as a fallback; the others do not (L is a guess for the whole post and would put every event in the same city)."""
+    its, out = rec['it'], []
+    for k, it in enumerate(its):
+        sub = {'ev': [{a: b for a, b in e.items() if a != 'i'} for e in rec['ev'] if e.get('i', 0) == k],
+               'c': it.get('c') or [], 'loc': it.get('loc'), 'cat': it.get('cat'), 'pl': it.get('pl')}
+        try:
+            row = llm_row(sub, t, tt, i, d16, ex, L if k == 0 else None, stat, jk=None if k == 0 else '%s.%d' % (i, k), item_cat=True)
+        except (KeyError, TypeError) as e:                 # geo.place_for was written for whole records: say so in the statistics instead of stopping the build
+            stat['events: place lookup failed (%s)' % type(e).__name__] += 1
+            continue
+        if row is None:
+            stat['events not placed'] += 1
+            continue
+        out.append((row, [k, len(its), it.get('w') or '']))
+    stat['posts split into events'] += 1
+    stat['extra event rows'] += max(0, len(out) - 1)
+    return out
 
 
 def load_overrides():
@@ -191,7 +218,9 @@ def assign_clusters(rows, stat):
     g = collections.defaultdict(list)
     for r in rows:
         if r[8] and r[8][0][5] == 'p' and len(r) > 13 and r[13] and r[13][0][1] not in ('', '?'):
-            g[(r[13][0][0], r[13][0][1], r[9][:10])].append(r)
+            k = (r[13][0][0], r[13][0][1], r[9][:10])
+            if not any(x[0] == r[0] for x in g[k]):     # two events of the same post are not "other posts about the same event"
+                g[k].append(r)
     n = 0
     for k in sorted(g):
         if len(g[k]) < 2:
@@ -207,7 +236,7 @@ def make_rows():
     """Everything main() does before it writes the page: returns (rows, stat, texts, posts, SRC).
     SRC[post id] says where the arrows of a row come from: 'curated', 'hand' (data/overrides*.json), 'llm'; a post not in SRC is rule-based.
     graph.py reuses this, so the graph shows exactly what the map shows."""
-    SRC = {}
+    SRC, splits = {}, []
     posts = [m for m in load_all() if len(txt(m).strip()) > 20]
     cur = json.load(open(ROOT / 'data/curated.json', encoding='utf-8'))
     rows, stat = [], collections.Counter()
@@ -251,6 +280,16 @@ def make_rows():
             stat['arrows by hand'] += 1
             stat['read by model'] += fresh
             continue
+        if fresh and SPLIT_ITEMS and rec.get('it'):          # several events in one post: one row each
+            SRC[i] = 'llm'
+            got = item_rows(rec, t, tt, i, d16, ex, L, stat)
+            for row, item in got:
+                rows.append(row)
+                splits.append((row, item))
+            if not got:
+                stat['unplaced'] += 1
+            stat['read by model'] += 1
+            continue
         if fresh:                                            # an edited post is read again, until then the old rules apply
             row = llm_row(rec, t, tt, i, d16, ex, L, stat)
             SRC[i] = 'llm'
@@ -283,7 +322,10 @@ def make_rows():
         rows.append([i, round(la + dy, 2), round(lo + dx, 2), theme(iso), conf, None, tt, cat(t), None, d16, [], ids(iso), ex])
         stat['placed'] += 1
     if FLAGS_INVOLVE:                                # flags name countries even when the words do not: involved only, never attacker, arrows stay where they are
+        split_rows = {id(r) for r, _ in splits}      # an event of a split post has its own countries; the flags belong to the whole post
         for r in rows:
+            if id(r) in split_rows:
+                continue
             inv = list(r[11] or [])
             add = AR.unique(i for iso in flag_isos(texts[r[0]]) for i in ids(iso) if i not in inv)
             if add:
@@ -292,6 +334,9 @@ def make_rows():
     rows.sort(key=lambda r: r[0])
     if CLUSTER:
         assign_clusters(rows, stat)
+    for row, item in splits:                         # field 15: [event number from 0, events in the post, short text]; field 14 (group) stays empty if the row has none
+        row += [None] * (15 - len(row))
+        row.append(item)
     return rows, stat, texts, posts, SRC
 
 

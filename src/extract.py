@@ -15,10 +15,11 @@ simply keep using the old rule-based code in place.py.
 Without an API key the script prints a note and exits normally, so the daily workflow never fails because of it.
 Only the standard library is used.
 """
-import os, sys, json, time, hashlib, argparse, urllib.request, urllib.error
+import os, sys, re, json, time, hashlib, argparse, urllib.request, urllib.error
 from common import DATA, load_all, txt
 
 CACHE = DATA / "events.json"
+FAILED = DATA / "events_failed.json"   # posts whose answer could not be parsed: {id: {"h": text hash, "n": tries}}
 PROVIDERS = {  # base url, env var holding the key, default model (None = must set LLM_MODEL)
     "groq": ("https://api.groq.com/openai/v1", "GROQ_API_KEY", "openai/gpt-oss-120b"),
     "gemini": ("https://generativelanguage.googleapis.com/v1beta/openai", "GEMINI_API_KEY", "gemini-flash-latest"),
@@ -27,13 +28,21 @@ PROVIDERS = {  # base url, env var holding the key, default model (None = must s
 CATS = "war mil dip sea eng hum sec nuc air cyb ter pro dis arm avi gen"
 SYSTEM = f"""You read short news posts (mostly Bulgarian) from a military/geopolitics channel and extract structured data for a map.
 Answer with ONE JSON object and nothing else (no markdown fences):
-{{"countries": [ISO codes of every country or bloc the post is about],
-  "location": ISO code of the country where the main event happens, or null,
-  "place": the most specific named city, town, region or facility where the event happens, in English, or null,
+{{"items": [{{"countries": [ISO codes of every country or bloc this item is about],
+  "location": ISO code of the country where this item happens, or null,
+  "place": the most specific named city, town, region or facility where this item happens, in English, or null,
   "category": one of: {CATS},
-  "events": [{{"from": ISO, "to": ISO, "kind": "physical" or "verbal", "confidence": 0.0-1.0, "why": "max 12 words"}}]}}
+  "what": "max 12 words, in Bulgarian",
+  "events": [{{"from": ISO, "to": ISO, "kind": "physical" or "verbal", "confidence": 0.0-1.0, "why": "max 12 words"}}]}}]}}
 
-Rules for "events" (these become arrows on the map, from attacker to victim):
+Rules for "items":
+- An item is ONE news event in ONE place. Most posts have exactly one item.
+- Make several items only when the post reports clearly separate events: different places, different attackers or victims, or different kinds
+  (for example a strike on Kharkiv and a sanctions package). Never split one event into pieces. A digest or list post gets one item per listed event.
+- At most 6 items, the most important first. Every item has its own countries, location, place, category and events.
+- Ignore greetings, ads, links and sign-offs.
+
+Rules for "events" of an item (these become arrows on the map, from attacker to victim):
 - One event per attacker->victim pair. Several attackers or several victims means several events. Two-way exchanges give two events.
 - "physical": strikes, shelling, drone/missile attacks, invasions, incursions, shoot-downs, sabotage by a state or its forces.
 - "verbal": ONLY an explicit threat, ultimatum, formal accusation, sanction or condemnation by a government or bloc aimed at a named state.
@@ -52,7 +61,7 @@ Rules for "events" (these become arrows on the map, from attacker to victim):
 
 Rules for "place": the name as a map would write it in English or in the usual transliteration ("Kharkiv", "Tolyatti", "Sanaa"),
 without the word "oblast"/"region". Only a settlement, region or named facility that the post itself names; null when only a country is named.
-Never guess a place the post does not mention. Several places: the one where the main effect happens.
+Never guess a place the post does not mention. Several places in one item: the one where the main effect happens.
 
 Rules for "location" and "category":
 - "location" is where the EFFECT happens, i.e. where the struck target is, NOT where the attacker comes from. A Ukrainian strike on a plant
@@ -64,17 +73,20 @@ Rules for "location" and "category":
 
 Examples (different posts, only to show the format and the traps):
 Post: "A Liberian-flagged tanker was hit by a Houthi missile in the Red Sea, two crew injured."
-{{"countries": ["YE", "LR"], "location": null, "place": "Red Sea", "category": "sea", "events": [{{"from": "YE", "to": null, "kind": "physical", "confidence": 0.9, "why": "Houthi missile hit tanker; flag state is not the victim"}}]}}
+{{"items": [{{"countries": ["YE", "LR"], "location": null, "place": "Red Sea", "category": "sea", "what": "Хусите удрят танкер с ракета", "events": [{{"from": "YE", "to": null, "kind": "physical", "confidence": 0.9, "why": "Houthi missile hit tanker; flag state is not the victim"}}]}}]}}
 Post: "Egyptian airports suspended all flights to and from Libya."
-{{"countries": ["EG", "LY"], "location": "EG", "place": null, "category": "avi", "events": []}}
+{{"items": [{{"countries": ["EG", "LY"], "location": "EG", "place": null, "category": "avi", "what": "Египет спира полетите до Либия", "events": []}}]}}
 Post: "France and Germany will send air defence to Ukraine. Russia launched 40 drones at Kharkiv overnight."
-{{"countries": ["FR", "DE", "UA", "RU"], "location": "UA", "place": "Kharkiv", "category": "war", "events": [{{"from": "RU", "to": "UA", "kind": "physical", "confidence": 1.0, "why": "drone attack on Kharkiv"}}]}}
+{{"items": [{{"countries": ["FR", "DE", "UA"], "location": "UA", "place": null, "category": "mil", "what": "Франция и Германия ще изпратят ПВО", "events": []}},
+  {{"countries": ["UA", "RU"], "location": "UA", "place": "Kharkiv", "category": "war", "what": "40 дрона срещу Харков", "events": [{{"from": "RU", "to": "UA", "kind": "physical", "confidence": 1.0, "why": "drone attack on Kharkiv"}}]}}]}}
 Post: "Ukraine struck the Tolyattikauchuk petrochemical plant in Samara oblast."
-{{"countries": ["UA", "RU"], "location": "RU", "place": "Tolyatti", "category": "war", "events": [{{"from": "UA", "to": "RU", "kind": "physical", "confidence": 0.95, "why": "strike on plant in Samara oblast"}}]}}
+{{"items": [{{"countries": ["UA", "RU"], "location": "RU", "place": "Tolyatti", "category": "war", "what": "Украйна удря петрохимически завод", "events": [{{"from": "UA", "to": "RU", "kind": "physical", "confidence": 0.95, "why": "strike on plant in Samara oblast"}}]}}]}}
 """
 PROMPT_VERSION = hashlib.sha1(SYSTEM.encode()).hexdigest()[:8]
 SHOW_PHYSICAL, SHOW_VERBAL = 0.7, 0.9  # below these an arrow stays in the data but is hidden / goes to review
-MAX_TEXT = 1500
+MAX_TEXT = 4096   # Telegram's own limit: nothing is cut, so the last events of a long digest are read too
+MAX_ITEMS = 6
+FLAG = re.compile("[\U0001F1E6-\U0001F1FF]{2}")
 
 
 class LLMError(Exception):
@@ -148,10 +160,11 @@ def with_show(events):
     return events
 
 
-def clean_events(out):
+def clean_events(out, idx=None):
     """Guards on whatever the model returned: no self-arrows, no duplicates, no invented codes.
 
-    A physical attack by a named country with no target country is kept with "to": None; the page draws it to the place named in the post."""
+    A physical attack by a named country with no target country is kept with "to": None; the page draws it to the place named in the post.
+    out is the post (old flat format) or one item of it; idx (the item number) is stored as "i" on every event when the post has several items."""
     loc = out.get("location") if iso_ok(out.get("location"), allow_blocs=False) else None
     best = {}
     for e in out.get("events", []) or []:
@@ -171,6 +184,8 @@ def clean_events(out):
         except (TypeError, ValueError):
             conf = 0.0
         ev = {"from": a, "to": b, "kind": e["kind"], "confidence": conf, "why": str(e.get("why", ""))[:120]}
+        if idx is not None:
+            ev["i"] = idx
         old = best.get((a, b))
         rank = lambda x: (x["kind"] == "physical", x["confidence"])  # prefer physical, then higher confidence
         if old is None or rank(ev) > rank(old):
@@ -186,19 +201,54 @@ def clean_place(x):
     return x if 2 <= len(x) <= 80 and not x.isdigit() and x.lower() not in ("null", "none", "n/a", "unknown") else None
 
 
+def clean_countries(x):
+    return sorted({c for c in (x if isinstance(x, list) else []) if iso_ok(c)})
+
+
+def items_of(out):
+    """The items of an answer. An answer in the old flat format (no "items") counts as one item."""
+    its = out.get("items")
+    if isinstance(its, list):
+        its = [i for i in its if isinstance(i, dict) and (i.get("location") or i.get("place") or i.get("countries") or i.get("events"))]
+        if its:
+            return its[:MAX_ITEMS]
+    return [out]
+
+
 def record(raw, text, model):
-    """What we store for one post."""
+    """What we store for one post.
+
+    Always: c (all countries), loc / cat / pl (of the first, main item) and ev (all arrows), exactly as before.
+    Only when the post has several items: it = [{loc, cat, pl, c, w}, ...] and every arrow in ev carries "i", the number of its item."""
     out = parse(raw)
     cats = CATS.split()
-    rec = {"h": text_hash(text), "pv": PROMPT_VERSION, "m": model,
-           "c": sorted({c for c in out.get("countries", []) if iso_ok(c)}),
-           "loc": out.get("location") if iso_ok(out.get("location"), allow_blocs=False) else None,
-           "cat": out.get("category") if out.get("category") in cats else None,
-           "ev": [{k: v for k, v in e.items() if k != "show"} for e in clean_events(out)]}
-    pl = clean_place(out.get("place"))
-    if pl:
-        rec["pl"] = pl                 # only stored when there is one, so old and new records stay equally small
+    items = items_of(out)
+    multi = len(items) > 1
+    ev, its, allc = [], [], set()
+    for k, it in enumerate(items):
+        ev += [{key: v for key, v in e.items() if key != "show"} for e in clean_events(it, k if multi else None)]
+        c = clean_countries(it.get("countries"))
+        allc.update(c)
+        its.append({"loc": it.get("location") if iso_ok(it.get("location"), allow_blocs=False) else None,
+                    "cat": it.get("category") if it.get("category") in cats else None,
+                    "pl": clean_place(it.get("place")), "c": c, "w": clean_what(it.get("what"))})
+    first = its[0]
+    rec = {"h": text_hash(text), "pv": PROMPT_VERSION, "m": model, "c": sorted(allc), "loc": first["loc"], "cat": first["cat"], "ev": ev}
+    if first["pl"]:
+        rec["pl"] = first["pl"]        # only stored when there is one, so old and new records stay equally small
+    if multi:
+        rec["it"] = [{key: v for key, v in i.items() if v} for i in its]
     return rec
+
+
+def clean_what(x):
+    """The short description of an item (Bulgarian, for the page), or None."""
+    return " ".join(x.split())[:100] if isinstance(x, str) and x.strip() else None
+
+
+def likely_multi(t):
+    """Cheap guess (no model) that a post holds several events: long, several flags, or a list of lines. Used to re-read those first."""
+    return len(t) >= 600 or len(set(FLAG.findall(t))) >= 3 or sum(1 for l in t.splitlines() if l.strip()) >= 4
 
 
 def text_hash(text):
@@ -223,17 +273,36 @@ def save_cache(cache, path=CACHE):
     os.replace(tmp, path)
 
 
+def load_failed(path=FAILED):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def save_failed(failed, path=FAILED):
+    if not failed and not path.exists():
+        return
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(failed, ensure_ascii=False, sort_keys=True), encoding="utf-8")
+    os.replace(tmp, path)
+
+
+MAX_BAD = 2   # an unparseable answer is tried this many times for the same text, then the post is left alone until its text changes
+
+
 def is_stale(rec):
     """Read with a different prompt than the current one."""
     return rec.get("pv") != PROMPT_VERSION
 
 
-def waiting(posts, cache, stale=False, force=()):
+def waiting(posts, cache, stale=False, force=(), failed=None, only=None):
     """Posts that still need the model, newest first.
 
     A post waits when it has no record, or its text was edited, or (only with stale=True) its record was made with an
     older prompt, or its id is in `force`. The old record stays in the cache until the new answer has arrived, so a
-    failed or interrupted run loses nothing.
+    failed or interrupted run loses nothing. failed: posts given up after MAX_BAD unparseable answers (same text). only(text): with
+    stale=True, re-read only the stale posts for which it is true (e.g. likely_multi).
     """
     out = []
     force = {str(i) for i in force}
@@ -242,17 +311,20 @@ def waiting(posts, cache, stale=False, force=()):
         if len(t) <= 20:
             continue
         old = cache["posts"].get(str(m["id"]))
+        bad = (failed or {}).get(str(m["id"]))
+        if bad and bad.get("h") == text_hash(t) and bad.get("n", 0) >= MAX_BAD and str(m["id"]) not in force:
+            continue
         if (old is None or old.get("h") != text_hash(t) or str(m["id"]) in force
-                or (stale and is_stale(old))):
+                or (stale and is_stale(old) and (only is None or only(t)))):
             out.append(m)
     return out
 
 
-def enrich(posts, cache, call, model, limit=30, sleep=1.0, save=None, save_every=10, stale=False, force=()):
+def enrich(posts, cache, call, model, limit=30, sleep=1.0, save=None, save_every=10, stale=False, force=(), failed=None, only=None):
     """Send up to `limit` waiting posts through `call(text) -> raw answer`. Stops quietly when the quota is used up."""
     st = {"done": 0, "unparseable": 0, "failed": 0, "quota": False}
     fails = 0
-    for m in waiting(posts, cache, stale=stale, force=force)[:limit]:
+    for m in waiting(posts, cache, stale=stale, force=force, failed=failed, only=only)[:limit]:
         text = txt(m).strip()
         try:
             raw = call(text)
@@ -271,11 +343,16 @@ def enrich(posts, cache, call, model, limit=30, sleep=1.0, save=None, save_every
         fails = 0
         try:
             cache["posts"][str(m["id"])] = record(raw, text, model)
-        except ValueError:
-            st["unparseable"] += 1           # not stored, so it is tried again next run
+        except (ValueError, TypeError, AttributeError):
+            st["unparseable"] += 1           # not stored; tried again next run, but only MAX_BAD times for the same text
+            if failed is not None:
+                f = failed.get(str(m["id"]))
+                failed[str(m["id"])] = {"h": text_hash(text), "n": (f["n"] if f and f.get("h") == text_hash(text) else 0) + 1}
             print(f"post {m['id']}: answer was not valid JSON, skipped")
             continue
         st["done"] += 1
+        if failed is not None:
+            failed.pop(str(m["id"]), None)
         if save and st["done"] % save_every == 0:
             save(cache)
         if sleep:
@@ -292,6 +369,7 @@ def main():
     ap.add_argument("--since", default=os.environ.get("EXTRACT_SINCE", ""), help="ignore posts older than this date, YYYY-MM-DD")
     ap.add_argument("--redo", type=int, nargs="+", metavar="ID", help="read these posts again, e.g. after a prompt change")
     ap.add_argument("--redo-stale", action="store_true", help="also read again the posts that were read with an older prompt (newest first, within --limit)")
+    ap.add_argument("--redo-multi", action="store_true", help="like --redo-stale, but only posts that look like they hold several events (long, several flags, a list)")
     a = ap.parse_args()
     cache = load_cache()
     if a.redo:
@@ -304,7 +382,10 @@ def main():
     else:
         posts = [m for m in load_all() if m["date"][:10] >= a.since]
     force = [m["id"] for m in posts] if a.redo else ()
-    todo = waiting(posts, cache, stale=a.redo_stale, force=force)
+    stale = a.redo_stale or a.redo_multi
+    only = likely_multi if a.redo_multi and not a.redo_stale else None
+    failed = load_failed()
+    todo = waiting(posts, cache, stale=stale, force=force, failed=failed, only=only)
     old_prompt = sum(1 for r in cache["posts"].values() if is_stale(r))
     print(f"{len(cache['posts'])} posts analysed ({old_prompt} with an older prompt), {len(todo)} waiting")
     if a.dry or not todo:
@@ -318,8 +399,10 @@ def main():
     if not token or not model:
         print(f"No {env if not token else 'LLM_MODEL'} set, skipping extraction (the old rules stay in use).")
         return
-    st = enrich(posts, cache, lambda t: ask(t, model, token, base_url), f"{provider}/{model}", limit=a.limit, save=save_cache,
-                stale=a.redo_stale, force=force)
+    extra = {"reasoning_effort": os.environ.get("LLM_REASONING", "low")} if provider == "groq" and "gpt-oss" in model else None   # fewer hidden tokens
+    call = lambda t: ask(t, model, token, base_url, max_tokens=1500 if len(t) < 700 else 3500, extra=extra)   # long posts get room for several items
+    st = enrich(posts, cache, call, f"{provider}/{model}", limit=a.limit, save=save_cache, stale=stale, force=force, failed=failed, only=only)
+    save_failed(failed)
     print(st, "| analysed now:", len(cache["posts"]))
 
 

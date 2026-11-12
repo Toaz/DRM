@@ -259,14 +259,25 @@ def country_meta(posts, texts, names):
     return out
 
 
+def merge_rows(rows, SRC):
+    """({post id: arrows}, {post id: (theme, category)}) from the map rows. A post the model split into several events has several rows with the
+    same id: the graph is about posts, so their arrows are joined, and theme and category are those of the first (main) row."""
+    arrows, meta = {}, {}
+    for r in rows:
+        pid = str(r[0])
+        have = arrows.setdefault(pid, [])
+        have += [x for x in row_arrows(r, SRC.get(r[0])) if x not in have]
+        meta.setdefault(pid, (r[3], r[7]))                                # theme and category exactly as the map shows them
+    return arrows, meta
+
+
 def map_inputs():
     """The posts, texts and arrows exactly as the map has them (curated rows, hand overrides, model, rules), by reusing build.make_rows()."""
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import build
     rows, stat, texts, posts, SRC = build.make_rows()
-    arrows = {str(r[0]): row_arrows(r, SRC.get(r[0])) for r in rows}
+    arrows, meta = merge_rows(rows, SRC)
     tx = {str(k): v for k, v in texts.items()}
-    meta = {str(r[0]): (r[3], r[7]) for r in rows}                       # theme and category exactly as the map shows them
     for p in posts:                                                       # posts the map does not place: category by the same rules, no theme
         meta.setdefault(str(p["id"]), ("", build.cat(tx.get(str(p["id"]), ""))))
     return ([(str(p["id"]), p["date"]) for p in posts], tx, arrows, dict(build.BGN), meta)

@@ -30,9 +30,9 @@ main{flex:1;min-height:0;display:grid;grid-template-columns:1fr 360px;gap:10px;p
 #side{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:12px 14px;overflow:auto;min-height:0;font-size:13.5px}
 #tb{display:flex;justify-content:space-between;align-items:center;padding:4px 8px;border-bottom:1px solid var(--bd)}#tb button{border:1px solid var(--bd);background:var(--card);border-radius:3px;padding:3px 12px;font-size:13px;cursor:pointer}#tb .tab.on{background:var(--brand);color:var(--icn);border-color:var(--brand)}
 svg{width:100%;height:100%;touch-action:none;cursor:grab}text{fill:var(--ink);pointer-events:none}#g{flex:1;min-height:0;height:auto}
-.ev{border-bottom:1px solid var(--line);padding:6px 0}a{color:var(--brand)}
+.ev{border-bottom:1px solid var(--line);padding:6px 4px}.ev:hover{background:color-mix(in srgb,var(--brand) 8%,transparent)}a{color:var(--brand)}
 .warn{border:1px solid var(--brand);border-left-width:4px;padding:4px 8px;margin:6px 0;font-size:12.5px}
-.chip{display:inline-block;border:1px solid var(--bd);border-radius:10px;padding:0 6px;margin:2px 3px 0 0;font-size:12px}.chip button{border:0;padding:0 0 0 4px;background:none;color:var(--brand);cursor:pointer}#picks .chip{background:var(--card)}#clrp{font-size:12px;border:1px solid var(--bd);background:var(--card);border-radius:3px;padding:2px 8px;cursor:pointer}
+.chip{display:inline-block;border:1px solid var(--bd);border-radius:10px;padding:0 6px;margin:2px 3px 0 0;font-size:12px}.chip button{border:0;padding:0 0 0 4px;background:none;color:var(--brand);cursor:pointer}.dpk{margin-bottom:6px;max-height:84px;overflow:auto}.dpk:empty{display:none}.dpk .chip{background:var(--card)}.clrp{font-size:12px;border:1px solid var(--bd);background:var(--card);border-radius:3px;padding:2px 8px;cursor:pointer}
 #side button#more{border:1px solid var(--bd);background:var(--card);border-radius:3px;padding:5px 13px;font-size:13px;cursor:pointer}#side button#more:hover{border-color:var(--brand)}
 table{border-collapse:collapse;font-size:12px}td,th{border:1px solid var(--bd);padding:2px 6px;text-align:center}td.c{cursor:pointer}
 #lg{position:absolute;left:8px;bottom:8px;background:var(--card);border:1px solid var(--bd);padding:4px 8px;font-size:12px;border-radius:4px;pointer-events:none}#lg i{font-style:normal;margin-right:8px;white-space:nowrap}
@@ -46,13 +46,13 @@ table{border-collapse:collapse;font-size:12px}td,th{border:1px solid var(--bd);p
 <button type="button" id="modeb" title="Превключва между държави и ключови думи (личности, организации, формирования, въоръжение)"></button>
 <select id="mode" hidden><option value="c">c</option><option value="e">e</option></select><select id="sel" hidden></select>
 <nav class="tb" aria-label="Филтри">
-<div class="dd" data-k="c"><button type="button" class="ddb" aria-expanded="false">Избери</button><div class="ddp" hidden><input type="search" class="ddq" placeholder="Търсене на държава…"><div class="ddl"></div></div></div>
-<div class="dd" data-k="e"><button type="button" class="ddb" aria-expanded="false">Избери</button><div class="ddp" hidden><input type="search" class="ddq" placeholder="Търсене на ключова дума…"><div class="ddl"></div></div></div>
+<div class="dd" data-k="c"><button type="button" class="ddb" aria-expanded="false">Избери</button><div class="ddp" hidden><div class="dpk"></div><input type="search" class="ddq" placeholder="Търсене на държава…"><div class="ddl"></div></div></div>
+<div class="dd" data-k="e"><button type="button" class="ddb" aria-expanded="false">Избери</button><div class="ddp" hidden><div class="dpk"></div><input type="search" class="ddq" placeholder="Търсене на ключова дума…"><div class="ddl"></div></div></div>
 <div class="dd" data-k="t"><button type="button" class="ddb" aria-expanded="false">Видове</button><div class="ddp" hidden><div class="ddl"></div></div></div>
 <div class="dd" data-k="th"><button type="button" class="ddb" aria-expanded="false">Теми</button><div class="ddp" hidden><input type="search" class="ddq" placeholder="Търсене на тема…"><div class="ddl"></div></div></div>
 <div class="dd" data-k="ct"><button type="button" class="ddb" aria-expanded="false">Категории</button><div class="ddp" hidden><input type="search" class="ddq" placeholder="Търсене на категория…"><div class="ddl"></div></div></div>
 <div class="menu" id="dl"><button type="button" class="mb" id="b-rg" aria-expanded="false">Период</button><div class="pop" hidden><div class="rg"><label>От <input id="c0" type="date" aria-label="Начална дата"><input id="d0" type="range" min="0" value="0" aria-label="Начало на периода"><b id="lov"></b></label><label>До <input id="c1" type="date" aria-label="Крайна дата"><input id="d1" type="range" min="0" aria-label="Край на периода"><b id="hiv"></b></label><div id="pre"></div><span id="note"></span></div></div></div>
-<input id="q" type="search" placeholder="Търсене в текста…" aria-label="Търсене в текста на публикациите" autocomplete="off" title="Търси фраза в целия текст на публикациите – както на картата. Комбинира се с останалите филтри."><span id="qs" class="mut"></span><span id="picks"></span></nav>
+<input id="q" type="search" placeholder="Търсене в текста…" aria-label="Търсене в текста на публикациите" autocomplete="off" title="Търси фраза в целия текст на публикациите – както на картата. Комбинира се с останалите филтри."><span id="qs" class="mut"></span></nav>
 <div class="hs"><a id="back" href="index.html">Към Картата</a><button class="ib" id="thm" aria-label="Тъмна или светла тема" title="Тъмна / светла тема"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button><button class="ib" id="ib" aria-label="За графиката" aria-haspopup="dialog">i</button></div></header>
 <div class="bar"><label title="Колко публикации най-малко трябва да стоят зад една линия (и зад един обект), за да се покаже. От 1 до 50.">мин. тегло <input id="minw" type="range" min="1" max="50" value="1" style="width:90px"> <b id="mwv">1</b></label>
 <label id="lall" title="Показва само публикациите, в които са споменати всички избрани едновременно, а не всяка поотделно."><input id="all" type="checkbox"> само публикации с всички избрани</label>
@@ -82,7 +82,7 @@ table{border-collapse:collapse;font-size:12px}td,th{border:1px solid var(--bd);p
 <li>„Предполагаемо участие“ чертае пунктир от ключова дума към държавите от стрелките в същите публикации – извод по правила, не твърдение.</li></ul>
 <h3>Филтри</h3>
 <ul><li><b>Избери</b> – отметки, търсене в списъка и „Всички“. Подредбата е по азбучен ред.</li><li><b>Само публикации с всички избрани</b> – при две или повече избрани показва само публикациите, където са споменати и двете (всички) заедно.</li>
-<li><b>Теми, Категории, Период и Търсене в текста</b> са същите като на картата и се комбинират. Периодът се избира с плъзгачите или от календара.</li><li><b>Мин. тегло</b> скрива линии и балони с по-малко публикации, а <b>Топ</b> ограничава балоните до най-често споменаваните.</li></ul>
+<li><b>Избрани държави и ключови думи:</b> виждат се най-горе в отворения списък „Избери“, където се махат с ✕ или с „Изчисти“.</li><li><b>Запомняне:</b> избраните държави или ключови думи, темите, категориите и настройките в „Опции“ се помнят в този браузър и се връщат при следващото отваряне. Периодът и търсеният текст не се помнят. Връзка от картата носи със себе си нейните теми, категории и период.</li><li><b>Теми, Категории, Период и Търсене в текста</b> са същите като на картата и се комбинират. Периодът се избира с плъзгачите или от календара.</li><li><b>Мин. тегло</b> скрива линии и балони с по-малко публикации, а <b>Топ</b> ограничава балоните до най-често споменаваните.</li></ul>
 <h3>Матрица</h3><ul><li>Таблица „държава × държава“: клетката е броят на общите публикации. Мащабът се сменя с плъзгача, а „Побери по ширина“ я събира в екрана.</li></ul>
 <p class="fine">Поправки: добавете <code>?edit</code> в адреса на страницата, за да поправяте грешни споменавания и да добавяте имена; изтеглете файла и го сложете в <code>data/</code>.</p></div></div>
 <main><div id="stage"><div id="tb"><button type="button" id="fit" title="Побери всичко в екрана">Побери</button><span class="mut" id="hint" style="font-size:12.5px">Ctrl + ляв клик върху балон – избор на няколко</span><span><button type="button" id="tg" class="tab on">Мрежа</button> <button type="button" id="tm" class="tab" title="Матрица: действащ × цел">Матрица</button></span></div><svg id="g"></svg><div id="mat" hidden></div><div id="lg"><i><span class="dot" style="background:var(--country)"></span>държава</i><i><span class="dot" style="background:var(--person)"></span>личност</i><i><span class="dot" style="background:var(--org)"></span>организация</i><i><span class="dot" style="background:var(--unit)"></span>формирование</i><i><span class="dot" style="background:var(--weapon)"></span>въоръжение</i><br><i style="color:var(--atk)">━ нападение</i><i>╌ заплаха</i><i style="color:var(--co)">━ споменати заедно</i></div></div>
@@ -97,6 +97,8 @@ const EDM=/(^|[?&])edit(=|&|$)/.test(location.search);
 let ED={mentions:{},entities:{},merge:{}};
 try{const x=JSON.parse(localStorage.getItem("drm-graph-edits")||"{}");for(const k in ED)if(x[k])ED[k]=x[k]}catch(e){}
 const saveEd=()=>{try{localStorage.setItem("drm-graph-edits",JSON.stringify(ED))}catch(e){}};
+const FKEY="drm-graph-filters";
+function saveFilt(){try{const o={m:$("mode").value,pick:S.pick,th:[...S.th],ct:[...S.ct]};["kind","csrc","minw","top"].forEach(i=>o[i]=$(i).value);["arr","all","nb","rules","inv","only"].forEach(i=>o[i]=$(i).checked);localStorage.setItem(FKEY,JSON.stringify(o))}catch(e){}}
 const BASE=D.ents.map(a=>({id:a[0],type:a[1],en:a[2],bg:a[3],n:a[4],f:a[5],l:a[6],al:a[7]})),BIDX=BASE.map(e=>e.id);
 let ENT=[],EBY={},MG={};
 function buildEnts(){MG=EDM?ED.merge:{};
@@ -105,7 +107,7 @@ function buildEnts(){MG=EDM?ED.merge:{};
  EBY={};ENT.forEach(e=>EBY[e.id]=e)}
 const res=id=>{let n=0;while(MG[id]&&n++<20)id=MG[id];return id},nmE=id=>EBY[id]?(EBY[id].bg||EBY[id].en):id;
 function pe(r){let l=r[2].map(i=>BIDX[i]);if(EDM){const o=ED.mentions[r[0]];if(o){if(o.exclude)l=l.filter(x=>!o.exclude.includes(x));if(o.add)l=l.concat(o.add)}l=l.map(res)}return[...new Set(l)].filter(x=>EBY[x])}
-const S={sel:"",pick:[],mat:false,last:null,shown:30,mz:0,th:new Set(),ct:new Set(),q:""};let sim,cur=[],K=1,deg={},lim=0,LAST=[],NC={},POS={};
+const S={sel:"",pick:[],mat:false,last:null,shown:30,mz:0,th:new Set(),ct:new Set(),q:""};let sim,cur=[],K=1,deg={},lim=0,LAST=[],NC={},POS={},NS=null,LS=null,HL=null;
 buildEnts();
 const LST={c:[],e:[],t:[],th:[],ct:[]},DDS=[...document.querySelectorAll(".dd")],DDN={c:"Избери",e:"Избери",t:"Видове",th:"Теми",ct:"Категории"},TBP={person:"Личности",org:"Организации",unit:"Формирования",weapon:"Въоръжение"},byLab=(a,b)=>a[1].localeCompare(b[1],"bg");
 const tIds=t=>LST.e.filter(x=>EBY[x[0]].type==t).map(x=>x[0]);
@@ -118,7 +120,7 @@ function ddLabels(){DDS.forEach(dd=>{const k=dd.dataset.k,b=dd.querySelector(".d
 const ddClose=()=>{DDS.forEach(dd=>{dd.querySelector(".ddp").hidden=true;dd.querySelector(".ddb").setAttribute("aria-expanded","false")});document.querySelectorAll(".menu .pop").forEach(p=>{p.hidden=true;p.previousElementSibling.setAttribute("aria-expanded","false")})};
 function setMode(k){$("mode").value=k;setPick([]);S.last=null;S.mat=false;S.mz=0;$("side").innerHTML='<p class="mut">Изберете възел, линия или клетка, за да видите публикациите зад нея.</p>';render()}
 const lab=i=>EBY[i]?nmE(i):nmC(i);
-function drawPicks(){ddLabels();$("picks").innerHTML=S.pick.length>6?`<span class="chip">избрани: ${S.pick.length}</span> <button type="button" id="clrp">очисти</button>`:S.pick.map(i=>`<span class="chip">${esc(lab(i))}<button type="button" data-rm="${esc(i)}" title="махни">✕</button></span>`).join("")+(S.pick.length>1?' <button type="button" id="clrp">очисти</button>':"")}
+function drawPicks(){ddLabels();const h=S.pick.map(i=>`<span class="chip">${esc(lab(i))}<button type="button" data-rm="${esc(i)}" title="махни">✕</button></span>`).join("")+(S.pick.length?' <button type="button" class="clrp" data-clrp="1">Изчисти</button>':"");document.querySelectorAll(".dpk").forEach(el=>el.innerHTML=h)}
 function setPick(a){S.pick=[...new Set(a)];S.sel=S.pick.length==1?S.pick[0]:"";drawPicks()}
 const DAYS=D.days||[],iso=n=>{const s=String(n);return s.slice(0,4)+"-"+s.slice(4,6)+"-"+s.slice(6)};
 if(DAYS.length){$("d0").max=$("d1").max=DAYS.length-1;$("d1").value=DAYS.length-1;$("c0").min=$("c1").min=iso(DAYS[0]);$("c0").max=$("c1").max=iso(DAYS[DAYS.length-1])}else $("dl").hidden=true;
@@ -144,7 +146,7 @@ function eLinks(P,f){const cnt={},pr=new Map(),iv=new Map();
  const L=[...pr.values()].filter(l=>keep.has(l.source)&&keep.has(l.target)&&l.n>=f.minw);
  const I=[...iv.values()].filter(l=>keep.has(l.source)&&l.n>=f.minw);return{L:L.concat(I),keep,cnt}}
 function row(r){const s=SN[r[0]],d=s?s[0]:(MO[r[1]]||"без дата"),es=pe(r),th=r[5]>=0?D.themes[r[5]][1]:"",ct=r[6]>=0?D.cats[r[6]][1]:"";
-  return`<div class="ev"><span class="mut">${esc(d)} · </span><a href="https://t.me/drmjournal/${r[0]}" target="_blank" rel="noopener">#${r[0]}</a>`+
+  return`<div class="ev" data-p="${r[0]}"><span class="mut">${esc(d)} · </span><a href="https://t.me/drmjournal/${r[0]}" target="_blank" rel="noopener">#${r[0]}</a>`+
   `<div>${es.map(e=>`<span class="chip"><span class="dot" style="background:var(--${EBY[e].type})"></span>${esc(nmE(e))}${EDM?`<button type="button" title="грешно споменаване" data-ed="xm" data-p="${r[0]}" data-e="${esc(e)}">✕</button>`:""}</span>`).join("")}${S.m=="c"?cset(r).map(c=>`<span class="chip" title="държава" style="border-style:dashed">${esc(nmC(c))}</span>`).join(""):""}${th?`<span class="chip" title="тема">${esc(th)}</span>`:""}${ct?`<span class="chip" title="категория">${esc(ct)}</span>`:""}</div>`+
   `<i>${s?esc(s[1]):(SNL?'<span class="mut">(без откъс)</span>':'<span class="mut">(зареждам текста…)</span>')}</i></div>`}
 function show(title,rs,head,keep){const sc=keep?$("side").scrollTop:0,l=[...new Map(rs.map(r=>[r[0],r])).values()].sort((a,b)=>b[0]-a[0]);
@@ -180,7 +182,7 @@ function focus(links){const s=new Set(S.pick),n=new Set(s);links.forEach(l=>{if(
  return links.filter(l=>s.has(l.source)||s.has(l.target)||($("nb").checked&&n.has(l.source)&&n.has(l.target)))}
 function backHref(){const q=new URLSearchParams();if(S.th.size&&S.th.size<D.themes.length)q.set("th",[...S.th].join("."));if(S.ct.size&&S.ct.size<D.cats.length)q.set("ct",[...S.ct].join("."));if(S.q)q.set("q",$("q").value.trim());
  if(DAYS.length){const f=F();q.set("f",iso(DAYS[f.a]));q.set("t",iso(DAYS[f.b]))}const s=q.toString();return"index.html"+(s?"#"+s:"")}
-function render(fresh){
+function render(fresh){saveFilt();
  S.m=$("mode").value;const f=F();ddLabels();$("back").href=backHref();$("mwv").textContent=f.minw;
  if(S.m!="c")S.mat=false;if(DAYS.length){$("c0").value=iso(DAYS[f.a]);$("c1").value=iso(DAYS[f.b]);$("lov").textContent=fd(iso(DAYS[f.a]));$("hiv").textContent=fd(iso(DAYS[f.b]));$("b-rg").textContent="Период · "+rd(iso(DAYS[f.a]))+" – "+rd(iso(DAYS[f.b]))}
  $("tg").classList.toggle("on",!S.mat);$("fit").style.display=S.mat?"none":"";$("tm").classList.toggle("on",S.mat);$("tm").style.display=S.m=="c"?"":"none";
@@ -208,7 +210,7 @@ function render(fresh){
   .on("click",(e,d)=>{const a=d.source.id||d.source,b=d.target.id||d.target;show(nlab(a)+(d.t=="A"?" → ":d.t=="T"?" ⇢ ":d.t=="I"?" ⋯ (предполагаемо участие) ":" ↔ (споменати заедно) ")+nlab(b),d.rs)});
  L.select("title").text(d=>`${d.n} публикации – кликнете за тях`);
  const N=gn.selectAll("g").data(nodes,d=>d.id).join(e=>{const g=e.append("g").attr("class","n").style("cursor","pointer");g.append("title");g.append("circle");g.append("circle").attr("class","ring").attr("fill","none");g.append("text").attr("text-anchor","middle");return g});
- N.select("title").text(d=>d.label+" – "+((NC[d.id]!=null?NC[d.id]:deg[d.id])||0)+" публикации");N.select("circle:not(.ring)").attr("r",R).attr("fill",fillOf);N.select("circle.ring").attr("r",d=>R(d)+5).attr("stroke","var(--ink)").attr("stroke-width",3).style("display",d=>isP(d)?null:"none");N.select("text").text(d=>d.label);labels();
+ NS=N;LS=L;HL=null;N.select("title").text(d=>d.label+" – "+((NC[d.id]!=null?NC[d.id]:deg[d.id])||0)+" публикации");N.select("circle:not(.ring)").attr("r",R).attr("fill",fillOf);N.select("circle.ring").attr("r",d=>R(d)+5).attr("stroke","var(--ink)").attr("stroke-width",3).style("display",d=>isP(d)?null:"none");N.select("text").text(d=>d.label);labels();
  N.on("mouseover",(e,d)=>{L.attr("opacity",l=>(l.source.id==d.id||l.target.id==d.id)?1:.06);N.select("text").style("display",null)}).on("mouseout",()=>{L.attr("opacity",.75);labels()})
   .on("click",(e,d)=>{if(e.defaultPrevented)return;nodePick(d,e.ctrlKey||e.metaKey||e.shiftKey)}).on("contextmenu",(e,d)=>{if(e.ctrlKey){e.preventDefault();nodePick(d,true)}})
   .call(d3.drag().clickDistance(4).on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.12).restart();d.fx=d.x;d.fy=d.y}).on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);if(d.id!=S.sel)d.fx=d.fy=null}));
@@ -281,16 +283,34 @@ document.addEventListener("click",ev=>{const mb=ev.target.closest(".mb");if(mb){
  if(!ev.target.closest(".dd")&&!ev.target.closest(".menu"))ddClose();
  if(ev.target.id=="more"){S.shown+=30;show(...S.last,true);return}
  if(ev.target.id=="mfit"){S.mz=0;render(false);return}
- const r=ev.target.closest("[data-rm]");if(r){setPick(S.pick.filter(x=>x!=r.dataset.rm));render();selectPick();return}if(ev.target.id=="clrp"){setPick([]);S.last=null;render()}});
+ const r=ev.target.closest("[data-rm]");if(r){setPick(S.pick.filter(x=>x!=r.dataset.rm));render();selectPick();return}if(ev.target.closest("[data-clrp]")){setPick([]);S.last=null;render()}});
 let qt=null;$("q").addEventListener("input",()=>{clearTimeout(qt);qt=setTimeout(async()=>{S.q=$("q").value.trim().toLowerCase();if(S.q&&!FT){$("qs").textContent="зареждам текста…";await loadFT();$("qs").textContent=FT?"":"текстът не може да се зареди"}render();if(S.q)show("Търсене: „"+$("q").value.trim()+"“",posts(F()));else if(S.pick.length)selectPick();else if(!S.mat){S.last=null;$("side").innerHTML='<p class="mut">Изберете възел, линия или клетка, за да видите публикациите зад нея.</p>'}},220)});
 $("modeb").onclick=()=>{ddClose();setMode(S.m=="c"?"e":"c")};
 $("tg").onclick=()=>{S.mat=false;render(false)};$("tm").onclick=()=>{S.mat=true;S.mz=0;render(false)};$("fit").onclick=()=>fit();
+/* hovering a post in the side panel lights up its balloons */
+const RID=new Map(D.posts.map(r=>[String(r[0]),r]));
+function hlPost(id){HL=null;if(!NS)return;
+ if(id){const r=RID.get(id);if(r){const f=F(),s=new Set(S.m=="e"?pe(r):cset(r));if(S.m=="e"&&f.inv)arrs(r,f).forEach(x=>{s.add(x[0]);s.add(x[1])});HL=s}}
+ NS.style("opacity",d=>!HL||HL.has(d.id)?null:.18);
+ NS.select("circle.ring").style("display",d=>(isP(d)||(HL&&HL.has(d.id)))?null:"none").attr("stroke",d=>HL&&HL.has(d.id)&&!isP(d)?"var(--brand)":"var(--ink)").attr("stroke-width",d=>HL&&HL.has(d.id)?4:3);
+ LS.attr("opacity",l=>!HL?.75:(HL.has(l.source.id)&&HL.has(l.target.id)?1:.05));
+ labels();if(HL)NS.select("text").style("display",d=>HL.has(d.id)?null:"none")}
+$("side").addEventListener("mouseover",ev=>{const e=ev.target.closest(".ev");if(e&&e.dataset.p)hlPost(e.dataset.p)});
+$("side").addEventListener("mouseout",ev=>{const e=ev.target.closest(".ev");if(e&&!(ev.relatedTarget&&e.contains(ev.relatedTarget)))hlPost(null)});
 if(EDM)document.title+=" · редакция";
 /* filters handed over by the map (same names as in the map's address: th, ct, f, t, q) */
 {const H=new URLSearchParams(location.hash.slice(1)),dl=k=>(H.get(k)||"").split(".").filter(Boolean),ok=(k,tab)=>{const a=dl(k).filter(x=>tab.some(y=>y[0]==x));return a.length&&a.length<tab.length?a:[]};
  ok("th",D.themes).forEach(x=>S.th.add(x));ok("ct",D.cats).forEach(x=>S.ct.add(x));
  if(H.get("q")){$("q").value=H.get("q");S.q=H.get("q").trim().toLowerCase()}
  const D8=/^\d{4}-\d{2}-\d{2}$/;if(DAYS.length&&D8.test(H.get("f")||"")&&D8.test(H.get("t")||"")){let x=iFrom(+H.get("f").replace(/-/g,"")),y=iTo(+H.get("t").replace(/-/g,""));if(x>y)[x,y]=[y,x];$("d0").value=x;$("d1").value=y;PKG="";presSync()}}
-render();if(S.q)$("q").dispatchEvent(new Event("input"));
+/* the filters of the last visit come back (not the period and not the search text); a link from the map brings its own themes and categories */
+{let o={};try{o=JSON.parse(localStorage.getItem(FKEY)||"{}")}catch(e){}if(!o||typeof o!="object"||Array.isArray(o))o={};
+const H=new URLSearchParams(location.hash.slice(1)),fromMap=H.has("f")||H.has("t"),sa=a=>Array.isArray(a)?a.filter(x=>typeof x=="string"):[],keep=(a,tab)=>{const l=sa(a).filter(x=>tab.some(y=>y[0]==x));return l.length&&l.length<tab.length?l:[]};
+if(!fromMap){keep(o.th,D.themes).forEach(x=>S.th.add(x));keep(o.ct,D.cats).forEach(x=>S.ct.add(x))}
+if(o.m=="e"||o.m=="c")$("mode").value=o.m;S.m=$("mode").value;
+setPick(sa(o.pick).filter(i=>S.m=="e"?EBY[i]:C[i]!==undefined));
+["kind","csrc","minw","top"].forEach(i=>{const el=$(i),v=o[i];if(v==null)return;if(el.tagName=="SELECT"?[...el.options].some(x=>x.value==String(v)):(el.type=="range"&&+v>=+el.min&&+v<=+el.max))el.value=v});
+["arr","all","nb","rules","inv","only"].forEach(i=>{if(typeof o[i]=="boolean")$(i).checked=o[i]})}
+render();if(S.q)$("q").dispatchEvent(new Event("input"));if(S.pick.length)selectPick();
 (async()=>{try{if(!D.snz)return;const b=Uint8Array.from(atob(D.snz),c=>c.charCodeAt(0));SN=JSON.parse(await new Response(new Blob([b]).stream().pipeThrough(new DecompressionStream("gzip"))).text());if(S.last)show(...S.last,true)}catch(e){console.warn("snippets:",e)}SNL=true;if(S.last)show(...S.last,true)})();
 </script></body></html>
